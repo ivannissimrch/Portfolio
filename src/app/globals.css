@@ -1,42 +1,176 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* ------------------------------------------------------------------------------------ */
+/* ---------------------------------------r-e-s-e-t------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+/* https://piccalil.li/blog/a-modern-css-reset/ */
 
 * {
+  border: 1px solid red;
+}
+
+/* Box sizing */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  padding: 0;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* set up the body */
+body {
+  background-color: hsl(var(--clr-white));
+  margin: 0;
+  line-height: 1.5;
+  min-height: 100vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
+}
+/* ------------------- */
+/* End of Reset */
+/* ------------------- */
+
+:root {
+  --clr-black-900: 0 0% 0%;
+  --clr-black-800: 0 0% 20%;
+  --clr-black-700: 0 0% 30%;
+  --clr-black-600: 0 0% 40%;
+  --clr-black-500: 0 0% 50%;
+  --clr-black-400: 0 0% 60%;
+  --clr-black-300: 0 0% 70%;
+  --clr-black-200: 0 0% 80%;
+  --clr-white: 0 0% 100%;
+  --clr-blue-800: 235, 54%, 41%;
+  --clr-blue-700: 236, 57%, 51%;
+  --clr-blue-50: 220, 60%, 97%;
+
+  /* font family */
+  --ff-inter: "Inter", sans-serif;
+  --ff-onest: "Onest", sans-serif;
+
+  /* font size */
+}
+
+/* colors */
+.bg-dark {
+  background-color: hsl(var(--clr-black-900));
+}
+
+.bg-accent {
+  background-color: hsl(var(--clr-blue-50));
+}
+
+.bg-white {
+  background-color: hsl(var(--clr-white));
+}
+
+.text-black {
+  color: hsl(var(--clr-black-900));
+}
+.text-blue {
+  color: hsl(var(--clr-blue-700));
+}
+
+.text-gray {
+  color: hsl(var(--clr-black-700));
+}
+
+.text-white {
+  color: hsl(var(--clr-white));
+}
+
+.ff-sans-normal {
+  font-family: var(--ff-inter);
+}
+
+.ff-onest {
+  font-family: var(--ff-onest);
+}
+
+.h1 {
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+.h2 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+.h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+.h4 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+
+.text-10 {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 16px */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.text-12 {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 16.8px */
+}
+.text-14 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.text-16 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }
