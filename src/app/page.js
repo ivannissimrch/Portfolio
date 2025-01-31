@@ -9,7 +9,7 @@ const PROJECTS_INFO = [
     description:
       "A user-friendly expense splitting application that takes the headache out of shared finances.",
     image: "/images/sliceImage.png",
-    date: "September 01 2024",
+    date: "September 2024",
     icons: [
       "/images/react-icon.svg",
       "/images/react-router-icon.svg",
@@ -22,7 +22,7 @@ const PROJECTS_INFO = [
     description:
       "A meal Scheduler App that creates weekly menus safe for employees with allergies.",
     image: "/images/weeklyBytes.png",
-    date: "January 25 2025",
+    date: "January 2025",
     icons: [
       "/images/react-icon.svg",
       "/images/react-router-icon.svg",
@@ -33,8 +33,8 @@ const PROJECTS_INFO = [
   {
     title: "Stocks",
     description: "A stocks searching and display info about stocks",
-    image: "/images/StocksImage.png",
-    date: "01 25 2025",
+    image: "/images/stocksImage.png",
+    date: "01 2025",
     icons: [
       "/images/react-icon.svg",
       "/images/css-icon.svg",
@@ -47,7 +47,7 @@ const PROJECTS_INFO = [
     description:
       "A  playlist builder that allow you to search and save playlist to your spotify account",
     image: "/images/spotifyCloneImage.jpg",
-    date: "01 25 2025",
+    date: "01 2025",
     icons: [
       "/images/react-icon.svg",
       "/images/material-ui-icon.svg",
@@ -59,7 +59,7 @@ const PROJECTS_INFO = [
 
 export default function Home() {
   return (
-    <main className="mobile-container flex  bg-accent padding-top-72 ">
+    <main className="mobile-container flex  bg-accent padding-72 ">
       <section className=" grid hero-container">
         <h1 id="title" className="ff-sans-normal h2 hero-intro">
           <div> I’m Ivan Rebolledo,</div>
@@ -126,32 +126,37 @@ export default function Home() {
       </section>
 
       <section className="">
-        <h3 className="fs-400">
+        <h3 className="fs-400 flex ff-sans-normal technologies-title">
           Technologies I work with.
           <span className="text-blue">As a developer</span>{" "}
         </h3>
-        <section className="flex">
+        <section className="flex technologies-container">
           {TECHNOLOGIES_ICONS.map((icon, idx) => {
             return (
-              <span key={idx}>
-                <Image src={icon} width={20} height={20} />
-              </span>
+              <section key={idx} className="technologies-icon-container">
+                <Image src={icon} width={35.1} height={35.1} alt="icon" />
+              </section>
             );
           })}
         </section>
       </section>
-      <section className="bg-dark text-white">
+      <section className="bg-dark text-white working-together-container flex">
         <div>
           <h2>Intersted in working together</h2>
           <h3>Send a message to my email</h3>
         </div>
-        <div>
-          <span>email icon</span>
-          <span>ivannissimrch@gmail.com</span>
+        <div className="bg-blue flex email-container">
+          <p>ivannissimrch@gmail.com</p>
         </div>
       </section>
-      <footer>
-        <p>Ivan Rebolledo</p>
+      <footer className="flex footer">
+        <div>
+          <p>2025 Ivan Rebolledo</p>
+        </div>
+        <div>
+          <span>GitHub</span>
+          <span>Linkedln</span>
+        </div>
       </footer>
     </main>
   );
