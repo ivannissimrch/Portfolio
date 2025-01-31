@@ -4,7 +4,7 @@ export default function Card({ project }) {
   const { date, icons, title, description, image } = project;
   console.log(image);
   return (
-    <section className="w-full h-full">
+    <section className="w-full h-full bg-white">
       <div>
         <span>{date}</span>
         <span>{icons}</span>

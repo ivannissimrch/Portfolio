@@ -4,7 +4,6 @@
 /* https://piccalil.li/blog/a-modern-css-reset/ */
 
 * {
-  border: 1px solid red;
 }
 
 /* Box sizing */
@@ -151,6 +150,10 @@ select {
   }
 }
 
+/* ------------------------------------------------------------------------------------ */
+/* ---------------------------------------utility class------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
 /* colors */
 .bg-dark {
   background-color: hsl(var(--clr-black-900));
@@ -218,9 +221,6 @@ select {
 
 .h1 {
   font-size: 72px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 100%;
 }
 .h2 {
   /* 36px */
@@ -228,30 +228,16 @@ select {
 }
 .h3 {
   font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
 }
 .h4 {
   font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%; /* 27px */
 }
 
 .text-10 {
   font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%; /* 16px */
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 .text-12 {
   font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%; /* 16.8px */
 }
 .text-14 {
   font-size: 0.875rem;
@@ -259,9 +245,6 @@ select {
 
 .text-16 {
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
 }
 
 .flex {
@@ -281,34 +264,82 @@ select {
 /* screen reader only */
 .sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.0625rem;
+  height: 0.0625rem;
   padding: 0;
-  margin: -1px;
+  margin: -0.0625rem;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
   border: 0;
 }
 
-.container-10em {
-  max-width: 10em;
-}
-
 .mobile-container {
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 32px;
+  gap: 72px;
+  height: 100%;
 }
 
 .title {
   font-family: var(--ff-sans-cond);
   font-size: var(--fs-500);
   text-transform: uppercase;
-  letter-spacing: 4.72px;
+  letter-spacing: 0.295rem;
   color: hsl(var(--clr-lighter));
+}
+
+.padding-top-72 {
+  padding-top: 72px;
+}
+p {
+  font-family: var(--ff-sans-normal);
+  font-size: var(--fs-300);
 }
 
 /* -----------------------------End of the Utility Classes----------------------------- */
 
-p {
-  font-family: var(--ff-sans-normal);
-  font-size: var(--fs-300);
+/* ------------------------------------------------------------------------------------ */
+/* ---------------------------------------hero section------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+.hero-container {
+  position: relative;
+  margin-bottom: 104px;
+}
+
+.hero-intro {
+  text-align: center;
+}
+
+.hero-icons {
+  justify-content: center;
+  padding-bottom: 32px;
+}
+
+.hero-p {
+  position: absolute;
+  font-weight: 400;
+  bottom: -100px;
+  left: 34px;
+  max-width: 320px;
+  min-height: 105px;
+  padding: 18px;
+  /* Level 3 */
+  box-shadow: 0px 4px 8px 3px rgba(100, 100, 111, 0.15),
+    0px 1px 3px 0px rgba(100, 100, 111, 0.3);
+}
+
+/* tablet  */
+@media (min-width: 35rem) {
+  .hero-p {
+    max-width: 610px;
+  }
+}
+
+.projects-title {
+  font-weight: 700px;
+  margin-bottom: 24px;
+  line-height: 27px;
 }

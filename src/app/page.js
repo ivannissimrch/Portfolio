@@ -39,23 +39,26 @@ const PROJECTS_INFO = [
 
 export default function Home() {
   return (
-    <>
-      <section className="bg-accent grid">
-        <h1 id="title" className="ff-sans-normal h2">
+    <main className="mobile-container flex  bg-accent padding-top-72 ">
+      <section className=" grid hero-container">
+        <h1 id="title" className="ff-sans-normal h2 hero-intro">
           <div> I’m Ivan Rebolledo,</div>
-          <div className="text-blue"> a front-end developer.</div>
+          <div className="text-blue">a front-end developer.</div>
         </h1>
-        <section className="flex">
+        <section className="flex text-gray hero-icons">
           <span className="flex">
-            <Image
-              src="/images/location.svg"
-              alt="location icon"
-              width={20}
-              height={21}
-            />
+            <Link href={"https://maps.app.goo.gl/r4A29nCyUihTkDEq9"}>
+              <Image
+                src="/images/location.svg"
+                alt="location icon"
+                width={20}
+                height={21}
+              />
+            </Link>
+
             <span className="ff-sans-normal fs-200">Tucker, Georgia</span>
           </span>
-          <Link href="">
+          <Link href="https://github.com/ivannissimrch">
             {" "}
             <Image
               src="/images/githubIcon.svg"
@@ -64,7 +67,7 @@ export default function Home() {
               height={27}
             />
           </Link>
-          <Link href="">
+          <Link href="https://www.linkedin.com/in/ivan-rebolledo-012b17244/">
             {" "}
             <Image
               src="/images/LinkIcon.svg"
@@ -80,24 +83,33 @@ export default function Home() {
           height={313}
           alt="temp cover"
         />
-        <p className="break-all">
+
+        <p className="break-all bg-white hero-p fs-200 ff-sans-normal text-gray">
           Dedicated to creating engaging and user-friendly web applications. I
           have developed a strong skill set in front-end development through
-          projects using JavaScript, React, and Next.js, focusing on intuitive
+          projects using <span className="text-black">JavaScript,</span>
+          <span className="text-black">React,</span> and{" "}
+          <span className="text-black">Next.js,</span> focusing on intuitive
           design and clean code.
         </p>
       </section>
       <section id="projects">
-        <h3>
-          What I have been working on. Projects that challenge me and inspired
-          me.
-        </h3>
+        <h4 className="fs-400 projects-title ff-sans-normal">
+          What I have been working on.
+          <span className="text-blue">
+            Projects that challenge me and inspired me.
+          </span>
+        </h4>
         {PROJECTS_INFO.map((project, idx) => (
           <Card key={idx} project={project} />
         ))}
       </section>
-      <section>
-        <h3>Technologies I work with. As a developer</h3>
+
+      <section className="">
+        <h3 className="fs-400">
+          Technologies I work with.
+          <span className="text-blue">As a developer</span>{" "}
+        </h3>
         <section>
           <span>Icon</span>
           <span>Icon</span>
@@ -106,19 +118,19 @@ export default function Home() {
           <span>Icon</span>
         </section>
       </section>
-      <section>
+      <section className="bg-dark text-white">
         <div>
           <h2>Intersted in working together</h2>
           <h3>Send a message to my email</h3>
         </div>
         <div>
           <span>email icon</span>
-          <span>email@gmail.com</span>
+          <span>ivannissimrch@gmail.com</span>
         </div>
       </section>
       <footer>
         <p>Ivan Rebolledo</p>
       </footer>
-    </>
+    </main>
   );
 }
