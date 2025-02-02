@@ -5,7 +5,7 @@ export default function Card({ project }) {
   console.log(image);
   console.log(icons);
   return (
-    <section className="w-full h-full bg-white">
+    <section className="w-full h-full bg-white card-container">
       <section className="card-title">
         <section className="flex card-date-icons">
           <span className="text-gray card-date">{date}</span>
