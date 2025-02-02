@@ -101,15 +101,16 @@ export default function Home() {
           src="/images/mobileimageCover.png"
           width={405}
           height={313}
+          layout="responsive"
+          className="hero-image"
           alt="temp cover"
         />
 
         <p className="break-all bg-white hero-p fs-200 ff-sans-normal text-gray">
           Dedicated to creating engaging and user-friendly web applications. I
           have developed a strong skill set in front-end development through
-          projects using <span className="text-black">JavaScript,</span>
-          <span className="text-black">React,</span> and{" "}
-          <span className="text-black">Next.js,</span> focusing on intuitive
+          projects using <span>JavaScript,</span>
+          <span>React,</span> and <span>Next.js,</span> focusing on intuitive
           design and clean code.
         </p>
       </section>
