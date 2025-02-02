@@ -308,7 +308,6 @@ p {
   position: relative;
   margin: 0 auto 104px auto;
   justify-content: center;
-  /* margin-bottom: 104px; */
 }
 
 .hero-intro {
@@ -320,9 +319,9 @@ p {
   padding-bottom: 32px;
 }
 
-.hero-image {
+/* .hero-image {
   min-width: 447px;
-}
+} */
 
 .hero-p {
   position: absolute;
