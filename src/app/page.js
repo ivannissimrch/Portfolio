@@ -127,32 +127,37 @@ export default function Home() {
       </section>
 
       <section className="">
-        <h3 className="fs-400">
+        <h3 className="fs-400 flex ff-sans-normal technologies-title">
           Technologies I work with.
           <span className="text-blue">As a developer</span>{" "}
         </h3>
-        <section className="flex">
+        <section className="flex technologies-container">
           {TECHNOLOGIES_ICONS.map((icon, idx) => {
             return (
-              <span key={idx}>
-                <Image src={icon} width={20} height={20} />
-              </span>
+              <section key={idx} className="technologies-icon-container">
+                <Image src={icon} width={35.1} height={35.1} alt="icon" />
+              </section>
             );
           })}
         </section>
       </section>
-      <section className="bg-dark text-white">
+      <section className="bg-dark text-white working-together-container flex">
         <div>
           <h2>Intersted in working together</h2>
           <h3>Send a message to my email</h3>
         </div>
-        <div>
-          <span>email icon</span>
-          <span>ivannissimrch@gmail.com</span>
+        <div className="bg-blue flex email-container">
+          <p>ivannissimrch@gmail.com</p>
         </div>
       </section>
-      <footer>
-        <p>Ivan Rebolledo</p>
+      <footer className="flex footer">
+        <div>
+          <p>2025 Ivan Rebolledo</p>
+        </div>
+        <div>
+          <span>GitHub</span>
+          <span>Linkedln</span>
+        </div>
       </footer>
     </main>
   );
