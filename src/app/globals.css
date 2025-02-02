@@ -163,10 +163,6 @@ select {
   background-color: hsl(var(--clr-blue-50));
 }
 
-.bg-blue {
-  background-color: hsl(var(--clr-blue-800));
-}
-
 .bg-white {
   background-color: hsl(var(--clr-white));
 }
@@ -281,7 +277,7 @@ select {
 .mobile-container {
   flex-direction: column;
   justify-content: center;
-  padding: 0 32px;
+  padding: 0 15px;
   gap: 72px;
   height: 100%;
 }
@@ -310,7 +306,9 @@ p {
 
 .hero-container {
   position: relative;
-  margin-bottom: 104px;
+  margin: 0 auto 104px auto;
+  justify-content: center;
+  /* margin-bottom: 104px; */
 }
 
 .hero-intro {
@@ -322,12 +320,18 @@ p {
   padding-bottom: 32px;
 }
 
+.hero-image {
+  min-width: 447px;
+}
+
 .hero-p {
   position: absolute;
   font-weight: 400;
   bottom: -100px;
-  left: 34px;
+  left: 50%;
+  transform: translateX(-50%);
   max-width: 320px;
+  min-width: 320px;
   min-height: 105px;
   padding: 18px;
   /* Level 3 */
@@ -335,9 +339,19 @@ p {
     0px 1px 3px 0px rgba(100, 100, 111, 0.3);
 }
 
-.card-container {
-  margin-bottom: 12px;
-  border: 2px solid red;
+.hero-p > span {
+  font-weight: 800;
+  color: black;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* ---------------------------------------Projects Section------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+.projects-title {
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 27px;
 }
 
 .card-title {
@@ -349,56 +363,13 @@ p {
   margin-bottom: 8px;
 }
 
+.card-date {
+  font-family: var(--ff-sans-normal);
+}
+
 /* tablet  */
 @media (min-width: 35rem) {
   .hero-p {
     max-width: 610px;
   }
-}
-
-.projects-title {
-  font-weight: 700px;
-  margin-bottom: 24px;
-  line-height: 27px;
-}
-
-.technologies-title {
-  margin-bottom: 24px;
-}
-
-.technologies-container {
-  width: 405px;
-  height: 192px;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-}
-
-.technologies-icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 39.5px;
-  height: 60.2px;
-}
-
-.working-together-container {
-  flex-direction: column;
-  padding: 32px;
-  gap: 24px;
-}
-
-.email-container {
-  justify-content: center;
-  align-items: center;
-  padding: 24px 64px;
-}
-
-.footer {
-  justify-content: space-evenly;
-  align-items: center;
-  height: 42px;
-  padding: 12px 0;
 }
