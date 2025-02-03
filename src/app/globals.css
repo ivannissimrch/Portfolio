@@ -280,7 +280,8 @@ select {
 
 .mobile-container {
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
+  align-items: center;
   padding: 0 15px;
   gap: 72px;
   height: 100%;
@@ -323,9 +324,9 @@ p {
   padding-bottom: 32px;
 }
 
-/* .hero-image {
-  min-width: 447px;
-} */
+.hero-image {
+  min-width: 375px;
+}
 
 .hero-p {
   position: absolute;
@@ -379,7 +380,8 @@ p {
 }
 
 .technologies-container {
-  width: 405px;
+  border: solid 2px red;
+  width: 382px;
   height: 192px;
   flex-wrap: wrap;
   flex-direction: column;

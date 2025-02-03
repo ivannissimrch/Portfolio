@@ -2,60 +2,7 @@ import Card from "@/components/Card";
 import Image from "next/image";
 import Link from "next/link";
 import { TECHNOLOGIES_ICONS } from "./TechnologiesIcons";
-
-const PROJECTS_INFO = [
-  {
-    title: "Slice",
-    description:
-      "A user-friendly expense splitting application that takes the headache out of shared finances.",
-    image: "/images/sliceImage.png",
-    date: "September 01 2024",
-    icons: [
-      "/images/react-icon.svg",
-      "/images/react-router-icon.svg",
-      "/images/html-icon.svg",
-      "/images/tailwind-icon.svg",
-    ],
-  },
-  {
-    title: "Weekly Bytes",
-    description:
-      "A meal Scheduler App that creates weekly menus safe for employees with allergies.",
-    image: "/images/weeklyBytes.png",
-    date: "January 25 2025",
-    icons: [
-      "/images/react-icon.svg",
-      "/images/react-router-icon.svg",
-      "/images/html-icon.svg",
-      "/images/tailwind-icon.svg",
-    ],
-  },
-  {
-    title: "Stocks",
-    description: "A stocks searching and display info about stocks",
-    image: "/images/StocksImage.png",
-    date: "01 25 2025",
-    icons: [
-      "/images/react-icon.svg",
-      "/images/css-icon.svg",
-      "/images/html-icon.svg",
-      "/images/typescript-icon.svg",
-    ],
-  },
-  {
-    title: "PlayList",
-    description:
-      "A  playlist builder that allow you to search and save playlist to your spotify account",
-    image: "/images/spotifyCloneImage.jpg",
-    date: "01 25 2025",
-    icons: [
-      "/images/react-icon.svg",
-      "/images/material-ui-icon.svg",
-      "/images/html-icon.svg",
-      "/images/react-router-icon.svg",
-    ],
-  },
-];
+import { PROJECTS_INFO } from "./projects_info";
 
 export default function Home() {
   return (
