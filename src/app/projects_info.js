@@ -27,7 +27,7 @@ export const PROJECTS_INFO = [
   },
   {
     title: "Stocks",
-    description: "A stocks searching and display info about stocks",
+    description: "Allows to search and display information about stocks",
     image: "/images/stocksMobile.png",
     date: "September 2024",
     icons: [
