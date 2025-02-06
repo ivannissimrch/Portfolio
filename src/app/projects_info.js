@@ -37,17 +37,4 @@ export const PROJECTS_INFO = [
       "/images/typescript-icon.svg",
     ],
   },
-  {
-    title: "PlayList",
-    description:
-      "A  playlist builder that allow you to search and save playlist to your spotify account",
-    image: "/images/mobileAppImage.png",
-    date: "July 2024",
-    icons: [
-      "/images/react-icon.svg",
-      "/images/material-ui-icon.svg",
-      "/images/html-icon.svg",
-      "/images/react-router-icon.svg",
-    ],
-  },
 ];
