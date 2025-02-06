@@ -26,7 +26,7 @@ export default function Card({ project }) {
         <p className="fs-200 ff-sans-normal">{description}</p>
       </section>
 
-      <Image src={image} alt="project image" width={405} height={512} />
+      <Image src={image} alt="project image" width={405} height={369} />
     </section>
   );
 }

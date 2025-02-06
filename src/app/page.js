@@ -75,9 +75,12 @@ export default function Home() {
       </section>
 
       <section className="">
-        <h3 className="fs-400 flex ff-sans-normal technologies-title">
+        <h3
+          className="fs-400 flex ff-sans-normal technologies-title "
+          style={{ gap: "0.5rem" }}
+        >
           Technologies I work with.
-          <span className="text-blue">As a developer</span>{" "}
+          <span className="text-blue">As a developer</span>
         </h3>
         <section className="flex technologies-container">
           {TECHNOLOGIES_ICONS.map((icon, idx) => {
@@ -91,8 +94,12 @@ export default function Home() {
       </section>
       <section className="bg-dark text-white working-together-container flex">
         <div>
-          <h2>Interested in working together</h2>
-          <h3>Send a message to my email</h3>
+          <h2 className="fs-400 ff-sans-normal working-together-title ">
+            Interested in working together?
+          </h2>
+          <h3 className=" fs-200 text-light-gray ff-sans-normal">
+            Send a message to my email
+          </h3>
         </div>
         <div className="bg-blue flex email-container">
           <p>ivannissimrch@gmail.com</p>
@@ -102,7 +109,7 @@ export default function Home() {
         <div>
           <p> &copy; 2025 Ivan Rebolledo</p>
         </div>
-        <div>
+        <div className="footer-links flex">
           <Link href="https://github.com/ivannissimrch">GitHub</Link>
           <Link href="https://www.linkedin.com/in/ivan-rebolledo-012b17244/">
             {" "}
