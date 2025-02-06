@@ -65,6 +65,7 @@ export default function Home() {
         <h4 className="fs-400 projects-title ff-sans-normal">
           What I have been working on.
           <span className="text-blue">
+            {" "}
             Projects that challenge me and inspired me.
           </span>
         </h4>
@@ -90,7 +91,7 @@ export default function Home() {
       </section>
       <section className="bg-dark text-white working-together-container flex">
         <div>
-          <h2>Intersted in working together</h2>
+          <h2>Interested in working together</h2>
           <h3>Send a message to my email</h3>
         </div>
         <div className="bg-blue flex email-container">
@@ -99,11 +100,14 @@ export default function Home() {
       </section>
       <footer className="flex footer">
         <div>
-          <p>2025 Ivan Rebolledo</p>
+          <p> &copy; 2025 Ivan Rebolledo</p>
         </div>
         <div>
-          <span>GitHub</span>
-          <span>Linkedln</span>
+          <Link href="https://github.com/ivannissimrch">GitHub</Link>
+          <Link href="https://www.linkedin.com/in/ivan-rebolledo-012b17244/">
+            {" "}
+            Linkedln
+          </Link>
         </div>
       </footer>
     </main>
