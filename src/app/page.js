@@ -9,8 +9,8 @@ export default function Home() {
     <main className="mobile-container flex  bg-accent padding-top-72 ">
       <section className=" grid hero-container">
         <h1 id="title" className="ff-sans-normal h2 hero-intro">
-          <div> I’m Ivan Rebolledo,</div>
-          <div className="text-blue">a front-end developer.</div>
+          <div>Hello, I’m Ivan.</div>
+          <div className="text-blue">A front-end developer.</div>
         </h1>
         <section className="flex text-gray hero-icons">
           <span className="flex">
@@ -45,7 +45,7 @@ export default function Home() {
           </Link>
         </section>
         <Image
-          src="/images/mobileimageCover.png"
+          src="/images/mobileImageCover.jpg"
           width={405}
           height={313}
           layout="responsive"
@@ -54,11 +54,10 @@ export default function Home() {
         />
 
         <p className="break-all bg-white hero-p fs-200 ff-sans-normal text-gray">
-          Dedicated to creating engaging and user-friendly web applications. I
-          have developed a strong skill set in front-end development through
-          projects using <span>JavaScript,</span>
-          <span>React,</span> and <span>Next.js,</span> focusing on intuitive
-          design and clean code.
+          I'm a self-taught front-end developer. Some of the languages I use to
+          build my projects are <span>JavaScript, </span>
+          <span>React, </span> and <span>Next.js.</span> Outside coding I enjoy
+          taking my miniature poodle on hikes and latin dancing.
         </p>
       </section>
       <section id="projects">
