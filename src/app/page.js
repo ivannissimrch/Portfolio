@@ -53,11 +53,11 @@ export default function Home() {
           alt="temp cover"
         />
 
-        <p className="break-all bg-white hero-p fs-200 ff-sans-normal text-gray">
-          I've been working with a code mentor who has guided me in my learning
-          journey. I'm also participating on Chingu as a front-end developer,
-          which is a great way to learn teamwork. When I'm not coding, I love
-          hiking with my miniature poodle and Latin dancing.
+        <p className="bg-white hero-p fs-200 ff-sans-normal text-gray">
+          I enjoy learning about coding and building web applications, some of
+          the technologies I use to develop my apps are
+          <span> JavaScript, </span> <span>React </span> and{" "}
+          <span>Next Js.</span>
         </p>
       </section>
       <section id="projects">
