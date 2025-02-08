@@ -9,7 +9,7 @@ export default function Home() {
     <main className="mobile-container flex  bg-accent padding-top-72 ">
       <section className=" grid hero-container">
         <h1 id="title" className="ff-sans-normal h2 hero-intro">
-          <div>Hello, I’m Ivan.</div>
+          <div>Hi, I’m Ivan.</div>
           <div className="text-blue">A front-end developer.</div>
         </h1>
         <section className="flex text-gray hero-icons">
@@ -54,10 +54,10 @@ export default function Home() {
         />
 
         <p className="break-all bg-white hero-p fs-200 ff-sans-normal text-gray">
-          I'm a self-taught front-end developer. Some of the languages I use to
-          build my projects are <span>JavaScript, </span>
-          <span>React, </span> and <span>Next.js.</span> Outside coding I enjoy
-          taking my miniature poodle on hikes and latin dancing.
+          I've been working with a code mentor who has guided me in my learning
+          journey. I'm also participating on Chingu as a front-end developer,
+          which is a great way to learn teamwork. When I'm not coding, I love
+          hiking with my miniature poodle and Latin dancing.
         </p>
       </section>
       <section id="projects">
