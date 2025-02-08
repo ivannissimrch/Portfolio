@@ -1,11 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Card({ project }) {
   const { date, icons, title, description, image } = project;
   console.log(image);
   console.log(icons);
   return (
-    <section className="w-full h-full bg-white card-container">
+    <Link
+      href={`${project.title}`}
+      className="w-full h-full bg-white card-container"
+    >
       <section className="card-title">
         <section className="flex card-date-icons">
           <span className="text-gray">{date}</span>
@@ -27,6 +31,6 @@ export default function Card({ project }) {
       </section>
 
       <Image src={image} alt="project image" width={405} height={369} />
-    </section>
+    </Link>
   );
 }

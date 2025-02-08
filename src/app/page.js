@@ -54,10 +54,9 @@ export default function Home() {
         />
 
         <p className="bg-white hero-p fs-200 ff-sans-normal text-gray">
-          I enjoy learning about coding and building web applications, some of
-          the technologies I use to develop my apps are
-          <span> JavaScript, </span> <span>React </span> and{" "}
-          <span>Next Js.</span>
+          I enjoy learning about coding and developing web applications with
+          <span> JavaScript, </span>
+          <span> React,</span> <span> and Next.js.</span>
         </p>
       </section>
       <section id="projects">
