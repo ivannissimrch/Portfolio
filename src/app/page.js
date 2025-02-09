@@ -53,10 +53,17 @@ export default function Home() {
           alt="temp cover"
         />
 
-        <p className="bg-white hero-p fs-200 ff-sans-normal text-gray">
+        {/* <p className="bg-white hero-p fs-200 ff-sans-normal text-gray">
           I enjoy learning about coding and developing web applications with
           <span> JavaScript, </span>
           <span> React,</span> <span> and Next.js.</span>
+        </p> */}
+        <p className="bg-white hero-p fs-200 ff-sans-normal text-gray">
+          I'm a self-taught front-end developer passionate about creating web
+          applications. I'm particularly interested in projects related to
+          education accessibility, as I personally experienced barriers to
+          higher education. I believe technology can play a crucial role in
+          making education more accessible to everyone.
         </p>
       </section>
       <section id="projects">
@@ -68,7 +75,7 @@ export default function Home() {
           </span>
         </h4>
         {PROJECTS_INFO.map((project, idx) => (
-          <Card key={idx} project={project} />
+          <Card key={project.title} project={project} />
         ))}
       </section>
 

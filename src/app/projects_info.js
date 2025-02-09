@@ -13,7 +13,7 @@ export const PROJECTS_INFO = [
     ],
   },
   {
-    title: "Weekly Bytes",
+    title: "WeeklyBytes",
     description:
       "A meal Scheduler App that creates weekly menus safe for employees with allergies.",
     image: "/images/weeklyBytesMobile.png",
