@@ -45,7 +45,7 @@ export default function Home() {
           </Link>
         </section>
         <Image
-          src="/images/mobileImageCover.jpg"
+          src="/images/mobileImageCover.png"
           width={405}
           height={313}
           layout="responsive"
