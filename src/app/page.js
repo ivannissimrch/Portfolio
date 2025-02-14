@@ -6,7 +6,7 @@ import { PROJECTS_INFO } from "./projects_info";
 
 export default function Home() {
   return (
-    <main className="mobile-container flex  bg-accent padding-top-72 ">
+    <main className="main-container flex  bg-accent padding-top-72 ">
       <section className=" grid hero-container">
         <h1 id="title" className="ff-sans-normal h2 hero-intro">
           <div>Hi, I’m Ivan.</div>
@@ -49,7 +49,15 @@ export default function Home() {
           width={405}
           height={313}
           layout="responsive"
-          className="hero-image"
+          className="hero-image-phone "
+          alt="temp cover"
+        />
+        <Image
+          src="/images/tabletImageCover.png"
+          width={928}
+          height={378}
+          layout="responsive"
+          className="hero-image-tablet "
           alt="temp cover"
         />
 
@@ -66,7 +74,7 @@ export default function Home() {
           making education more accessible to everyone.
         </p>
       </section>
-      <section id="projects">
+      <section className="projects-container ">
         <h4 className="fs-400 projects-title ff-sans-normal">
           What I have been working on.
           <span className="text-blue">
@@ -79,7 +87,7 @@ export default function Home() {
         ))}
       </section>
 
-      <section className="">
+      <section className="technologies-container">
         <h3
           className="fs-400 flex ff-sans-normal technologies-title "
           style={{ gap: "0.5rem" }}
@@ -87,7 +95,7 @@ export default function Home() {
           Technologies I work with.
           <span className="text-blue">As a developer</span>
         </h3>
-        <section className="flex technologies-container">
+        <section className="flex technologies-icons-container">
           {TECHNOLOGIES_ICONS.map((icon, idx) => {
             return (
               <section key={idx} className="technologies-icon-container">
