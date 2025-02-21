@@ -530,6 +530,15 @@ p {
 
 /* tablet */
 @media (min-width: 560px) {
+  .working-together-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 32px 0 32px 32px;
+  }
+
   .working-together-title {
     font-size: var(--fs-450);
     line-height: 140%;
@@ -548,7 +557,6 @@ p {
 .footer {
   justify-content: space-between;
   min-width: 375px;
-
   align-items: center;
   height: 42px;
   padding: 12px 0;
@@ -561,7 +569,7 @@ p {
 
 /* tablet */
 @media (min-width: 560px) {
-  footer {
+  .footer {
     font-size: 14px;
   }
 }
