@@ -6,10 +6,10 @@ import { PROJECTS_INFO } from "./projects_info";
 
 export default function Home() {
   return (
-    <main className="main-container flex  bg-accent padding-top-72 ">
-      <section className=" grid hero-container">
-        <h1 id="title" className="ff-sans-normal h2 hero-intro">
-          <div>Hi, I’m Ivan.</div>
+    <main className="main-container flex  bg-accent ">
+      <section className=" grid hero-container padding-top-72">
+        <h1 id="title" className="ff-sans-normal hero-title">
+          <div>Hi, I’m Ivan Rebolledo.</div>
           <div className="text-blue">A front-end developer.</div>
         </h1>
         <section className="flex text-gray hero-icons">
@@ -60,18 +60,12 @@ export default function Home() {
           className="hero-image-tablet "
           alt="temp cover"
         />
-
-        {/* <p className="bg-white hero-p fs-200 ff-sans-normal text-gray">
-          I enjoy learning about coding and developing web applications with
-          <span> JavaScript, </span>
-          <span> React,</span> <span> and Next.js.</span>
-        </p> */}
         <p className="bg-white hero-p fs-200 ff-sans-normal text-gray">
-          I'm a self-taught front-end developer passionate about creating web
-          applications. I'm particularly interested in projects related to
-          education accessibility, as I personally experienced barriers to
-          higher education. I believe technology can play a crucial role in
-          making education more accessible to everyone.
+          I love learning about front-end development technologies and creating
+          applications using <span> JavaScript, </span>
+          <span> React,</span> <span> and Next.js</span>. Besides coding, I love
+          taking my miniature poodle on hikes on the weekends and I enjoy Latin
+          dancing.
         </p>
       </section>
       <section className="projects-container ">
@@ -82,9 +76,11 @@ export default function Home() {
             Projects that challenge me and inspired me.
           </span>
         </h4>
-        {PROJECTS_INFO.map((project, idx) => (
-          <Card key={project.title} project={project} />
-        ))}
+        <span className="cards-container">
+          {PROJECTS_INFO.map((project, idx) => (
+            <Card key={project.title} project={project} />
+          ))}
+        </span>
       </section>
 
       <section className="technologies-container">
@@ -110,7 +106,7 @@ export default function Home() {
           <h2 className="fs-400 ff-sans-normal working-together-title ">
             Interested in working together?
           </h2>
-          <h3 className=" fs-200 text-light-gray ff-sans-normal">
+          <h3 className=" fs-200 text-light-gray ff-sans-normal send-message-text">
             Send a message to my email
           </h3>
         </div>
@@ -120,7 +116,7 @@ export default function Home() {
       </section>
       <footer className="flex footer">
         <div>
-          <p> &copy; 2025 Ivan Rebolledo</p>
+          <p className="footer-name-text"> &copy; 2025 Ivan Rebolledo</p>
         </div>
         <div className="footer-links flex">
           <Link href="https://github.com/ivannissimrch">GitHub</Link>

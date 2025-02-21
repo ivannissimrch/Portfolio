@@ -4,6 +4,7 @@ export const PROJECTS_INFO = [
     description:
       "A user-friendly expense splitting application that takes the headache out of shared finances.",
     image: "/images/sliceMobile.png",
+    imageTablet: "/images/sliceTablet.png",
     date: "September 2024",
     icons: [
       "/images/react-icon.svg",

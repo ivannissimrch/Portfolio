@@ -101,7 +101,8 @@ select {
 
   /* 28px */
   --fs-500: 1.75rem;
-
+  /* 24px */
+  --fs-450: 1.5rem;
   /* 18px */
   --fs-400: 1.125rem;
 
@@ -306,6 +307,17 @@ p {
   font-size: var(--fs-300);
 }
 
+.link-text {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* -----------------------------End of the Utility Classes----------------------------- */
+
+/* ------------------------------------------------------------------------------------ */
+/* ---------------------------------------hero section------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
 .main-container {
   flex-direction: column;
   align-items: center;
@@ -313,24 +325,17 @@ p {
   gap: 72px;
   height: 100%;
   min-width: 372px;
-  background-color: chocolate;
 }
-/* -----------------------------End of the Utility Classes----------------------------- */
-
-/* ------------------------------------------------------------------------------------ */
-/* ---------------------------------------hero section------------------------------------- */
-/* ------------------------------------------------------------------------------------ */
-
 .hero-container {
   position: relative;
   margin: 0 auto 104px auto;
-  justify-content: center;
-  background-color: lightblue;
+  /* justify-content: center; */
   width: 100%;
 }
 
-.hero-intro {
+.hero-title {
   text-align: center;
+  font-size: 2.25rem;
 }
 
 .hero-icons {
@@ -368,13 +373,34 @@ p {
   color: black;
 }
 
+/* tablet  */
+@media (min-width: 560px) {
+  .main-container {
+    margin: 0 auto;
+  }
+  .hero-image-tablet {
+    display: block;
+  }
+
+  .hero-image-phone {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: var(--fs-750);
+    line-height: 100%;
+  }
+
+  .hero-p {
+    max-width: 658px;
+    padding: 24px;
+  }
+}
+
 /* ------------------------------------------------------------------------------------ */
 /* ---------------------------------------Projects Section------------------------------------- */
 /* ------------------------------------------------------------------------------------ */
 .projects-container {
-  background-color: cadetblue;
-  /* width: 393.88px; */
-  /* min-width: 375px */
   width: 100%;
 }
 
@@ -386,7 +412,7 @@ p {
 
 .card-container {
   margin-bottom: 12px;
-  background-color: chocolate;
+  flex-direction: column;
 }
 .card-title {
   padding: 24px;
@@ -401,21 +427,34 @@ p {
   font-family: var(--ff-sans-normal);
 }
 
+.card-image-mobile {
+  display: block;
+}
+
+.card-image-tablet {
+  display: none;
+}
+
+/* tablet */
+@media (min-width: 560px) {
+  .projects-title {
+    font-size: var(--fs-450);
+  }
+
+  .card-image-mobile {
+    display: none;
+  }
+  .card-image-tablet {
+    display: inline-block;
+  }
+}
+
 /* ------------------------------------------------------------------------------------ */
 /* ---------------------------------------Technologies Section------------------------------------- */
 /* ------------------------------------------------------------------------------------ */
 
 .technologies-container {
-  /* max-width: 393.88px; */
-  /* min-width: 375px; */
   width: 100%;
-  background-color: lightpink;
-  /* height: 192px;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px; */
 }
 
 .technologies-title {
@@ -424,7 +463,6 @@ p {
 
 .technologies-icons-container {
   width: 100%;
-  background-color: lightseagreen;
   height: 192px;
   flex-wrap: wrap;
   flex-direction: column;
@@ -434,12 +472,19 @@ p {
 }
 
 .technologies-icon-container {
-  background-color: yellow;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 39.5px;
   height: 60.2px;
+}
+
+/* tablet */
+@media (min-width: 560px) {
+  .technologies-title {
+    font-size: var(--fs-450);
+    line-height: 140%;
+  }
 }
 
 /* ------------------------------------------------------------------------------------ */
@@ -450,8 +495,6 @@ p {
   flex-direction: column;
   padding: 32px;
   gap: 24px;
-  /* width: 393.88px; */
-  /* min-width: 375px; */
   width: 100%;
 }
 
@@ -467,6 +510,19 @@ p {
 
 .email-title {
   line-height: 150%;
+}
+
+/* tablet */
+@media (min-width: 560px) {
+  .working-together-title {
+    font-size: var(--fs-450);
+    line-height: 140%;
+  }
+
+  .send-message-text {
+    font-size: var(--fs-400);
+    line-height: 150%;
+  }
 }
 
 /* ------------------------------------------------------------------------------------ */
@@ -487,14 +543,16 @@ p {
   cursor: pointer;
 }
 
-/* tablet  */
+/* tablet */
 @media (min-width: 560px) {
-  .hero-image-tablet {
-    display: block;
-    min-width: 928px;
-    height: 378px;
-  }
-  .hero-image-phone {
-    display: none;
+  footer {
+    font-size: 14px;
   }
 }
+
+/* desktop */
+/* @media (min-width: 1018px) {
+  .main-container {
+    background-color: brown;
+  }
+} */
