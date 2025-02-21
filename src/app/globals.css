@@ -3,8 +3,8 @@
 /* ------------------------------------------------------------------------------------ */
 /* https://piccalil.li/blog/a-modern-css-reset/ */
 
-* {
-}
+/* * {
+} */
 
 /* Box sizing */
 *,
@@ -414,6 +414,10 @@ p {
   margin-bottom: 12px;
   flex-direction: column;
 }
+
+.project {
+  background-color: blue;
+}
 .card-title {
   padding: 24px;
 }
@@ -439,6 +443,18 @@ p {
 @media (min-width: 560px) {
   .projects-title {
     font-size: var(--fs-450);
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+  }
+
+  .project1 {
+    grid-area: 1 / 1 / 2 / 3;
   }
 
   .card-image-mobile {
