@@ -3,12 +3,11 @@ import Link from "next/link";
 
 export default function Card({ project }) {
   const { date, icons, title, description, image, imageTablet } = project;
-  console.log(image);
-  console.log(icons);
+  const customStyles = project.title === "Slice" ? "project1" : "";
   return (
     <Link
       href={title}
-      className="w-full h-full bg-white card-container flex link-text text-black"
+      className={`w-full h-full bg-white card-container flex link-text text-black ${customStyles}`}
     >
       <section className="card-title bg-white">
         <section className="flex card-date-icons">
@@ -34,19 +33,15 @@ export default function Card({ project }) {
         alt="project image"
         width={405}
         height={369}
-        className={`${
-          imageTablet === "/images/sliceTablet.png" ? "card-image-mobile" : ""
-        }`}
+        className={"card-image-mobile"}
       />
-      {imageTablet === "/images/sliceTablet.png" && (
-        <Image
-          src={imageTablet}
-          alt="project image"
-          width={928}
-          height={512}
-          className="card-image-tablet "
-        />
-      )}
+      <Image
+        src={title === "Slice" ? imageTablet : image}
+        alt="project image"
+        width={930}
+        height={369}
+        className="card-image-tablet"
+      />
     </Link>
   );
 }

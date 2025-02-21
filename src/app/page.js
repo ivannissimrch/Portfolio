@@ -78,7 +78,7 @@ export default function Home() {
         </h4>
         <span className="cards-container">
           {PROJECTS_INFO.map((project, idx) => (
-            <Card key={project.title} project={project} />
+            <Card key={project.title} project={project} className="project" />
           ))}
         </span>
       </section>
