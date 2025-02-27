@@ -31,15 +31,17 @@ export default function Card({ project }) {
       <Image
         src={image}
         alt="project image"
-        width={405}
-        height={369}
+        width={560}
+        height={510}
+        style={{ width: "100%", height: "auto" }}
         className={"card-image-mobile"}
       />
       <Image
         src={title === "Slice" ? imageTablet : image}
         alt="project image"
         width={930}
-        height={369}
+        height={510}
+        style={{ width: "100%", height: "auto" }}
         className="card-image-tablet"
       />
     </Link>

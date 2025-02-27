@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import { PROJECTS_INFO } from "../projects_info";
+import Card from "@/components/Card";
 export default function ProjectPage({ params }) {
   const { project } = React.use(params);
   console.log(project);
@@ -15,11 +16,14 @@ export default function ProjectPage({ params }) {
   console.log(currentProject);
 
   return (
-    <main>
+    <main className="main-container ">
       <section>
-        <h1 className="">{currentProject[0].title}</h1>
+        <h1 className="projects_title_padding_top ff-sans-normal">
+          {currentProject[0].title}
+        </h1>
+        <Card project={currentProject[0]} />
         <p>
-          description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ex.
           Neque, expedita. Lorem ipsum dolor sit amet consectetur adipisicing
           elit. Neque, expedita.
         </p>
@@ -74,7 +78,7 @@ export default function ProjectPage({ params }) {
       <section>
         <h2>Other projects</h2>
         {otherProjects.map((project) => (
-          <h1 key={project.title}>{project.title}</h1>
+          <Card project={project} key={project.title} />
         ))}
       </section>
     </main>
