@@ -3,6 +3,9 @@ import Link from "next/link";
 import React from "react";
 import { PROJECTS_INFO } from "../projects_info";
 import Card from "@/components/Card";
+import CaseCard from "@/components/CaseCard";
+import Image from "next/image";
+
 export default function ProjectPage({ params }) {
   const { project } = React.use(params);
   console.log(project);
@@ -18,19 +21,19 @@ export default function ProjectPage({ params }) {
   return (
     <main className="main-container ">
       <section>
-        <h1 className="projects_title_padding_top ff-sans-normal">
+        <h1 className="case_title_padding_top ff-sans-normal case_title">
           {currentProject[0].title}
         </h1>
-        <Card project={currentProject[0]} />
-        <p>
+        <CaseCard project={currentProject[0]} />
+        {/* <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ex.
           Neque, expedita. Lorem ipsum dolor sit amet consectetur adipisicing
           elit. Neque, expedita.
         </p>
-        <Link href="https://chingu-expense-splitter.vercel.app">Live site</Link>
+        <Link href="https://chingu-expense-splitter.vercel.app">Live site</Link> */}
       </section>
       <section>
-        <h1>porpuse and Goal</h1>
+        <h1>Purpose and Goal</h1>
         <p>
           This project included 3 phases and iterations of the site. Phase 1
           simply allowed users to enter their email to be alerted to when the
@@ -38,13 +41,22 @@ export default function ProjectPage({ params }) {
           introduce users to the Slice product and answer any questions they may
           have. Phase three is by far the largest and most complex, as it
           included the full shop and cart pages as well as the logic and backend
-          that goes along with it. I found that the best way to implement these
-          3 phases without having separate versions saves was to incorporate a
-          feature flag that will pass the current state that should be displayed
-          and then render content conditionally.
+          that goes along with it.
         </p>
       </section>
       <section>
+        <section>
+          {currentProject[0].icons.map((icon, idx) => (
+            <Image
+              key={idx}
+              width={16}
+              height={14.9}
+              src={icon}
+              alt="technologies icons"
+            />
+          ))}
+        </section>
+
         <h2>Tech stack</h2>
         <p>
           React made the most sense for the web application because it required

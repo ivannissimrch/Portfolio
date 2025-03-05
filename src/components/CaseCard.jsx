@@ -1,26 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Card({ project }) {
+export default function CaseCard({ project }) {
   const { date, icons, title, description, image, imageTablet } = project;
-  const customStyles =
-    project.title === "Slice"
-      ? "project1"
-      : project.title === "WeeklyBytes"
-      ? "project2"
-      : "project3";
+
   return (
-    <Link
-      href={title}
-      className={`w-full h-full bg-white card-container flex link-text text-black ${customStyles}`}
-    >
-      <section className="card-title bg-white">
-        <section className="flex card-date-icons">
-          <span className="text-gray">{date}</span>
+    <section className={"w-full h-full bg-white card-container flex"}>
+      <section className="case_card-title bg-white">
+        <section className="flex case_card-title-icons">
+          <span className="text-gray">{title}</span>
           <span className="flex">
             {icons
-              ? icons.map((icon) => (
+              ? icons.map((icon, idx) => (
                   <Image
+                    key={idx}
                     width={16}
                     height={14.9}
                     src={icon}
@@ -30,8 +23,8 @@ export default function Card({ project }) {
               : ""}
           </span>
         </section>
-        <h4 className="fs-400 ff-sans-normal ">{title}</h4>
         <p className="fs-200 ff-sans-normal">{description}</p>
+        <Link href={""}>View site</Link>
       </section>
       <Image
         src={image}
@@ -42,13 +35,13 @@ export default function Card({ project }) {
         className={"card-image-mobile"}
       />
       <Image
-        src={title === "Slice" ? imageTablet : image}
+        src={imageTablet}
         alt="project image"
         width={930}
         height={510}
-        // style={{ width: "100%", height: "auto" }}
+        style={{ width: "100%", height: "auto" }}
         className="card-image-tablet"
       />
-    </Link>
+    </section>
   );
 }
