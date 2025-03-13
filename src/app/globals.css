@@ -23,6 +23,7 @@ h5,
 p,
 figure,
 picture {
+  font-family: var(--ff-sans-normal);
   margin: 0;
 }
 
@@ -588,8 +589,16 @@ p {
 
 /* case studies page */
 
+.case-page-container {
+  gap: 72px;
+}
+
 .case_title_padding_top {
   margin-top: 72px;
+}
+
+.case-card-gap {
+  gap: 72px;
 }
 
 .case_title {
@@ -599,10 +608,18 @@ p {
   line-height: 125%; /* 45px */
 }
 
-.case_card_title {
-}
-
 .case_card_title_icons {
   align-items: flex-start;
   gap: 32px;
+}
+
+.case-stack-icons-container {
+  justify-content: center;
+  align-items: center;
+  gap: 46px;
+  align-self: stretch;
+}
+
+.case-tech-stack-title {
+  margin-top: 72px;
 }

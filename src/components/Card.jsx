@@ -19,8 +19,9 @@ export default function Card({ project }) {
           <span className="text-gray">{date}</span>
           <span className="flex">
             {icons
-              ? icons.map((icon) => (
+              ? icons.map((icon, idx) => (
                   <Image
+                    key={idx}
                     width={16}
                     height={14.9}
                     src={icon}

@@ -5,7 +5,9 @@ export default function CaseCard({ project }) {
   const { date, icons, title, description, image, imageTablet } = project;
 
   return (
-    <section className={"w-full h-full bg-white card-container flex"}>
+    <section
+      className={"w-full h-full bg-white card-container flex case-card-gap "}
+    >
       <section className="case_card-title bg-white">
         <section className="flex case_card-title-icons">
           <span className="text-gray">{title}</span>
@@ -24,7 +26,9 @@ export default function CaseCard({ project }) {
           </span>
         </section>
         <p className="fs-200 ff-sans-normal">{description}</p>
-        <Link href={""}>View site</Link>
+        <Link href={""} className="ff-sans-normal fs-200">
+          View site
+        </Link>
       </section>
       <Image
         src={image}
