@@ -269,6 +269,9 @@ select {
   display: flex;
   gap: var(--gap, 1rem);
 }
+.flex-col {
+  flex-direction: column;
+}
 
 .grid {
   display: grid;
@@ -608,6 +611,13 @@ p {
   line-height: 125%; /* 45px */
 }
 
+.case-card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 12px;
+}
+
 .case_card_title_icons {
   align-items: flex-start;
   gap: 32px;
@@ -622,4 +632,15 @@ p {
 
 .case-tech-stack-title {
   margin-top: 72px;
+}
+
+.case-card-link {
+  font-weight: 700px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+.gap-24 {
+  gap: 24px;
 }

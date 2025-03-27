@@ -5,6 +5,7 @@ import { PROJECTS_INFO } from "../projects_info";
 import Card from "@/components/Card";
 import CaseCard from "@/components/CaseCard";
 import Image from "next/image";
+import Footer from "@/components/Footer";
 
 export default function ProjectPage({ params }) {
   const { project } = React.use(params);
@@ -32,7 +33,7 @@ export default function ProjectPage({ params }) {
         </p>
         <Link href="https://chingu-expense-splitter.vercel.app">Live site</Link> */}
       </section>
-      <section>
+      <section className="flex flex-col gap-12">
         <h1 className="fs-400">Purpose and Goal</h1>
         <p className="fs-200">
           This project included 3 phases and iterations of the site. Phase 1
@@ -57,21 +58,28 @@ export default function ProjectPage({ params }) {
             />
           ))}
         </section>
-
-        <h2 className="fs-400 case-tech-stack-title">Tech stack</h2>
-        <p className="fs-200">
-          React made the most sense for the web application because it required
-          to connect to GraphQL, and the Shophify-SDK for Javascript ties into
-          Rect very smoothly. The Shopify-Buy-SDK was chosen because of the
-          ability for the client to modify the products without any complex
-          coding knowledge. React hooks and session storage are also used
-          throughout the project to maintain the user cart items and allows the
-          cart count and other shopping data to be displayed universally without
-          the need for Redux. Netflify is also an obvious choice for deployment
-          because of its speed and reliability.
-        </p>
+        <section className="flex flex-col gap-12">
+          <h2 className="fs-400 case-tech-stack-title">Tech stack</h2>
+          <p className="fs-200">
+            React made the most sense for the web application because it
+            required to connect to GraphQL, and the Shophify-SDK for Javascript
+            ties into Rect very smoothly. The Shopify-Buy-SDK was chosen because
+            of the ability for the client to modify the products without any
+            complex coding knowledge. React hooks and session storage are also
+            used throughout the project to maintain the user cart items and
+            allows the cart count and other shopping data to be displayed
+            universally without the need for Redux. Netflify is also an obvious
+            choice for deployment because of its speed and reliability.
+          </p>
+        </section>
       </section>
-      <section>
+      <Image
+        src={"/images/case1.png"}
+        width={405}
+        height={296}
+        alt="case image"
+      />
+      <section className="flex flex-col gap-12">
         <h2 className="fs-400">Team collaboration</h2>
         <p className="fs-200">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
@@ -80,7 +88,13 @@ export default function ProjectPage({ params }) {
           aperiam officia soluta provident?
         </p>
       </section>
-      <section>
+      <Image
+        src={"/images/case2.jpeg"}
+        width={405}
+        height={296}
+        alt="case image"
+      />
+      <section className="flex flex-col gap-12">
         <h2 className="fs-400">Problems and thougth process</h2>
         <p className="fs-200">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
@@ -88,12 +102,16 @@ export default function ProjectPage({ params }) {
           quidem impedit.
         </p>
       </section>
-      <section>
-        <h2 className="fs-400">Other projects</h2>
+      <section className="flex flex-col gap-24">
+        <h2 className="fs-400">
+          Other projects.{" "}
+          <span className="text-blue">They are worth checking out too. </span>
+        </h2>
         {otherProjects.map((project) => (
           <Card project={project} key={project.title} />
         ))}
       </section>
+      <Footer />
     </main>
   );
 }

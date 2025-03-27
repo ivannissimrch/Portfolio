@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TECHNOLOGIES_ICONS } from "./TechnologiesIcons";
 import { PROJECTS_INFO } from "./projects_info";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -114,18 +115,7 @@ export default function Home() {
           <p>ivannissimrch@gmail.com</p>
         </div>
       </section>
-      <footer className="flex footer">
-        <div>
-          <p className="footer-name-text"> &copy; 2025 Ivan Rebolledo</p>
-        </div>
-        <div className="footer-links  flex ff-sans-normal">
-          <Link href="https://github.com/ivannissimrch">GitHub</Link>
-          <Link href="https://www.linkedin.com/in/ivan-rebolledo-012b17244/">
-            {" "}
-            Linkedln
-          </Link>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

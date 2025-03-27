@@ -6,9 +6,9 @@ export default function CaseCard({ project }) {
 
   return (
     <section
-      className={"w-full h-full bg-white card-container flex case-card-gap "}
+      className={"w-full h-full  card-container flex case-card-gap  bg-accent"}
     >
-      <section className="case_card-title bg-white">
+      <section className="case-card-title bg-accent">
         <section className="flex case_card-title-icons">
           <span className="text-gray">{title}</span>
           <span className="flex">
@@ -26,7 +26,7 @@ export default function CaseCard({ project }) {
           </span>
         </section>
         <p className="fs-200 ff-sans-normal">{description}</p>
-        <Link href={""} className="ff-sans-normal fs-200">
+        <Link href={""} className="ff-sans-normal fs-200 case-card-link">
           View site
         </Link>
       </section>
