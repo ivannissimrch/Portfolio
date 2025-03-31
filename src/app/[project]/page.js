@@ -20,12 +20,13 @@ export default function ProjectPage({ params }) {
   return (
     <main className="main-container case-page-container flex bg-accent">
       <section>
-        <h1 className="case_title_padding_top ff-sans-normal case_title">
+        <h1 className="case_title_padding_top ff-sans-normal case_title  purpose-section">
           {currentProject[0].title}
         </h1>
         <CaseCard project={currentProject[0]} />
       </section>
-      <section className="flex flex-col gap-12">
+
+      <section className="flex flex-col gap-12 purpose-section">
         <h1 className="fs-400 purpose-title">Purpose and Goal</h1>
         <p className="fs-200">
           This project included 3 phases and iterations of the site. Phase 1
@@ -37,7 +38,7 @@ export default function ProjectPage({ params }) {
           that goes along with it.
         </p>
       </section>
-      <section>
+      <section className="stack-section">
         <section className="flex case-stack-icons-container">
           {currentProject[0].icons.map((icon, idx) => (
             <Image
@@ -73,7 +74,7 @@ export default function ProjectPage({ params }) {
         height={296}
         alt="case image"
       />
-      <section className="flex flex-col gap-12">
+      <section className="flex flex-col gap-12 collaboration">
         <h2 className="fs-400">Team collaboration</h2>
         <p className="fs-200">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
@@ -88,7 +89,7 @@ export default function ProjectPage({ params }) {
         height={296}
         alt="case image"
       />
-      <section className="flex flex-col gap-12">
+      <section className="flex flex-col gap-12 problems-section">
         <h2 className="fs-400 problems-title">Problems and thought process</h2>
         <p className="fs-200">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
@@ -96,6 +97,7 @@ export default function ProjectPage({ params }) {
           quidem impedit.
         </p>
       </section>
+
       <section className="flex flex-col gap-24">
         <h2 className="fs-400 other-projects-title ">
           Other projects.{" "}

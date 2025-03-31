@@ -15,6 +15,7 @@ export default function CaseCard({ project }) {
             {icons
               ? icons.map((icon, idx) => (
                   <Image
+                    className=""
                     key={idx}
                     width={16}
                     height={14.9}
@@ -36,7 +37,7 @@ export default function CaseCard({ project }) {
         width={560}
         height={510}
         style={{ width: "100%", height: "auto" }}
-        className={"card-image-mobile"}
+        className={"case-card-image-mobile"}
       />
       <Image
         src={imageTablet}
@@ -44,7 +45,7 @@ export default function CaseCard({ project }) {
         width={930}
         height={510}
         style={{ width: "100%", height: "auto" }}
-        className="card-image-tablet"
+        className="case-card-image-tablet"
       />
     </section>
   );
