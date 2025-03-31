@@ -9,7 +9,6 @@ import Footer from "@/components/Footer";
 
 export default function ProjectPage({ params }) {
   const { project } = React.use(params);
-  console.log(project);
 
   const currentProject = PROJECTS_INFO.filter(
     (storeProject) => storeProject.title === project
@@ -17,24 +16,18 @@ export default function ProjectPage({ params }) {
   const otherProjects = PROJECTS_INFO.filter(
     (storeProject) => storeProject.title !== project
   );
-  console.log(currentProject);
 
   return (
     <main className="main-container case-page-container flex bg-accent">
       <section>
-        <h1 className="case_title_padding_top ff-sans-normal case_title">
+        <h1 className="case_title_padding_top ff-sans-normal case_title  purpose-section">
           {currentProject[0].title}
         </h1>
         <CaseCard project={currentProject[0]} />
-        {/* <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ex.
-          Neque, expedita. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Neque, expedita.
-        </p>
-        <Link href="https://chingu-expense-splitter.vercel.app">Live site</Link> */}
       </section>
-      <section className="flex flex-col gap-12">
-        <h1 className="fs-400">Purpose and Goal</h1>
+
+      <section className="flex flex-col gap-12 purpose-section">
+        <h1 className="fs-400 purpose-title">Purpose and Goal</h1>
         <p className="fs-200">
           This project included 3 phases and iterations of the site. Phase 1
           simply allowed users to enter their email to be alerted to when the
@@ -45,7 +38,7 @@ export default function ProjectPage({ params }) {
           that goes along with it.
         </p>
       </section>
-      <section>
+      <section className="stack-section">
         <section className="flex case-stack-icons-container">
           {currentProject[0].icons.map((icon, idx) => (
             <Image
@@ -59,7 +52,9 @@ export default function ProjectPage({ params }) {
           ))}
         </section>
         <section className="flex flex-col gap-12">
-          <h2 className="fs-400 case-tech-stack-title">Tech stack</h2>
+          <h2 className="fs-400 case-tech-stack-title stack-title">
+            Tech stack
+          </h2>
           <p className="fs-200">
             React made the most sense for the web application because it
             required to connect to GraphQL, and the Shophify-SDK for Javascript
@@ -79,7 +74,7 @@ export default function ProjectPage({ params }) {
         height={296}
         alt="case image"
       />
-      <section className="flex flex-col gap-12">
+      <section className="flex flex-col gap-12 collaboration">
         <h2 className="fs-400">Team collaboration</h2>
         <p className="fs-200">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
@@ -94,16 +89,17 @@ export default function ProjectPage({ params }) {
         height={296}
         alt="case image"
       />
-      <section className="flex flex-col gap-12">
-        <h2 className="fs-400">Problems and thougth process</h2>
+      <section className="flex flex-col gap-12 problems-section">
+        <h2 className="fs-400 problems-title">Problems and thought process</h2>
         <p className="fs-200">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
           odit debitis tempora maiores nam dolor accusantium est. Voluptatibus,
           quidem impedit.
         </p>
       </section>
+
       <section className="flex flex-col gap-24">
-        <h2 className="fs-400">
+        <h2 className="fs-400 other-projects-title ">
           Other projects.{" "}
           <span className="text-blue">They are worth checking out too. </span>
         </h2>

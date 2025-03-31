@@ -18,6 +18,7 @@ export const PROJECTS_INFO = [
     description:
       "A meal Scheduler App that creates weekly menus safe for employees with allergies.",
     image: "/images/weeklyBytesMobile.png",
+    imageTablet: "/images/tabletMainCaseImage.png",
     date: "January 2025",
     icons: [
       "/images/react-icon.svg",
@@ -31,7 +32,22 @@ export const PROJECTS_INFO = [
     description:
       "Application that allows to search and display information about stocks",
     image: "/images/stocksMobile.png",
+    imageTablet: "/images/tabletMainCaseImage.png",
     date: "September 2024",
+    icons: [
+      "/images/react-icon.svg",
+      "/images/css-icon.svg",
+      "/images/html-icon.svg",
+      "/images/typescript-icon.svg",
+    ],
+  },
+  {
+    title: "Spotify",
+    description:
+      "Application that allows to search and display information about stocks",
+    image: "/images/stocksMobile.png",
+    imageTablet: "/images/tabletMainCaseImage.png",
+    date: "2024",
     icons: [
       "/images/react-icon.svg",
       "/images/css-icon.svg",

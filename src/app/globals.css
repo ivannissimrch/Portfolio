@@ -28,6 +28,7 @@ picture {
 }
 
 /* set up the body */
+
 body {
   background-color: hsl(var(--clr-white));
   margin: 0;
@@ -329,11 +330,11 @@ p {
   gap: 72px;
   height: 100%;
   min-width: 372px;
+  overflow: hidden;
 }
 .hero-container {
   position: relative;
   margin: 0 auto 104px auto;
-  /* justify-content: center; */
   width: 100%;
 }
 
@@ -353,6 +354,9 @@ p {
 }
 
 .hero-image-tablet {
+  display: none;
+}
+.hero-image-desktop {
   display: none;
 }
 
@@ -398,6 +402,24 @@ p {
   .hero-p {
     max-width: 658px;
     padding: 24px;
+  }
+}
+
+/* desktop */
+@media (min-width: 1018px) {
+  .hero-image-tablet {
+    display: none;
+  }
+
+  .hero-image-phone {
+    display: none;
+  }
+  .hero-image-desktop {
+    display: block;
+  }
+
+  .hero-p {
+    font-size: var(--fs-300);
   }
 }
 
@@ -448,7 +470,7 @@ p {
 
   .cards-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
@@ -459,11 +481,15 @@ p {
   }
 
   .project2 {
-    grid-area: 2 / 1 / 3 / 2;
+    grid-area: 1 / 3 / 2 / 5;
   }
 
   .project3 {
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .project4 {
+    grid-area: 2 / 3 / 3 / 5;
   }
 
   .card-image-mobile {
@@ -472,6 +498,10 @@ p {
   .card-image-tablet {
     display: inline-block;
   }
+}
+
+/* desktop */
+@media (min-width: 1018px) {
 }
 
 /* ------------------------------------------------------------------------------------ */
@@ -581,66 +611,116 @@ p {
   .footer {
     font-size: 14px;
   }
-}
 
-/* desktop */
-/* @media (min-width: 1018px) {
-  .main-container {
-    background-color: brown;
+  /* case studies page */
+
+  .case-page-container {
+    gap: 72px;
   }
-} */
 
-/* case studies page */
+  .case_title_padding_top {
+    margin-top: 72px;
+  }
 
-.case-page-container {
-  gap: 72px;
-}
+  .case-card-gap {
+    gap: 72px;
+  }
 
-.case_title_padding_top {
-  margin-top: 72px;
-}
+  .case_title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 45px */
+  }
 
-.case-card-gap {
-  gap: 72px;
-}
+  .case-card-title {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 12px;
+  }
 
-.case_title {
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 125%; /* 45px */
-}
+  .case_card_title_icons {
+    align-items: flex-start;
+    gap: 32px;
+  }
 
-.case-card-title {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding-top: 12px;
-}
+  .case-stack-icons-container {
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+    align-self: stretch;
+  }
 
-.case_card_title_icons {
-  align-items: flex-start;
-  gap: 32px;
-}
+  .case-tech-stack-title {
+    margin-top: 72px;
+  }
 
-.case-stack-icons-container {
-  justify-content: center;
-  align-items: center;
-  gap: 46px;
-  align-self: stretch;
-}
+  .case-card-link {
+    font-weight: 700px;
+  }
 
-.case-tech-stack-title {
-  margin-top: 72px;
-}
+  .gap-12 {
+    gap: 12px;
+  }
+  .gap-24 {
+    gap: 24px;
+  }
 
-.case-card-link {
-  font-weight: 700px;
-}
+  /* case tablet  */
+  @media (min-width: 560px) {
+    .case-page-container {
+      gap: 128px;
+      background-color: brown;
+    }
 
-.gap-12 {
-  gap: 12px;
+    /* .case-sections-layout {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+    }
+
+    .purpose-section {
+      grid-area: 1 / 1 / 2 / 4;
+    }
+    .stack-section {
+      grid-area: 2 / 1 / 3 / 5;
+    }
+
+    .collaboration-section {
+      grid-area: 3 / 1 / 4 / 5;
+    }
+
+    .problems-section {
+      grid-area: 4 / 1 / 5 / 4;
+    } */
+
+    .purpose-title {
+      font-size: var(--fs-450);
+    }
+
+    .stack-title {
+      font-size: var(--fs-450);
+    }
+    .collaboration-title {
+      font-size: var(--fs-450);
+    }
+
+    .problems-title {
+      font-size: var(--fs-450);
+    }
+    .other-projects-title {
+      font-size: var(--fs-450);
+    }
+
+    .case-card-image-mobile {
+      display: none;
+    }
+    .case-card-image-tablet {
+      display: block;
+    }
+  }
 }
-.gap-24 {
-  gap: 24px;
-}
+/* case tablet */
