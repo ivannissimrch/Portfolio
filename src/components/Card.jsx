@@ -1,14 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Card({ project }) {
+export default function Card({ project, idx }) {
   const { date, icons, title, description, image, imageTablet } = project;
-  const customStyles =
-    project.title === "Slice"
-      ? "project1"
-      : project.title === "WeeklyBytes"
-      ? "project2"
-      : "project3";
+  let customStyles = `project${idx + 1}`;
+
   return (
     <Link
       href={title}

@@ -9,7 +9,6 @@ import Footer from "@/components/Footer";
 
 export default function ProjectPage({ params }) {
   const { project } = React.use(params);
-  console.log(project);
 
   const currentProject = PROJECTS_INFO.filter(
     (storeProject) => storeProject.title === project
@@ -17,7 +16,6 @@ export default function ProjectPage({ params }) {
   const otherProjects = PROJECTS_INFO.filter(
     (storeProject) => storeProject.title !== project
   );
-  console.log(currentProject);
 
   return (
     <main className="main-container case-page-container flex bg-accent">

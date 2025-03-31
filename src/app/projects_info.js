@@ -39,4 +39,17 @@ export const PROJECTS_INFO = [
       "/images/typescript-icon.svg",
     ],
   },
+  {
+    title: "Spotify Clone",
+    description:
+      "Application that allows to search and display information about stocks",
+    image: "/images/stocksMobile.png",
+    date: "September 2024",
+    icons: [
+      "/images/react-icon.svg",
+      "/images/css-icon.svg",
+      "/images/html-icon.svg",
+      "/images/typescript-icon.svg",
+    ],
+  },
 ];
