@@ -24,15 +24,9 @@ export default function ProjectPage({ params }) {
           {currentProject[0].title}
         </h1>
         <CaseCard project={currentProject[0]} />
-        {/* <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, ex.
-          Neque, expedita. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Neque, expedita.
-        </p>
-        <Link href="https://chingu-expense-splitter.vercel.app">Live site</Link> */}
       </section>
       <section className="flex flex-col gap-12">
-        <h1 className="fs-400">Purpose and Goal</h1>
+        <h1 className="fs-400 purpose-title">Purpose and Goal</h1>
         <p className="fs-200">
           This project included 3 phases and iterations of the site. Phase 1
           simply allowed users to enter their email to be alerted to when the
@@ -57,7 +51,9 @@ export default function ProjectPage({ params }) {
           ))}
         </section>
         <section className="flex flex-col gap-12">
-          <h2 className="fs-400 case-tech-stack-title">Tech stack</h2>
+          <h2 className="fs-400 case-tech-stack-title stack-title">
+            Tech stack
+          </h2>
           <p className="fs-200">
             React made the most sense for the web application because it
             required to connect to GraphQL, and the Shophify-SDK for Javascript
@@ -93,7 +89,7 @@ export default function ProjectPage({ params }) {
         alt="case image"
       />
       <section className="flex flex-col gap-12">
-        <h2 className="fs-400">Problems and thougth process</h2>
+        <h2 className="fs-400 problems-title">Problems and thought process</h2>
         <p className="fs-200">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
           odit debitis tempora maiores nam dolor accusantium est. Voluptatibus,
@@ -101,7 +97,7 @@ export default function ProjectPage({ params }) {
         </p>
       </section>
       <section className="flex flex-col gap-24">
-        <h2 className="fs-400">
+        <h2 className="fs-400 other-projects-title ">
           Other projects.{" "}
           <span className="text-blue">They are worth checking out too. </span>
         </h2>

@@ -674,3 +674,26 @@ p {
 .gap-24 {
   gap: 24px;
 }
+
+/* case tablet  */
+@media (min-width: 560px) {
+  .purpose-title {
+    font-size: var(--fs-450);
+  }
+
+  .stack-title {
+    font-size: var(--fs-450);
+  }
+  .collaboration-title {
+    font-size: var(--fs-450);
+  }
+
+  .problems-title {
+    font-size: var(--fs-450);
+  }
+  .other-projects-title {
+    font-size: var(--fs-450);
+  }
+}
+
+/* case tablet */
