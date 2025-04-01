@@ -698,8 +698,9 @@ p {
       display: flex;
       flex-direction: row;
     }
-    /* 
-    .collaboration-text {
+
+    /* .collaboration-text {
+      width: 80%;
     } */
 
     .problems-section {
@@ -709,21 +710,7 @@ p {
       width: 80%;
     }
 
-    .purpose-title {
-      font-size: var(--fs-450);
-    }
-
-    .stack-title {
-      font-size: var(--fs-450);
-    }
-    .collaboration-title {
-      font-size: var(--fs-450);
-    }
-
-    .problems-title {
-      font-size: var(--fs-450);
-    }
-    .other-projects-title {
+    .case-subtitle {
       font-size: var(--fs-450);
     }
 
@@ -732,6 +719,18 @@ p {
     }
     .case-card-image-tablet {
       display: block;
+    }
+
+    .other-projects-parent-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+    }
+
+    .other-projects-project1-container {
+      grid-area: 1 / 1 / 2 / 3;
     }
   }
 }

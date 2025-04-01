@@ -27,7 +27,7 @@ export default function ProjectPage({ params }) {
       </section>
 
       <section className="flex flex-col gap-12 purpose-section">
-        <h1 className="fs-400 purpose-title">Purpose and Goal</h1>
+        <h1 className="fs-400 purpose-title case-subtitle">Purpose and Goal</h1>
         <p className="fs-200">
           This project included 3 phases and iterations of the site. Phase 1
           simply allowed users to enter their email to be alerted to when the
@@ -52,7 +52,7 @@ export default function ProjectPage({ params }) {
           ))}
         </section>
         <section className="flex flex-col gap-12 case-stack-section-text">
-          <h2 className="fs-400 case-tech-stack-title stack-title">
+          <h2 className="fs-400 case-tech-stack-title stack-title case-subtitle">
             Tech stack
           </h2>
           <p className="fs-200">
@@ -77,7 +77,7 @@ export default function ProjectPage({ params }) {
           alt="case image"
         />
         <section className="collaboration-text">
-          <h2 className="fs-400">Team collaboration</h2>
+          <h2 className="fs-400 case-subtitle">Team collaboration</h2>
           <p className="fs-200">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
             nostrum laudantium officiis autem doloremque nesciunt omnis odit,
@@ -88,7 +88,9 @@ export default function ProjectPage({ params }) {
       </section>
 
       <section className="flex flex-col gap-12 problems-section">
-        <h2 className="fs-400 problems-title">Problems and thought process</h2>
+        <h2 className="fs-400 problems-title case-subtitle">
+          Problems and thought process
+        </h2>
         <p className="fs-200">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
           odit debitis tempora maiores nam dolor accusantium est. Voluptatibus,
@@ -103,13 +105,22 @@ export default function ProjectPage({ params }) {
       />
 
       <section className="flex flex-col gap-24">
-        <h2 className="fs-400 other-projects-title ">
+        <h2 className="fs-400 other-projects-title case-subtitle">
           Other projects.{" "}
           <span className="text-blue">They are worth checking out too. </span>
         </h2>
-        {otherProjects.map((project) => (
-          <Card project={project} key={project.title} />
-        ))}
+        <section className="other-projects-parent-container">
+          {otherProjects.map((project, idx) => (
+            <section
+              key={project.title}
+              className={`${
+                idx === 1 ? "other-projects-project1-container" : ""
+              }`}
+            >
+              <Card project={project} />
+            </section>
+          ))}
+        </section>
       </section>
       <Footer />
     </main>
