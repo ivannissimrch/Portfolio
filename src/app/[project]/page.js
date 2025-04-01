@@ -20,7 +20,7 @@ export default function ProjectPage({ params }) {
   return (
     <main className="main-container case-page-container flex bg-accent">
       <section>
-        <h1 className="case_title_padding_top ff-sans-normal case_title  purpose-section">
+        <h1 className="case_title_padding_top ff-sans-normal case_title ">
           {currentProject[0].title}
         </h1>
         <CaseCard project={currentProject[0]} />
@@ -51,7 +51,7 @@ export default function ProjectPage({ params }) {
             />
           ))}
         </section>
-        <section className="flex flex-col gap-12">
+        <section className="flex flex-col gap-12 case-stack-section-text">
           <h2 className="fs-400 case-tech-stack-title stack-title">
             Tech stack
           </h2>
@@ -68,27 +68,25 @@ export default function ProjectPage({ params }) {
           </p>
         </section>
       </section>
-      <Image
-        src={"/images/case1.png"}
-        width={405}
-        height={296}
-        alt="case image"
-      />
-      <section className="flex flex-col gap-12 collaboration">
-        <h2 className="fs-400">Team collaboration</h2>
-        <p className="fs-200">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-          nostrum laudantium officiis autem doloremque nesciunt omnis odit,
-          incidunt rerum odio. Officiis, libero! Numquam, ducimus. Doloribus quo
-          aperiam officia soluta provident?
-        </p>
+
+      <section className="flex flex-col gap-12 collaboration-section">
+        <Image
+          src={"/images/case1.png"}
+          width={405}
+          height={296}
+          alt="case image"
+        />
+        <section className="collaboration-text">
+          <h2 className="fs-400">Team collaboration</h2>
+          <p className="fs-200">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+            nostrum laudantium officiis autem doloremque nesciunt omnis odit,
+            incidunt rerum odio. Officiis, libero! Numquam, ducimus. Doloribus
+            quo aperiam officia soluta provident?
+          </p>
+        </section>
       </section>
-      <Image
-        src={"/images/case2.jpeg"}
-        width={405}
-        height={296}
-        alt="case image"
-      />
+
       <section className="flex flex-col gap-12 problems-section">
         <h2 className="fs-400 problems-title">Problems and thought process</h2>
         <p className="fs-200">
@@ -97,6 +95,12 @@ export default function ProjectPage({ params }) {
           quidem impedit.
         </p>
       </section>
+      <Image
+        src={"/images/case2.jpeg"}
+        width={405}
+        height={296}
+        alt="case image"
+      />
 
       <section className="flex flex-col gap-24">
         <h2 className="fs-400 other-projects-title ">
