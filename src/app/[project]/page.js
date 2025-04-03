@@ -71,6 +71,7 @@ export default function ProjectPage({ params }) {
 
       <section className="flex flex-col gap-12 collaboration-section">
         <Image
+          className="collaboration-image"
           src={"/images/case1.png"}
           width={405}
           height={296}
@@ -98,9 +99,18 @@ export default function ProjectPage({ params }) {
         </p>
       </section>
       <Image
+        className="problems-image-mobile"
         src={"/images/case2.jpeg"}
         width={405}
         height={296}
+        alt="case image"
+      />
+
+      <Image
+        className="problems-image-tablet"
+        src={"/images/thoughtImage.png"}
+        width={928}
+        height={681}
         alt="case image"
       />
 
