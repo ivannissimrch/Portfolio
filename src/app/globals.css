@@ -611,127 +611,160 @@ p {
   .footer {
     font-size: 14px;
   }
+}
 
-  /* case studies page */
+/* ------------------------------------------------------------------------------------ */
+/* ---------------------------------------Case study------------------------------------ */
+/* ------------------------------------------------------------------------------------ */
 
+.case-page-container {
+  gap: 72px;
+}
+
+.case-card-image-mobile {
+  display: block;
+}
+.case-card-image-tablet {
+  display: none;
+}
+
+.case_title_padding_top {
+  margin-top: 72px;
+}
+
+.case-card-gap {
+  gap: 72px;
+}
+
+.case_title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 45px */
+}
+
+.case-card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 12px;
+}
+
+.case_card_title_icons {
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.case-stack-icons-container {
+  justify-content: center;
+  align-items: center;
+  gap: 46px;
+  align-self: stretch;
+}
+
+.case-tech-stack-title {
+  margin-top: 72px;
+}
+
+.case-card-link {
+  font-weight: 700px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+.gap-24 {
+  gap: 24px;
+}
+
+.problems-image-mobile {
+  display: block;
+}
+.problems-image-tablet {
+  display: none;
+}
+
+/* case tablet  */
+@media (min-width: 560px) {
   .case-page-container {
-    gap: 72px;
+    gap: 128px;
   }
 
-  .case_title_padding_top {
-    margin-top: 72px;
-  }
-
-  .case-card-gap {
-    gap: 72px;
-  }
-
-  .case_title {
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 125%; /* 45px */
-  }
-
-  .case-card-title {
+  .case-first-description {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding-top: 12px;
+    width: 80%;
   }
 
-  .case_card_title_icons {
-    align-items: flex-start;
-    gap: 32px;
+  .purpose-section {
+    width: 100%;
+  }
+
+  .purpose-section p {
+    width: 80%;
+  }
+  .stack-section {
+    display: flex;
+    flex-direction: row;
   }
 
   .case-stack-icons-container {
-    justify-content: center;
-    align-items: center;
-    gap: 46px;
-    align-self: stretch;
+    width: 30%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .case-stack-section-text {
+    width: 70%;
   }
 
-  .case-tech-stack-title {
-    margin-top: 72px;
+  .collaboration-section {
+    flex-direction: row-reverse;
+  }
+  .collaboration-image {
+    width: 30%;
+    height: auto;
   }
 
-  .case-card-link {
-    font-weight: 700px;
+  .collaboration-text {
+    width: 70%;
   }
 
-  .gap-12 {
-    gap: 12px;
+  .problems-section {
+    width: 100%;
   }
-  .gap-24 {
-    gap: 24px;
+  .problems-section p {
+    width: 80%;
   }
 
-  /* case tablet  */
-  @media (min-width: 560px) {
-    .case-page-container {
-      gap: 128px;
-    }
+  .problems-image-mobile {
+    display: none;
+  }
+  .problems-image-tablet {
+    display: block;
+    height: auto;
+  }
 
-    .purpose-section {
-      width: 100%;
-    }
+  .case-subtitle {
+    font-size: var(--fs-450);
+  }
 
-    .purpose-section p {
-      width: 80%;
-    }
-    .stack-section {
-      display: flex;
-      flex-direction: row;
-    }
+  .case-card-image-mobile {
+    display: none;
+  }
+  .case-card-image-tablet {
+    display: block;
+  }
 
-    .case-stack-icons-container {
-      width: 30%;
-      margin: 0 auto;
-      flex-direction: column;
-    }
-    .case-stack-section-text {
-      width: 70%;
-    }
+  .other-projects-parent-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
 
-    .collaboration-section {
-      display: flex;
-      flex-direction: row;
-    }
-
-    /* .collaboration-text {
-      width: 80%;
-    } */
-
-    .problems-section {
-      width: 100%;
-    }
-    .problems-section p {
-      width: 80%;
-    }
-
-    .case-subtitle {
-      font-size: var(--fs-450);
-    }
-
-    .case-card-image-mobile {
-      display: none;
-    }
-    .case-card-image-tablet {
-      display: block;
-    }
-
-    .other-projects-parent-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 5px;
-      grid-row-gap: 5px;
-    }
-
-    .other-projects-project1-container {
-      grid-area: 1 / 1 / 2 / 3;
-    }
+  .other-projects-project1-container {
+    grid-area: 1 / 1 / 2 / 3;
   }
 }
+
 /* case tablet */

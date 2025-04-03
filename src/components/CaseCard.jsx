@@ -26,7 +26,9 @@ export default function CaseCard({ project }) {
               : ""}
           </span>
         </section>
-        <p className="fs-200 ff-sans-normal">{description}</p>
+        <p className="fs-200 ff-sans-normal case-first-description">
+          {description}
+        </p>
         <Link href={""} className="ff-sans-normal fs-200 case-card-link">
           View site
         </Link>
