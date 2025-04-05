@@ -755,16 +755,48 @@ p {
   }
 
   .other-projects-parent-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    display: flex;
+
+    gap: 5px;
   }
 
-  .other-projects-project1-container {
-    grid-area: 1 / 1 / 2 / 3;
+  .other-projects-container {
+    width: 50%;
   }
 }
 
 /* case tablet */
+
+/* ------------------------------------------------------------------------------------ */
+/* ---------------------------------------Case Desktop------------------------------------ */
+/* ------------------------------------------------------------------------------------ */
+@media (min-width: 1018px) {
+  .case-first-description {
+    width: 50%;
+  }
+
+  .purpose-section p {
+    width: 50%;
+  }
+
+  .case-stack-icons-container {
+    width: 50%;
+    flex-direction: row;
+    margin: auto;
+  }
+  .case-stack-section-text {
+    width: 50%;
+  }
+
+  .collaboration-image {
+    width: 50%;
+  }
+
+  .collaboration-text {
+    width: 50%;
+  }
+
+  .problems-section p {
+    width: 50%;
+  }
+}

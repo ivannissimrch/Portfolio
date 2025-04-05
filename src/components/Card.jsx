@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import SpotLight from "./SpotLight";
 
 export default function Card({ project, idx }) {
   const { date, icons, title, description, image, imageTablet } = project;

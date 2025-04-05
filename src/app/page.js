@@ -50,7 +50,7 @@ export default function Home() {
             />
           </Link>
         </section>
-        <Image
+        {/* <Image
           src="/images/mobileImageCover.png"
           width={405}
           height={313}
@@ -73,7 +73,7 @@ export default function Home() {
           layout="responsive"
           className="hero-image-desktop "
           alt="temp cover"
-        />
+        /> */}
         <p className="bg-white hero-p fs-200 ff-sans-normal text-gray">
           I love learning about front-end development technologies and creating
           applications using <span> JavaScript, </span>

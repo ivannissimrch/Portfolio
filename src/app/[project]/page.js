@@ -13,8 +13,14 @@ export default function ProjectPage({ params }) {
   const currentProject = PROJECTS_INFO.filter(
     (storeProject) => storeProject.title === project
   );
+
   const otherProjects = PROJECTS_INFO.filter(
-    (storeProject) => storeProject.title !== project
+    (storeProject, idx) => storeProject.title !== project
+  );
+
+  const randomNumber = Math.floor(Math.random() * 3);
+  const towRandomOtherProjects = otherProjects.filter(
+    (project, idx) => idx !== randomNumber
   );
 
   return (
@@ -120,13 +126,8 @@ export default function ProjectPage({ params }) {
           <span className="text-blue">They are worth checking out too. </span>
         </h2>
         <section className="other-projects-parent-container">
-          {otherProjects.map((project, idx) => (
-            <section
-              key={project.title}
-              className={`${
-                idx === 1 ? "other-projects-project1-container" : ""
-              }`}
-            >
+          {towRandomOtherProjects.map((project, idx) => (
+            <section key={project.title} className={"other-projects-container"}>
               <Card project={project} />
             </section>
           ))}
