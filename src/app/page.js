@@ -28,7 +28,7 @@ export default function Home() {
               />
             </Link>
 
-            <span className="ff-sans-normal fs-200">Tucker, Georgia</span>
+            <span className="ff-sans-normal fs-200 ">Tucker, Georgia</span>
           </span>
 
           <Link href="https://github.com/ivannissimrch">

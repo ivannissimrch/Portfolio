@@ -34,15 +34,7 @@ export default function ProjectPage({ params }) {
 
       <section className="flex flex-col gap-12 purpose-section">
         <h1 className="fs-400 purpose-title case-subtitle">Purpose and Goal</h1>
-        <p className="fs-200">
-          This project included 3 phases and iterations of the site. Phase 1
-          simply allowed users to enter their email to be alerted to when the
-          product was released. Phase 2 was quite larger and is designed to
-          introduce users to the Slice product and answer any questions they may
-          have. Phase three is by far the largest and most complex, as it
-          included the full shop and cart pages as well as the logic and backend
-          that goes along with it.
-        </p>
+        <p className="fs-200">{currentProject[0].purpose}</p>
       </section>
       <section className="stack-section">
         <section className="flex case-stack-icons-container">
@@ -61,17 +53,7 @@ export default function ProjectPage({ params }) {
           <h2 className="fs-400 case-tech-stack-title stack-title case-subtitle">
             Tech stack
           </h2>
-          <p className="fs-200">
-            React made the most sense for the web application because it
-            required to connect to GraphQL, and the Shophify-SDK for Javascript
-            ties into Rect very smoothly. The Shopify-Buy-SDK was chosen because
-            of the ability for the client to modify the products without any
-            complex coding knowledge. React hooks and session storage are also
-            used throughout the project to maintain the user cart items and
-            allows the cart count and other shopping data to be displayed
-            universally without the need for Redux. Netflify is also an obvious
-            choice for deployment because of its speed and reliability.
-          </p>
+          <p className="fs-200">{currentProject[0].techStack}</p>
         </section>
       </section>
 
@@ -85,12 +67,7 @@ export default function ProjectPage({ params }) {
         />
         <section className="collaboration-text">
           <h2 className="fs-400 case-subtitle">Team collaboration</h2>
-          <p className="fs-200">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
-            nostrum laudantium officiis autem doloremque nesciunt omnis odit,
-            incidunt rerum odio. Officiis, libero! Numquam, ducimus. Doloribus
-            quo aperiam officia soluta provident?
-          </p>
+          <p className="fs-200">{currentProject[0].collaboration}</p>
         </section>
       </section>
 
@@ -98,11 +75,7 @@ export default function ProjectPage({ params }) {
         <h2 className="fs-400 problems-title case-subtitle">
           Problems and thought process
         </h2>
-        <p className="fs-200">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          odit debitis tempora maiores nam dolor accusantium est. Voluptatibus,
-          quidem impedit.
-        </p>
+        <p className="fs-200">{currentProject[0].thoughtProcess}</p>
       </section>
       <Image
         className="problems-image-mobile"
