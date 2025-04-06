@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function CaseCard({ project }) {
-  const { date, icons, title, description, image, imageTablet } = project;
+  const { date, icons, title, description, image, imageTablet, siteLink } =
+    project;
 
   return (
     <section
@@ -29,7 +30,7 @@ export default function CaseCard({ project }) {
         <p className="fs-200 ff-sans-normal case-first-description">
           {description}
         </p>
-        <Link href={""} className="ff-sans-normal fs-200 case-card-link">
+        <Link href={siteLink} className="ff-sans-normal fs-200 case-card-link">
           View site
         </Link>
       </section>
