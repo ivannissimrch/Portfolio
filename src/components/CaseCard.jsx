@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function CaseCard({ project }) {
-  const { date, icons, title, description, image, imageTablet, siteLink } =
+  const { date, icons, title, description, image, imageDesktop, siteLink } =
     project;
 
   return (
@@ -43,7 +43,7 @@ export default function CaseCard({ project }) {
         className={"case-card-image-mobile"}
       />
       <Image
-        src={imageTablet}
+        src={imageDesktop}
         alt="project image"
         width={930}
         height={510}

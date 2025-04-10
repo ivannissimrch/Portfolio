@@ -2,16 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import SpotLight from "./SpotLight";
-import { motion } from "framer-motion";
-
 export default function Card({ project, idx }) {
-  const { date, icons, title, description, image, imageTablet } = project;
+  const { date, icons, title, description, image, imageDesktop } = project;
   let customStyles = `project${idx + 1}`;
+  console.log(title);
 
   return (
     <Link
-      href={title}
+      href={title === "ComingSoon" ? "" : title}
       className={`w-full h-full bg-white card-container flex link-text text-black ${customStyles}`}
     >
       <section className="card-title bg-white">
@@ -43,12 +41,12 @@ export default function Card({ project, idx }) {
         className={"card-image-mobile"}
       />
       <Image
-        src={title === "Slice" ? imageTablet : image}
+        src={imageDesktop}
         alt="project image"
         width={930}
         height={510}
         // style={{ width: "100%", height: "auto" }}
-        className="card-image-tablet"
+        className="card-image-desktop"
       />
     </Link>
   );

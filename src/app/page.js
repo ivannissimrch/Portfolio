@@ -12,11 +12,10 @@ export default function Home() {
   return (
     <main className="main-container flex  bg-accent ">
       <section className=" grid hero-container padding-top-72">
-        <TextAnimation text={title1} />
-        {/* <h1 id="title" className="ff-sans-normal hero-title">
+        <h1 id="title" className="ff-sans-normal hero-title">
           <div>Hi, I’m Ivan Rebolledo.</div>
           <div className="text-blue">A front-end developer.</div>
-        </h1> */}
+        </h1>
         <section className="flex text-gray hero-icons">
           <span className="flex">
             <Link href={"https://maps.app.goo.gl/r4A29nCyUihTkDEq9"}>
@@ -50,7 +49,7 @@ export default function Home() {
             />
           </Link>
         </section>
-        {/* <Image
+        <Image
           src="/images/mobileImageCover.png"
           width={405}
           height={313}
@@ -73,7 +72,7 @@ export default function Home() {
           layout="responsive"
           className="hero-image-desktop "
           alt="temp cover"
-        /> */}
+        />
         <p className="bg-white hero-p fs-200 ff-sans-normal text-gray">
           I love learning about front-end development technologies and creating
           applications using <span> JavaScript, </span>

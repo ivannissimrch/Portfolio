@@ -9,7 +9,6 @@ import Footer from "@/components/Footer";
 
 export default function ProjectPage({ params }) {
   const { project } = React.use(params);
-
   const currentProject = PROJECTS_INFO.filter(
     (storeProject) => storeProject.title === project
   );
