@@ -85,7 +85,7 @@ export default function ProjectPage({ params }) {
       />
 
       <Image
-        className="problems-image-tablet"
+        className="problems-image-desktop"
         src={"/images/thoughtImage.png"}
         width={928}
         height={681}

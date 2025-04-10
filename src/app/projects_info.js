@@ -2,7 +2,7 @@ export const PROJECTS_INFO = [
   {
     title: "Slice",
     description:
-      "A user-friendly expense splitting application that takes the headache out of shared finances A user-friendly expense splitting application that takes the headache out of shared finances.A user-friendly expense splitting application that takes the headache out of shared finances.",
+      "A user-friendly expense splitting application that takes the headache  A user-friendly expense splitting application that takes the headache out of shared finances.A user-friendly expense splitting application that takes the headache out of shared finances.",
     image: "/images/sliceMobile.png",
     imageDesktop: "/images/sliceDesktop.png",
     date: "September 2024",

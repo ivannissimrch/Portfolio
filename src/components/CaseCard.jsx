@@ -48,7 +48,7 @@ export default function CaseCard({ project }) {
         width={930}
         height={510}
         style={{ width: "100%", height: "auto" }}
-        className="case-card-image-tablet"
+        className="case-card-image-desktop"
       />
     </section>
   );

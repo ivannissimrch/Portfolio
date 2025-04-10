@@ -465,7 +465,7 @@ p {
   display: inline-block;
 }
 
-.card-image-tablet {
+.card-image-desktop {
   display: none;
 }
 
@@ -478,7 +478,7 @@ p {
   .card-image-mobile {
     display: none;
   }
-  .card-image-tablet {
+  .card-image-desktop {
     display: inline-block;
   }
 }
@@ -630,7 +630,7 @@ p {
 .case-card-image-mobile {
   display: block;
 }
-.case-card-image-tablet {
+.case-card-image-desktop {
   display: none;
 }
 
@@ -686,7 +686,7 @@ p {
 .problems-image-mobile {
   display: block;
 }
-.problems-image-tablet {
+.problems-image-desktop {
   display: none;
 }
 
@@ -756,7 +756,13 @@ p {
   .case-card-image-mobile {
     display: none;
   }
-  .case-card-image-tablet {
+  .case-card-image-desktop {
+    display: block;
+  }
+  problems-image-mobile {
+    display: block;
+  }
+  .problems-image-desktop {
     display: block;
   }
 
