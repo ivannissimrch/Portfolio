@@ -1,17 +1,17 @@
 export const PROJECTS_INFO = [
   {
-    title: "Slice",
+    title: "Stocks",
     description:
-      "A user-friendly expense splitting application that takes the headache  A user-friendly expense splitting application that takes the headache out of shared finances.A user-friendly expense splitting application that takes the headache out of shared finances.",
-    image: "/images/sliceMobile.png",
-    imageDesktop: "/images/sliceDesktop.png",
+      "Application that allows to search and display information about stocks okoijsidojds  djiopsdj iosdj dsiijdasi idsjdisosjd isdjdsoijdsiosjdiosdjoidjoisdjoidsjiojiodsjoidsjdsoids isdjisdjoidsjdos opsdjoisjdoijsdoijdoisdj piosjidsk[cppoclopsidhcs fodjkfdojkfdolkjo opdfk[podfkopldkfpldklfdkl;dkl;dfklfdkdfldfkldk;lfdk;lfdkfd;lkfd;lk;lfdkdfl;kd",
+    image: "/images/stocksMobile.png",
+    imageDesktop: "/images/stocksDesktop.png",
     date: "September 2024",
-    siteLink: "https://islice.netlify.app/expenses-user",
+    siteLink: "https://typescriptstocks.netlify.app/",
     icons: [
       "/images/react-icon.svg",
-      "/images/react-router-icon.svg",
+      "/images/css-icon.svg",
       "/images/html-icon.svg",
-      "/images/tailwind-icon.svg",
+      "/images/typescript-icon.svg",
     ],
     purpose: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
 
@@ -41,19 +41,20 @@ export const PROJECTS_INFO = [
     collaboration: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
     thoughtProcess: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
   },
+
   {
-    title: "Stocks",
+    title: "Slice",
     description:
-      "Application that allows to search and display information about stocks",
-    image: "/images/stocksMobile.png",
-    imageDesktop: "/images/stocksDesktop.png",
+      "A user-friendly expense splitting application that takes the headache  A user-friendly expense splitting application that takes the headache out of shared finances.A user-friendly expense splitting application that takes the headache out of shared finances.",
+    image: "/images/sliceMobile.png",
+    imageDesktop: "/images/sliceDesktop.png",
     date: "September 2024",
-    siteLink: "https://typescriptstocks.netlify.app/",
+    siteLink: "https://islice.netlify.app/expenses-user",
     icons: [
       "/images/react-icon.svg",
-      "/images/css-icon.svg",
+      "/images/react-router-icon.svg",
       "/images/html-icon.svg",
-      "/images/typescript-icon.svg",
+      "/images/tailwind-icon.svg",
     ],
     purpose: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
 

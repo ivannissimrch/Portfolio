@@ -336,7 +336,7 @@ p {
 
 .hero-container {
   position: relative;
-  margin: 0 auto 104px auto;
+  /* margin: 0 auto 104px auto; */
   width: 100%;
 }
 
@@ -363,11 +363,12 @@ p {
 }
 
 .hero-p {
-  position: absolute;
+  /* position: absolute; */
   font-weight: 400;
-  bottom: -100px;
+  /* bottom: -100px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
+  margin: 0 auto;
   max-width: 320px;
   min-width: 320px;
   min-height: 105px;

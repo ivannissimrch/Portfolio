@@ -59,7 +59,7 @@ export default function ProjectPage({ params }) {
       <section className="flex flex-col gap-12 collaboration-section">
         <Image
           className="collaboration-image"
-          src={"/images/case1.png"}
+          src={"/images/collaborationImage.png"}
           width={405}
           height={296}
           alt="case image"
@@ -76,7 +76,7 @@ export default function ProjectPage({ params }) {
         </h2>
         <p className="fs-200">{currentProject[0].thoughtProcess}</p>
       </section>
-      <Image
+      {/* <Image
         className="problems-image-mobile"
         src={"/images/case2.jpeg"}
         width={405}
@@ -90,7 +90,7 @@ export default function ProjectPage({ params }) {
         width={928}
         height={681}
         alt="case image"
-      />
+      /> */}
 
       <section className="flex flex-col gap-24">
         <h2 className="fs-400 other-projects-title case-subtitle">
