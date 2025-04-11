@@ -1,26 +1,5 @@
 export const PROJECTS_INFO = [
   {
-    title: "Stocks",
-    description:
-      "Application that allows to search and display information about stocks okoijsidojds  djiopsdj iosdj dsiijdasi idsjdisosjd isdjdsoijdsiosjdiosdjoidjoisdjoidsjiojiodsjoidsjdsoids isdjisdjoidsjdos opsdjoisjdoijsdoijdoisdj piosjidsk[cppoclopsidhcs fodjkfdojkfdolkjo opdfk[podfkopldkfpldklfdkl;dkl;dfklfdkdfldfkldk;lfdk;lfdkfd;lkfd;lk;lfdkdfl;kd",
-    image: "/images/stocksMobile.png",
-    imageDesktop: "/images/stocksDesktop.png",
-    date: "September 2024",
-    siteLink: "https://typescriptstocks.netlify.app/",
-    icons: [
-      "/images/react-icon.svg",
-      "/images/css-icon.svg",
-      "/images/html-icon.svg",
-      "/images/typescript-icon.svg",
-    ],
-    purpose: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
-
-    techStack: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
-
-    collaboration: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
-    thoughtProcess: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
-  },
-  {
     title: "WeeklyBytes",
     description:
       "A meal Scheduler App that creates weekly menus safe for employees with allergies. sfdsfsdfsdf  dsf se fsddfsfrsgresg rewtgerwtgwert regtsdfsdfsdfsd dsfgfsdgsd sdnfksdnjfksdjfs jkdslfkjs lkjfseld ksdlfklsdkflsdkf lksdlfk sdlfksdlkflsdkfls d lsdklfksdlfklsdkf sd ;lksdfl sdklf dsk sd;lkf;lskf sd;fl ksd;l fks;lfsk;lsfdkfsdl; k",
@@ -33,6 +12,27 @@ export const PROJECTS_INFO = [
       "/images/react-router-icon.svg",
       "/images/html-icon.svg",
       "/images/tailwind-icon.svg",
+    ],
+    purpose: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
+
+    techStack: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
+
+    collaboration: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
+    thoughtProcess: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
+  },
+  {
+    title: "Stocks",
+    description:
+      "Applioidsjdos opsdjoisjdoijs;dfklfdkdfldfkldk;lfdk;lfdkfd;lkfd;lk;lfdkdfl;kd",
+    image: "/images/stocksMobile.png",
+    imageDesktop: "/images/stocksDesktop.png",
+    date: "September 2024",
+    siteLink: "https://typescriptstocks.netlify.app/",
+    icons: [
+      "/images/react-icon.svg",
+      "/images/css-icon.svg",
+      "/images/html-icon.svg",
+      "/images/typescript-icon.svg",
     ],
     purpose: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
 
