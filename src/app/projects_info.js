@@ -46,8 +46,8 @@ export const PROJECTS_INFO = [
     title: "Slice",
     description:
       "A user-friendly expense splitting application that takes the headache  A user-friendly expense splitting application that takes the headache out of shared finances.A user-friendly expense splitting application that takes the headache out of shared finances.",
-    image: "/images/sliceMobile.png",
-    imageDesktop: "/images/sliceDesktop.png",
+    image: "/images/sliceMobile.gif",
+    imageDesktop: "/images/sliceDesktop.gif",
     date: "September 2024",
     siteLink: "https://islice.netlify.app/expenses-user",
     icons: [
