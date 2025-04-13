@@ -24,8 +24,8 @@ export const PROJECTS_INFO = [
     title: "Stocks",
     description:
       "Applioidsjdos opsdjoisjdoijs;dfklfdkdfldfkldk;lfdk;lfdkfd;lkfd;lk;lfdkdfl;kd",
-    image: "/images/stocksMobile.png",
-    imageDesktop: "/images/stocksDesktop.png",
+    image: "/images/stocksMobile.gif",
+    imageDesktop: "/images/stocksDesktop.gif",
     date: "September 2024",
     siteLink: "https://typescriptstocks.netlify.app/",
     icons: [
