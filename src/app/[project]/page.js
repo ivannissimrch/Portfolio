@@ -59,7 +59,7 @@ export default function ProjectPage({ params }) {
       <section className="flex flex-col gap-12 collaboration-section">
         <Image
           className="collaboration-image"
-          src={"/images/collaborationImage.png"}
+          src={currentProject[0].teamWorkMobileImage}
           width={405}
           height={296}
           alt="case image"
