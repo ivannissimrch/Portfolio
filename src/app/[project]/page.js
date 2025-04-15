@@ -99,7 +99,7 @@ export default function ProjectPage({ params }) {
         </h2>
         <section className="other-projects-parent-container">
           {towRandomOtherProjects.map((project, idx) => (
-            <section key={project.title} className={"other-projects-container"}>
+            <section key={project.title} className="other-projects-container">
               <Card project={project} />
             </section>
           ))}

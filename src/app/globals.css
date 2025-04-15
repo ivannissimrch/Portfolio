@@ -439,6 +439,12 @@ p {
   line-height: 27px;
 }
 
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .card-container {
   flex-direction: column;
   margin: 0 auto;
@@ -693,6 +699,12 @@ p {
   display: none;
 }
 
+.other-projects-parent-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 /* case tablet  */
 @media (min-width: 560px) {
   .case-page-container {
@@ -815,7 +827,7 @@ p {
   }
 
   .other-projects-parent-container {
-    display: flex;
+    flex-direction: row;
     gap: 24px;
   }
 
