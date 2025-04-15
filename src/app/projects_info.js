@@ -2,7 +2,7 @@ export const PROJECTS_INFO = [
   {
     title: "WeeklyBytes",
     description:
-      "A meal Scheduler App that creates weekly menus safe for employees with allergies. sfdsfsdfsdf  dsf se fsddfsfrsgresg rewtgerwtgwert regtsdfsdfsdfsd dsfgfsdgsd sdnfksdnjfksdjfs jkdslfkjs lkjfseld ksdlfklsdkflsdkf lksdlfk sdlfksdlkflsdkfls d lsdklfksdlfklsdkf sd ;lksdfl sdklf dsk sd;lkf;lskf sd;fl ksd;l fks;lfsk;lsfdkfsdl; k",
+      "A meal Scheduler App tlfklsdkflsdkf lksdlfk sdlfksdlkflsdkfls d lsdklfksdlfklsdkf sd ;lksdfl sdklf dsk sd;lkf;lskf sd;fl ksd;l fks;lfsk;lsfdkfsdl; k",
     image: "/images/weeklyBytesMobile.gif",
     imageDesktop: "/images/weeklyBytesDesktop.gif",
     teamWorkMobileImage: "/images/weeklyBytesMTeamWork.png",
