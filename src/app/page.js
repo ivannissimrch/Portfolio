@@ -108,7 +108,7 @@ export default function Home() {
           {TECHNOLOGIES_ICONS.map((icon, idx) => {
             return (
               <section key={idx} className="technologies-icon-container">
-                <Image src={icon} width={84} height={79} alt="icon" />
+                <Image src={icon} width={70} height={70} alt="icon" />
               </section>
             );
           })}

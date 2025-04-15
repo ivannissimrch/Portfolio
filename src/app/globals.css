@@ -543,8 +543,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 84px;
-  height: 79px;
   flex-wrap: nowrap;
   overflow: hidden;
 }
