@@ -7,5 +7,4 @@ export const TECHNOLOGIES_ICONS = [
   "/images/next-js-icon.svg",
   "/images/react-router-icon.svg",
   "/images/tailwind-icon.svg",
-  "/images/material-ui-icon.svg",
 ];

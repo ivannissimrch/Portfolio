@@ -490,8 +490,8 @@ p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
   }
 
   .project1 {
@@ -537,8 +537,10 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 39.5px;
-  height: 60.2px;
+  width: 84px;
+  height: 79px;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 /* tablet */
@@ -814,7 +816,7 @@ p {
 
   .other-projects-parent-container {
     display: flex;
-    gap: 5px;
+    gap: 24px;
   }
 
   .other-projects-container {
