@@ -15,12 +15,19 @@ export const PROJECTS_INFO = [
       "/images/html-icon.svg",
       "/images/tailwind-icon.svg",
     ],
-    purpose: `application designed to help managers effortlessly create and share weekly meal plans while prioritizing staff safety and dietary needs. With a vast selection of delicious meals, the app automatically filters out any dishes containing allergens identified by staff members. It then generates a randomized menu—ensuring variety and eliminating meal repetition within the same week.`,
+    purpose: `The app was designed to streamline meal planning for managers. With a wide selection of delicious meals, it automatically filters out dishes containing allergens based on employee input. It then generates a randomized weekly menu—ensuring variety and avoiding meal repetition.
 
-    techStack: `We used React, React router for routing, Tailwind for styling, Material UI for the alert messages and react-select library to create the dropdown menus `,
+`,
 
-    collaboration: `I collaborated at Chingu during six weeks with a group of 9 people, 5 developers, 1 product owner, 1 UX designer, 1 scrum Master and 1 voyage guide`,
-    thoughtProcess: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
+    techStack: `We used React for the frontend, React Router for routing, Tailwind CSS for styling, Material UI for alert messages, and the react-select library to build dropdown menus. `,
+
+    collaboration: `This project was built as part of a 6-week Chingu Voyage with a team of 9 developers.
+Some of the tasks I handled included:
+
+Implementing the dropdown menu for selecting employee allergies using react-select
+
+Writing the logic to filter out meals that contain any of the selected allergens`,
+    thoughtProcess: `One challenge I faced was styling the react-select dropdown. Initially, it seemed like a great choice, but the more customization we needed, the harder it became to style. I was ready to build a custom dropdown from scratch, but I realized this too late in the project and we didn’t have enough time left to implement it.`,
   },
   {
     title: "Stocks",
@@ -62,12 +69,17 @@ export const PROJECTS_INFO = [
       "/images/html-icon.svg",
       "/images/tailwind-icon.svg",
     ],
-    purpose: `nceptos himenaeos.`,
+    purpose: ` To help  users manage and divide expenses such as rent, utilities, subscription services, groceries, and more. Our target demographic is the 18-30 age group, which includes students and early professionals who need an easy way to handle finances among roommates and friends.`,
 
-    techStack: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
+    techStack: `We used React for the frontend, React Router for routing, Tailwind CSS for styling, React-hot-toast for alert messages, and the react-select library to create dropdown menus.`,
 
-    collaboration: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
-    thoughtProcess: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
+    collaboration: `We developed this project as part of a Chingu Voyage team.
+My contributions included:
+
+Creating a centralized state management system using useContext and useState
+
+Building a custom dropdown component with react-select to assign expenses to specific users`,
+    thoughtProcess: `Since this was the first time many of us had worked on a collaborative coding project, using GitHub effectively was a big challenge. We struggled with merge conflicts and accidentally overwriting each other’s code. It was a valuable learning experience in version control and teamwork.`,
   },
   {
     title: "ComingSoon",
