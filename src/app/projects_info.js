@@ -82,11 +82,11 @@ Building a custom dropdown component with react-select to assign expenses to spe
     thoughtProcess: `Since this was the first time many of us had worked on a collaborative coding project, using GitHub effectively was a big challenge. We struggled with merge conflicts and accidentally overwriting each other’s code. It was a valuable learning experience in version control and teamwork.`,
   },
   {
-    title: "ComingSoon",
+    title: "emberAi",
     description:
       "Ember AI is an assistant app designed to help a user craft a well written, complete prompt to use when utilizing an AI platform in seeking information.",
-    image: "/images/comingSoon.jpg",
-    imageDesktop: "/images/comingSoon.jpg",
+    image: "/images/emberAiMobile.gif",
+    imageDesktop: "/images/emberAiDesktop.gif",
     date: "2024",
     siteLink: "https://typescriptstocks.netlify.app/",
     icons: [

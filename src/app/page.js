@@ -49,30 +49,7 @@ export default function Home() {
             />
           </Link>
         </section>
-        {/* <Image
-          src="/images/mobileImageCover.png"
-          width={405}
-          height={313}
-          layout="responsive"
-          className="hero-image-phone "
-          alt="temp cover"
-        />
-        <Image
-          src="/images/tabletImageCover.png"
-          width={928}
-          height={378}
-          layout="responsive"
-          className="hero-image-tablet "
-          alt="temp cover"
-        />
-        <Image
-          src="/images/desktopImageCover.png"
-          width={928}
-          height={378}
-          layout="responsive"
-          className="hero-image-desktop "
-          alt="temp cover"
-        /> */}
+
         <p className="bg-white hero-p fs-200 ff-sans-normal text-gray">
           I love learning about front-end development technologies and creating
           applications using <span> JavaScript, </span>
