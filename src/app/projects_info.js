@@ -87,6 +87,8 @@ Building a custom dropdown component with react-select to assign expenses to spe
       "Ember AI is an assistant app designed to help a user craft a well written, complete prompt to use when utilizing an AI platform in seeking information.",
     image: "/images/emberAiMobile.gif",
     imageDesktop: "/images/emberAiDesktop.gif",
+    teamWorkMobileImage: "/images/comingSoon.jpg",
+    teamWorkDesktopImage: "/images/comingSoon.jpg",
     date: "2024",
     siteLink: "https://typescriptstocks.netlify.app/",
     icons: [
@@ -95,11 +97,11 @@ Building a custom dropdown component with react-select to assign expenses to spe
       "/images/html-icon.svg",
       "/images/typescript-icon.svg",
     ],
-    purpose: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
+    purpose: `We wanted to build an app that helps people write strong, clear AI prompts. This way, users can get better answers and make the most out of using AI tools.`,
 
-    techStack: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
+    techStack: `We used React, Next.js, Tailwind, and TypeScript. Some teammates were new to these tools, so it was a great learning opportunity for them.`,
 
-    collaboration: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
-    thoughtProcess: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
+    collaboration: `This was a Chingu group project with 6 developers working together.`,
+    thoughtProcess: `One of the biggest challenges we faced was communication. At times, we weren’t clear about who was working on what, which caused confusion. We learned how important it is to check in often and share progress regularly.`,
   },
 ];

@@ -5,7 +5,6 @@ import Link from "next/link";
 export default function Card({ project, idx }) {
   const { date, icons, title, description, image, imageDesktop } = project;
   let customStyles = `project${idx + 1}`;
-  console.log(title);
 
   return (
     <Link
