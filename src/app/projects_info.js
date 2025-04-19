@@ -1,3 +1,6 @@
+import stocksImageMobile from "/public/images/stocksMobile.gif";
+import stocksImageDesktop from "/public/images/stocksDesktop.gif";
+
 export const PROJECTS_INFO = [
   {
     title: "WeeklyBytes",
@@ -33,8 +36,8 @@ Writing the logic to filter out meals that contain any of the selected allergens
     title: "Stocks",
     description:
       "A stock application that allows you to search for and retrieve data about stocks.",
-    image: "/images/stocksMobile.gif",
-    imageDesktop: "/images/stocksDesktop.gif",
+    image: stocksImageMobile,
+    imageDesktop: stocksImageDesktop,
     teamWorkMobileImage: "/images/stocksMTeamWork.png",
     teamWorkDesktopImage: "/images/stocksDTeamWork.png",
     date: "September 2024",
