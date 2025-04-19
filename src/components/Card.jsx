@@ -43,7 +43,7 @@ export default function Card({ project, idx }) {
         src={imageDesktop}
         alt="project image"
         width={930}
-        height={510}
+        height={350}
         // style={{ width: "100%", height: "auto" }}
         className="card-image-desktop"
       />

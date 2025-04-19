@@ -12,10 +12,10 @@ export const PROJECTS_INFO = [
     title: "WeeklyBytes",
     description:
       "Weekly Bytes is an intuitive web application designed to help managers effortlessly create and share weekly meal plans while prioritizing staff safety and dietary needs.",
-    image: "/images/weeklyBytesMobile.gif",
+    image: weeklyBytesImageMobile,
     imageDesktop: weeklyBytesImageDesktop,
-    teamWorkMobileImage: weeklyBytesImageMobile,
-    teamWorkDesktopImage: "/images/weeklyBytesDTeamWork.png",
+    teamWorkMobileImage: "/images/weeklyBytesMTeamWork.png",
+    teamWorkDesktopImage: "/weeklyBytesDTeamWork.png",
     date: "January 2025",
     siteLink: "https://v53-tier2-team-26-fork.vercel.app/",
     icons: [
@@ -66,10 +66,10 @@ Writing the logic to filter out meals that contain any of the selected allergens
     title: "Slice",
     description:
       "Expense-splitting app tailored specifically for roommates and friends. Slice helps users manage and divide expenses such as rent, utilities, subscription services, groceries, and more",
-    image: "/images/sliceMobile.gif",
-    imageDesktop: "/images/sliceDesktop.gif",
-    teamWorkMobileImage: sliceImageMobile,
-    teamWorkDesktopImage: sliceImageDesktop,
+    image: sliceImageMobile,
+    imageDesktop: sliceImageDesktop,
+    teamWorkMobileImage: "/images/sliceMTeamWork.png",
+    teamWorkDesktopImage: "/images/sliceDTeamWork.png",
     date: "September 2024",
     siteLink: "https://islice.netlify.app/expenses-user",
     icons: [
