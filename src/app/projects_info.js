@@ -54,12 +54,12 @@ Writing the logic to filter out meals that contain any of the selected allergens
       "/images/html-icon.svg",
       "/images/typescript-icon.svg",
     ],
-    purpose: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
+    purpose: `I built this project to learn TypeScript, practice writing unit tests, and follow a Figma design. It helped me improve my frontend skills and learn how to turn a design into a working app.`,
 
-    techStack: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
+    techStack: `I used React, TypeScript, CSS, and Vitest, this was my first time adding unit testing to a project also, I'm still getting use to work with typeScript`,
 
-    collaboration: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
-    thoughtProcess: `Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.`,
+    collaboration: `I created this project under the guidance of my mentor.`,
+    thoughtProcess: `This project went through a lot of changes. I started using Material UI, but later switched to building the UI based on a Figma design to challenge myself more. I worked on it on and off while also participating in Chingu voyages.`,
   },
 
   {
@@ -110,7 +110,8 @@ Building a custom dropdown component with react-select to assign expenses to spe
 
     techStack: `We used React, Next.js, Tailwind, and TypeScript. Some teammates were new to these tools, so it was a great learning opportunity for them.`,
 
-    collaboration: `This was a Chingu group project with 6 developers working together.`,
-    thoughtProcess: `One of the biggest challenges we faced was communication. At times, we weren’t clear about who was working on what, which caused confusion. We learned how important it is to check in often and share progress regularly.`,
+    collaboration: `This was a team project from a Chingu cohort with six developers working together.`,
+
+    thoughtProcess: `One of the biggest challenges was communication. Since our schedules didn’t always line up and some teammates were new to the tech stack, it was hard to stay in sync. But it was a great learning experience for everyone involved.`,
   },
 ];
