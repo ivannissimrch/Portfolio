@@ -1,5 +1,11 @@
+import weeklyBytesImageMobile from "/public/images/weeklyBytesMobile.gif";
+import weeklyBytesImageDesktop from "/public/images/weeklyBytesDesktop.gif";
 import stocksImageMobile from "/public/images/stocksMobile.gif";
 import stocksImageDesktop from "/public/images/stocksDesktop.gif";
+import sliceImageMobile from "/public/images/sliceMobile.gif";
+import sliceImageDesktop from "/public/images/sliceDesktop.gif";
+import emberImageMobile from "/public/images/emberAiMobile.gif";
+import emberImageDesktop from "/public/images/emberAiDesktop.gif";
 
 export const PROJECTS_INFO = [
   {
@@ -7,8 +13,8 @@ export const PROJECTS_INFO = [
     description:
       "Weekly Bytes is an intuitive web application designed to help managers effortlessly create and share weekly meal plans while prioritizing staff safety and dietary needs.",
     image: "/images/weeklyBytesMobile.gif",
-    imageDesktop: "/images/weeklyBytesDesktop.gif",
-    teamWorkMobileImage: "/images/weeklyBytesMTeamWork.png",
+    imageDesktop: weeklyBytesImageDesktop,
+    teamWorkMobileImage: weeklyBytesImageMobile,
     teamWorkDesktopImage: "/images/weeklyBytesDTeamWork.png",
     date: "January 2025",
     siteLink: "https://v53-tier2-team-26-fork.vercel.app/",
@@ -62,8 +68,8 @@ Writing the logic to filter out meals that contain any of the selected allergens
       "Expense-splitting app tailored specifically for roommates and friends. Slice helps users manage and divide expenses such as rent, utilities, subscription services, groceries, and more",
     image: "/images/sliceMobile.gif",
     imageDesktop: "/images/sliceDesktop.gif",
-    teamWorkMobileImage: "/images/sliceMTeamWork.png",
-    teamWorkDesktopImage: "/images/sliceDTeamWork.png",
+    teamWorkMobileImage: sliceImageMobile,
+    teamWorkDesktopImage: sliceImageDesktop,
     date: "September 2024",
     siteLink: "https://islice.netlify.app/expenses-user",
     icons: [
@@ -88,8 +94,8 @@ Building a custom dropdown component with react-select to assign expenses to spe
     title: "emberAi",
     description:
       "Ember AI is an assistant app designed to help a user craft a well written, complete prompt to use when utilizing an AI platform in seeking information.",
-    image: "/images/emberAiMobile.gif",
-    imageDesktop: "/images/emberAiDesktop.gif",
+    image: emberImageMobile,
+    imageDesktop: emberImageDesktop,
     teamWorkMobileImage: "/images/comingSoon.jpg",
     teamWorkDesktopImage: "/images/comingSoon.jpg",
     date: "2024",

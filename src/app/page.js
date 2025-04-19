@@ -4,7 +4,6 @@ import Link from "next/link";
 import { TECHNOLOGIES_ICONS } from "./TechnologiesIcons";
 import { PROJECTS_INFO } from "./projects_info";
 import Footer from "@/components/Footer";
-import TextAnimation from "@/components/TextAnimation";
 
 export default function Home() {
   const title1 = "Hi, I’m Ivan Rebolledo. A front-end developer.";
