@@ -12,7 +12,7 @@ export default function CaseCard({ project }) {
       <section className="case-card-title bg-accent">
         <section className="flex case_card-title-icons">
           <span className="text-gray">{title}</span>
-          <span className="flex">
+          <span className="flex case_card-title-icons">
             {icons
               ? icons.map((icon, idx) => (
                   <Image

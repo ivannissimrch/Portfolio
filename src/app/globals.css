@@ -268,7 +268,7 @@ select {
 
 .flex {
   display: flex;
-  gap: var(--gap, 1rem);
+  /* gap: var(--gap, 1rem); */
 }
 .flex-col {
   flex-direction: column;
@@ -348,6 +348,7 @@ p {
 .hero-icons {
   justify-content: center;
   padding-bottom: 32px;
+  gap: 1rem;
 }
 
 .hero-image-phone {
@@ -363,7 +364,6 @@ p {
 }
 
 .hero-p {
-  /* position: absolute; */
   font-weight: 400;
   /* bottom: -100px;
   left: 50%;
@@ -451,12 +451,11 @@ p {
 }
 
 .card-container p {
-  height: 84px;
+  height: 50px;
 }
 
 .card-title {
   padding: 24px;
-  min-height: ;
 }
 
 .card-date-icons {
@@ -646,7 +645,7 @@ p {
 }
 
 .case-card-gap {
-  gap: 72px;
+  /* gap: 72px; */
 }
 
 .case_title {
@@ -663,9 +662,9 @@ p {
   padding-top: 12px;
 }
 
-.case_card_title_icons {
+.case_card-title-icons {
   align-items: flex-start;
-  gap: 32px;
+  gap: 1rem;
 }
 
 .case-stack-icons-container {
@@ -834,6 +833,6 @@ p {
   }
 
   .other-projects-container p {
-    height: 84px;
+    height: 50px;
   }
 }
