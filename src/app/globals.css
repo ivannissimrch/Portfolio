@@ -451,7 +451,7 @@ p {
 }
 
 .card-container p {
-  height: 50px;
+  min-height: 50px;
 }
 
 .card-title {
@@ -486,6 +486,10 @@ p {
   }
   .card-image-desktop {
     display: inline-block;
+  }
+
+  .card-container p {
+    height: 50px;
   }
 }
 
