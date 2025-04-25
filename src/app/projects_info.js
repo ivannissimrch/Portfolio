@@ -99,7 +99,7 @@ Building a custom dropdown component with react-select to assign expenses to spe
     teamWorkMobileImage: "/images/comingSoon.jpg",
     teamWorkDesktopImage: "/images/comingSoon.jpg",
     date: "2024",
-    siteLink: "https://typescriptstocks.netlify.app/",
+    siteLink: "https://ember-ai.vercel.app/",
     icons: [
       "/images/react-icon.svg",
       "/images/css-icon.svg",
