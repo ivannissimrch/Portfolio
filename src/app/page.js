@@ -14,33 +14,31 @@ export default function Home() {
           <Image
             src="/images/profile.jpg"
             alt="Avatar"
-            width={450}
-            height={450}
-            layout="responsive"
+            width={128}
+            height={128}
             priority
+            quality={95}
             className="rounded-full object-cover"
+            sizes="128px"
           />
         </div>
-
         {/* Intro Text */}
         <div className="max-w-xl mt-6 md:mt-0">
-          <h1 className="text-3xl sm:text-4xl font-bold flex justify-center md:justify-start  gap-1">
-            Hi, I’m<span className="text-blue-700 ">Ivan Rebolledo</span>.
+          <h1 className="text-3xl sm:text-4xl font-bold flex justify-center md:justify-start gap-1">
+            Hi, I'm<span className="text-blue-700">Ivan Rebolledo</span>.
           </h1>
-          <h2 className="text-xl sm:text-2xl mt-2  flex justify-center md:justify-start">
-            I’m a front-end developer.
+          <h2 className="text-xl sm:text-2xl mt-2 flex justify-center md:justify-start">
+            I'm a front-end developer.
           </h2>
-
           <div className="flex space-x-4 my-4 text-xl justify-center md:justify-start">
             <FaLinkedin />
             <FaGithub />
           </div>
-
-          <p className="bg-white px-6 py-2  text-sm sm:text-base text-center md:text-left">
+          <p className="bg-white px-6 py-2 text-sm sm:text-base text-center md:text-left">
             I love learning about front-end development technologies and
-            creating applications using <span> JavaScript, </span>
-            <span> React,</span> <span> and Next.js</span>. Besides coding, I
-            love taking my miniature poodle on hikes on the weekends and I enjoy
+            creating applications using <span>JavaScript, </span>
+            <span>React,</span> <span>and Next.js</span>. Besides coding, I love
+            taking my miniature poodle on hikes on the weekends and I enjoy
             Latin dancing.
           </p>
         </div>
@@ -54,17 +52,25 @@ export default function Home() {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {PROJECTS_INFO.map((project, index) => (
-            <div key={index} className="bg-white p-4 ">
-              <Image
-                src={project.imageDesktop}
-                alt="image"
-                className="w-full h-96 bg-blue-200  mb-3"
-              />
-              <div className="text-sm text-right mb-2">{project.date}</div>
-              <h4 className="font-semibold">{project.title}</h4>
-              <Link href={project.title} className="text-sm text-blue-800">
-                {project.description}
-              </Link>
+            <div key={index} className="bg-white overflow-hidden">
+              <div className="relative w-full h-96 bg-blue-200">
+                <Image
+                  src={project.imageDesktop}
+                  alt={`${project.title} project screenshot`}
+                  fill
+                  quality={100}
+                  unoptimized
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <div className="p-4">
+                <div className="text-sm text-right mb-2">{project.date}</div>
+                <h4 className="font-semibold">{project.title}</h4>
+                <Link href={project.title} className="text-sm text-blue-800">
+                  {project.description}
+                </Link>
+              </div>
             </div>
           ))}
         </div>
@@ -77,7 +83,14 @@ export default function Home() {
         </h3>
         <div className="flex flex-wrap gap-8 text-3xl">
           {TECHNOLOGIES_ICONS.map((icon, idx) => (
-            <Image key={idx} src={icon} alt="" width={40} height={40} />
+            <Image
+              key={idx}
+              src={icon}
+              alt=""
+              width={40}
+              height={40}
+              quality={95}
+            />
           ))}
         </div>
       </section>
@@ -86,13 +99,9 @@ export default function Home() {
       <section className="text-center bg-black flex justify-center p-4">
         <div className="flex sm:flex-col justify-start w-1/2">
           <p className="mb-4 text-white">Interested in working together?</p>
-          {/* <p className="mb-4 text-white">
-            Feel free to reach out to me via email.
-          </p> */}
         </div>
-
         <div className="flex justify-end w-1/2"></div>
-        <button className="bg-blue-900 text-white px-6 py-2  hover:bg-blue-800">
+        <button className="bg-blue-900 text-white px-6 py-2 hover:bg-blue-800">
           Send message
         </button>
       </section>
