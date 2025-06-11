@@ -1,109 +1,101 @@
-import Card from "@/components/Card";
 import Image from "next/image";
-import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { PROJECTS_INFO } from "./projectsInfo";
 import { TECHNOLOGIES_ICONS } from "./TechnologiesIcons";
-import { PROJECTS_INFO } from "./projects_info";
-import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export default function Home() {
-  const title1 = "Hi, I’m Ivan Rebolledo. A front-end developer.";
-
   return (
-    <main className="main-container flex  bg-accent ">
-      <section className=" grid hero-container padding-top-72">
-        <h1 id="title" className="ff-sans-normal hero-title">
-          <div>Hi, I’m Ivan Rebolledo.</div>
-          <div className="text-blue">A front-end developer.</div>
-        </h1>
-        <section className="flex text-gray hero-icons">
-          <span className="flex">
-            <Link href={"https://maps.app.goo.gl/r4A29nCyUihTkDEq9"}>
-              <Image
-                src="/images/location.svg"
-                alt="location icon"
-                width={20}
-                height={21}
-              />
-            </Link>
+    <main className="min-h-screen bg-blue-100 text-black px-6 py-10 font-sans">
+      {/* Hero Section */}
+      <section className="flex flex-col items-center md:flex-row md:items-start md:justify-center text-left mb-16 gap-6 px-4">
+        {/* Avatar */}
+        <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center shrink-0">
+          <Image
+            src="/images/profile.jpg"
+            alt="Avatar"
+            width={450}
+            height={450}
+            layout="responsive"
+            priority
+            className="rounded-full object-cover"
+          />
+        </div>
 
-            <span className="ff-sans-normal fs-200 ">Tucker, Georgia</span>
-          </span>
-
-          <Link href="https://github.com/ivannissimrch">
-            {" "}
-            <Image
-              src="/images/githubIcon.svg"
-              alt="location icon"
-              width={27}
-              height={27}
-            />
-          </Link>
-          <Link href="https://www.linkedin.com/in/ivan-rebolledo-012b17244/">
-            {" "}
-            <Image
-              src="/images/LinkIcon.svg"
-              alt="location icon"
-              width={27}
-              height={27}
-            />
-          </Link>
-        </section>
-
-        <p className="bg-white hero-p fs-200 ff-sans-normal text-gray">
-          I love learning about front-end development technologies and creating
-          applications using <span> JavaScript, </span>
-          <span> React,</span> <span> and Next.js</span>. Besides coding, I love
-          taking my miniature poodle on hikes on the weekends and I enjoy Latin
-          dancing.
-        </p>
-      </section>
-      <section className="projects-container ">
-        <h4 className="fs-400 projects-title ff-sans-normal">
-          What I have been working on.
-          <span className="text-blue">
-            {" "}
-            Projects that challenge me and inspired me.
-          </span>
-        </h4>
-        <span className="cards-container">
-          {PROJECTS_INFO.map((project, idx) => (
-            <Card key={project.title} project={project} idx={idx} />
-          ))}
-        </span>
-      </section>
-
-      <section className="technologies-container">
-        <h3
-          className="fs-400 flex ff-sans-normal technologies-title "
-          style={{ gap: "0.5rem" }}
-        >
-          Technologies I work with.
-          <span className="text-blue">As a developer</span>
-        </h3>
-        <section className="flex technologies-icons-container">
-          {TECHNOLOGIES_ICONS.map((icon, idx) => {
-            return (
-              <section key={idx} className="technologies-icon-container">
-                <Image src={icon} width={70} height={70} alt="icon" />
-              </section>
-            );
-          })}
-        </section>
-      </section>
-      <section className="bg-dark text-white working-together-container flex">
-        <div>
-          <h2 className="fs-400 ff-sans-normal working-together-title ">
-            Interested in working together?
+        {/* Intro Text */}
+        <div className="max-w-xl mt-6 md:mt-0">
+          <h1 className="text-3xl sm:text-4xl font-bold flex justify-center md:justify-start  gap-1">
+            Hi, I’m<span className="text-blue-700 ">Ivan Rebolledo</span>.
+          </h1>
+          <h2 className="text-xl sm:text-2xl mt-2  flex justify-center md:justify-start">
+            I’m a front-end developer.
           </h2>
-          <h3 className=" fs-200 text-light-gray ff-sans-normal send-message-text">
-            Send a message to my email
-          </h3>
-        </div>
-        <div className="bg-blue flex email-container">
-          <p>ivannissimrch@gmail.com</p>
+
+          <div className="flex space-x-4 my-4 text-xl justify-center md:justify-start">
+            <FaLinkedin />
+            <FaGithub />
+          </div>
+
+          <p className="bg-white px-6 py-2  text-sm sm:text-base text-center md:text-left">
+            I love learning about front-end development technologies and
+            creating applications using <span> JavaScript, </span>
+            <span> React,</span> <span> and Next.js</span>. Besides coding, I
+            love taking my miniature poodle on hikes on the weekends and I enjoy
+            Latin dancing.
+          </p>
         </div>
       </section>
-      <Footer />
+
+      {/* Projects Section */}
+      <section className="mb-16">
+        <h3 className="text-2xl font-bold mb-6">
+          What I have been working on. Projects that challenge me and inspired
+          me.
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {PROJECTS_INFO.map((project, index) => (
+            <div key={index} className="bg-white p-4 ">
+              <Image
+                src={project.imageDesktop}
+                alt="image"
+                className="w-full h-96 bg-blue-200  mb-3"
+              />
+              <div className="text-sm text-right mb-2">{project.date}</div>
+              <h4 className="font-semibold">{project.title}</h4>
+              <Link href={project.title} className="text-sm text-blue-800">
+                {project.description}
+              </Link>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Technologies Section */}
+      <section className="mb-16">
+        <h3 className="text-2xl font-bold mb-4">
+          Technologies I work with. As a developer
+        </h3>
+        <div className="flex flex-wrap gap-8 text-3xl">
+          {TECHNOLOGIES_ICONS.map((icon, idx) => (
+            <Image key={idx} src={icon} alt="" width={40} height={40} />
+          ))}
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="text-center bg-black flex justify-center p-4">
+        <div className="flex sm:flex-col justify-start w-1/2">
+          <p className="mb-4 text-white">Interested in working together?</p>
+          {/* <p className="mb-4 text-white">
+            Feel free to reach out to me via email.
+          </p> */}
+        </div>
+
+        <div className="flex justify-end w-1/2"></div>
+        <button className="bg-blue-900 text-white px-6 py-2  hover:bg-blue-800">
+          Send message
+        </button>
+      </section>
     </main>
   );
 }

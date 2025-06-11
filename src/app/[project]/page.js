@@ -1,55 +1,46 @@
 "use client";
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import { PROJECTS_INFO } from "../projects_info";
-import Card from "@/components/Card";
-import CaseCard from "@/components/CaseCard";
 import Image from "next/image";
-import Footer from "@/components/Footer";
+import React from "react";
+import { SiJavascript, SiCss3, SiAdobeillustrator } from "react-icons/si";
+import { PROJECTS_INFO } from "../projectsInfo";
 
-export default function ProjectPage({ params }) {
+export default function CaseStudy({ params }) {
   const { project } = React.use(params);
-  const [twoProjects, setTwoProjects] = useState([]);
-
-  const currentProject = PROJECTS_INFO.filter(
+  const [currentProject] = PROJECTS_INFO.filter(
     (storeProject) => storeProject.title === project
   );
-  const otherProjects = PROJECTS_INFO.filter(
-    (storeProject, idx) => storeProject.title !== project
-  );
 
-  useEffect(() => {
-    const shuffled = [...otherProjects].sort(() => 0.5 - Math.random());
-    setTwoProjects(shuffled.slice(0, 2));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  return (
+    <main className="bg-blue-200 text-black px-6 py-10 font-sans">
+      {/* Project Intro */}
+      <section className="mb-16 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 className="text-3xl font-bold mb-2">{currentProject.title}</h1>
+          <hr className="border-blue-300 mb-4" />
+          <h2 className="font-semibold mb-2">Purpose and Goal</h2>
+          <p className="text-sm max-w-md">{currentProject.purpose}</p>
+        </div>
+        <div className="bg-white p-4  shadow">
+          <div className="w-full h-96 bg-white mb-2">
+            <Image
+              src={currentProject.imageDesktop}
+              alt="image"
+              width={800}
+              height={450}
+              layout="responsive"
+              priority
+            />
+          </div>
+        </div>
+      </section>
 
-  const randomNumber = Math.floor(Math.random() * 3);
-  const towRandomOtherProjects = otherProjects.filter(
-    (project, idx) => idx !== randomNumber
-  );
-
-  if (currentProject) {
-    return (
-      <main className="main-container case-page-container flex bg-accent">
-        <section>
-          <h1 className="case_title_padding_top ff-sans-normal case_title ">
-            {currentProject[0].title}
-          </h1>
-          <CaseCard project={currentProject[0]} />
-        </section>
-
-        <section className="flex flex-col gap-12 purpose-section">
-          <h1 className="fs-400 purpose-title case-subtitle">
-            Purpose and Goal
-          </h1>
-          <p className="fs-200">{currentProject[0].purpose}</p>
-        </section>
-        <section className="stack-section">
-          <section className="flex case-stack-icons-container">
-            {currentProject[0].icons.map((icon, idx) => (
+      {/* Tech + Team */}
+      <section className="mb-16 grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <h3 className="font-semibold text-lg mb-2">Tech stack</h3>
+          <div className="flex gap-4 text-3xl mb-3">
+            {currentProject.icons.map((icon, idx) => (
               <Image
-                className="case-stack-icons-container"
                 key={idx}
                 width={63}
                 height={56}
@@ -57,53 +48,48 @@ export default function ProjectPage({ params }) {
                 alt="technologies icons"
               />
             ))}
-          </section>
-          <section className="flex flex-col gap-12 case-stack-section-text">
-            <h2 className="fs-400 case-tech-stack-title stack-title case-subtitle">
-              Tech stack
-            </h2>
-            <p className="fs-200">{currentProject[0].techStack}</p>
-          </section>
-        </section>
+          </div>
+          <p className="text-sm max-w-md">{currentProject.techStack}</p>
+        </div>
+        <div>
+          <h3 className="font-semibold text-lg mb-2">Team collaboration</h3>
 
-        <section className="flex flex-col gap-12 collaboration-section">
-          <Image
-            className="collaboration-image"
-            src={currentProject[0].teamWorkMobileImage}
-            width={405}
-            height={296}
-            alt="case image"
-          />
-          <section className="collaboration-text">
-            <h2 className="fs-400 case-subtitle">Team collaboration</h2>
-            <p className="fs-200">{currentProject[0].collaboration}</p>
-          </section>
-        </section>
+          <p className="text-sm max-w-md">{currentProject.collaboration}</p>
+          <div className="w-full h-full bg-white p-4 mt-4">
+            <Image
+              src={currentProject.teamWorkDesktopImage}
+              alt="image"
+              width={800}
+              height={450}
+              layout="responsive"
+              priority
+            />
+          </div>
+        </div>
+      </section>
 
-        <section className="flex flex-col gap-12 problems-section">
-          <h2 className="fs-400 problems-title case-subtitle">
-            Problems and thought process
-          </h2>
-          <p className="fs-200">{currentProject[0].thoughtProcess}</p>
-        </section>
+      {/* Problems and Process */}
+      <section className="mb-16">
+        <h3 className="font-semibold text-lg mb-2">
+          Problems and thought process
+        </h3>
+        <p className="text-sm max-w-2xl">{currentProject.thoughtProcess}</p>
+      </section>
 
-        <section className="flex flex-col gap-24">
-          <h2 className="fs-400 other-projects-title case-subtitle">
-            Other projects.{" "}
-            <span className="text-blue">They are worth checking out too. </span>
-          </h2>
-          <section className="other-projects-parent-container">
-            {twoProjects.map((project, idx) => (
-              <section key={project.title} className="other-projects-container">
-                {twoProjects ? <Card project={project} /> : "Loading"}
-              </section>
-            ))}
-          </section>
-        </section>
-        <Footer />
-      </main>
-    );
-  } else {
-    return <h1>Loading</h1>;
-  }
+      {/* Other Projects */}
+      <section>
+        <h3 className="font-semibold text-lg mb-4">
+          Other projects. They are worth checking out too.
+        </h3>
+        <div className="grid md:grid-cols-2 gap-6">
+          {[...Array(2)].map((_, i) => (
+            <div key={i} className="bg-white p-4  shadow">
+              <div className="w-full h-36 bg-blue-200 mb-2"></div>
+              <h4 className="font-semibold">Project Title</h4>
+            </div>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
 }
