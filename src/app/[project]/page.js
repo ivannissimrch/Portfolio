@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { SiJavascript, SiCss3, SiAdobeillustrator } from "react-icons/si";
+
 import { PROJECTS_INFO } from "../projectsInfo";
 
 export default function CaseStudy({ params }) {
@@ -16,7 +16,7 @@ export default function CaseStudy({ params }) {
       <main className="bg-blue-200 text-black px-6 py-10 font-sans">
         <div className="text-center">
           <h1 className="text-3xl font-bold mb-4">Project Not Found</h1>
-          <p>The project "{project}" could not be found.</p>
+          <p>The project &quot;{project}&quot; could not be found.</p>
         </div>
       </main>
     );
