@@ -25,10 +25,10 @@ export default function Home() {
         {/* Intro Text */}
         <div className="max-w-xl mt-6 md:mt-0">
           <h1 className="text-3xl sm:text-4xl font-bold flex justify-center md:justify-start gap-1">
-            Hi, I'm<span className="text-blue-700">Ivan Rebolledo</span>.
+            Hi, I&apos;m<span className="text-blue-700">Ivan Rebolledo</span>.
           </h1>
           <h2 className="text-xl sm:text-2xl mt-2 flex justify-center md:justify-start">
-            I'm a front-end developer.
+            I&apos;m a front-end developer.
           </h2>
           <div className="flex space-x-4 my-4 text-xl justify-center md:justify-start">
             <FaLinkedin />
