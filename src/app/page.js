@@ -31,7 +31,7 @@ export default function Home() {
             <h2 className="text-xl sm:text-2xl mt-2 flex justify-center md:justify-start">
               I&apos;m a front-end developer.
             </h2>
-            <div className="flex space-x-4 my-4 text-xl justify-center md:justify-start">
+            <div className="flex space-x-4 my-4 text-2xl justify-center md:justify-start">
               <a href="https://www.linkedin.com/in/ivan-rebolledo-012b17244/">
                 <FaLinkedin />
               </a>
@@ -58,6 +58,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {PROJECTS_LIST.map((project, index) => (
               <div key={index} className="bg-white overflow-hidden">
+                <div className="p-4">
+                  <div className="text-sm text-right mb-2">{project.date}</div>
+                  <h4 className="font-semibold">{project.title}</h4>
+                  <Link href={project.link} className="text-sm text-blue-800">
+                    {project.description}
+                  </Link>
+                </div>
                 <div className="relative w-full h-96 bg-blue-200">
                   <Image
                     src={project.imageDesktop}
@@ -68,13 +75,6 @@ export default function Home() {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
-                </div>
-                <div className="p-4">
-                  <div className="text-sm text-right mb-2">{project.date}</div>
-                  <h4 className="font-semibold">{project.title}</h4>
-                  <Link href={project.link} className="text-sm text-blue-800">
-                    {project.description}
-                  </Link>
                 </div>
               </div>
             ))}

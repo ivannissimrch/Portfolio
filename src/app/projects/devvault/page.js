@@ -113,7 +113,7 @@ export default function DevVaultPage() {
           </div>
           <div className="bg-white shadow rounded overflow-hidden">
             <Image
-              src="/images/stocksDTeamWork.png"
+              src="/images/devVaultTeamWork.png"
               alt="Team collaboration in DevVault project"
               width={800}
               height={600}
