@@ -148,9 +148,8 @@ export default function StocksPage() {
           </p>
           <p className="text-base mb-4">
             Due to API rate limits, I added local caching and integrated a
-            second API to fill in missing data. Later, I introduced unit tests
-            and began planning a stock simulation feature, which is currently in
-            development.
+            second API to fill in missing data. Later, I also introduced unit
+            tests
           </p>
         </section>
 
