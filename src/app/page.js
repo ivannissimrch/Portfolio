@@ -26,11 +26,14 @@ export default function Home() {
           {/* Intro Text */}
           <div className="max-w-xl mt-6 md:mt-0">
             <h1 className="text-3xl sm:text-4xl font-bold flex justify-center md:justify-start gap-1">
-              Hi, I&apos;m<span className="text-blue-700">Ivan Rebolledo</span>.
+              Hi, I&apos;m
+              <span className="text-blue-700">Ivan Rebolledo</span>
             </h1>
+
             <h2 className="text-xl sm:text-2xl mt-2 flex justify-center md:justify-start">
-              I&apos;m a front-end developer.
+              a front-end developer.
             </h2>
+            <p>Welcome to my portfolio page</p>
             <div className="flex space-x-4 my-4 text-2xl justify-center md:justify-start">
               <a href="https://www.linkedin.com/in/ivan-rebolledo-012b17244/">
                 <FaLinkedin />
@@ -41,8 +44,10 @@ export default function Home() {
             </div>
             <p className="bg-white px-6 py-2 text-sm sm:text-base text-center md:text-left">
               I love learning about front-end development technologies and
-              creating applications using <span>JavaScript, </span>
-              <span>React,</span> <span>and Next.js</span>. Besides coding, I
+              creating applications using{" "}
+              <span className="font-bold">JavaScript, </span>
+              <span className="font-bold">React,</span>{" "}
+              <span className="font-bold">and Next.js</span>. Besides coding, I
               love taking my miniature poodle on hikes on the weekends and I
               enjoy Latin dancing.
             </p>

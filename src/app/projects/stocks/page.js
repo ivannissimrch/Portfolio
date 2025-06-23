@@ -11,9 +11,8 @@ export default function StocksPage() {
             <h1 className="text-3xl sm:text-4xl font-bold mb-2">Stocks</h1>
             <hr className="border-blue-300 mb-4" />
             <p className="text-base sm:text-lg">
-              A responsive stock search and analysis app built to strengthen my
-              skills in TypeScript, API integration, caching strategies, and
-              unit testing.
+              A stock search and analysis app that allows users to search for
+              stocks by name and view detailed information about each stock.
             </p>
             <a
               className="text-blue-700 underline font-medium mt-2 inline-block"
@@ -41,12 +40,15 @@ export default function StocksPage() {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Project Goal</h2>
             <p className="text-base mb-6">
-              My goal was to build a reliable stock-tracking app using
-              real-world APIs. Users can search for stock data by name and
-              analyze trends using historical data. The app displays charts for
-              7-day, 6-week, and 5-month ranges, along with real-time price
-              updates. I also practiced converting a Figma design to UI using
-              plain CSS and improved my TypeScript, caching, and testing skills.
+              My goal was to build a reliable stock search app using real-world
+              APIs. Users can search for a stock by name and analyze its trends
+              using historical data. The app displays charts for 7-day, 6-week,
+              and 5-month periods, along with real-time price updates.
+              <strong>
+                {" "}
+                (Note: only the currently selected stock is updated every 15
+                minutes.)
+              </strong>
             </p>
           </div>
           <div>
@@ -68,9 +70,11 @@ export default function StocksPage() {
               ))}
             </div>
             <ul className="list-disc pl-6 text-base space-y-1">
-              <li>React, Vite, TypeScript, plain CSS</li>
+              <li>React, TypeScript, Vite, plain CSS</li>
               <li>Vitest for unit testing</li>
-              <li>Custom caching mechanism using Context and custom hooks</li>
+              <li>
+                Custom caching using React Context and a usePersistedState hook
+              </li>
             </ul>
           </div>
         </section>
@@ -97,18 +101,21 @@ export default function StocksPage() {
                 Converted a Figma design into a responsive UI using plain CSS
               </li>
               <li>
-                Implemented caching using <code>useContext</code> and a custom{" "}
-                <code>usePersistedState</code> hook
+                Implemented a caching system using <code>useContext</code> and a
+                custom <code>usePersistedState</code> hook
               </li>
               <li>
                 Created reusable, typed components with clean TypeScript
                 interfaces
               </li>
               <li>
-                Wrote unit tests using <code>Vitest</code> to verify app
-                behavior
+                Wrote unit tests with <code>Vitest</code> to ensure app
+                functionality
               </li>
-              <li>Added auto-refresh to update recently viewed stock data</li>
+              <li>
+                Built an quote auto-update feature to update the quotes of the
+                stocks
+              </li>
             </ul>
           </div>
           <div className="bg-white shadow rounded overflow-hidden">
@@ -129,27 +136,27 @@ export default function StocksPage() {
           </h2>
           <p className="text-base mb-4">
             This project went through multiple iterations and overlapped with
-            several Chingu Voyages. I applied many lessons learned from this
-            app, like caching logic, search bar creation, and TypeScript best
-            practices to my Chingu team projects.
+            several Chingu Voyages. I used what I learned from this app, like
+            caching logic and search implementation, to contribute more
+            effectively to team projects.
           </p>
           <p className="text-base mb-4">
-            I initially used Material UI but later transitioned to plain CSS to
-            improve my layout and styling skills. Since I didn’t know how to
-            convert a Figma design manually, I worked with a tutor,{" "}
+            I originally used Material UI, but switched to plain CSS to improve
+            my layout and styling skills. Since I wasn’t familiar with turning
+            Figma designs into HTML/CSS, I worked with a tutor,{" "}
             <a
               href="https://www.wyzant.com/match/tutor/89018372"
               className="text-blue-700 underline"
               target="_blank"
             >
-              Green Lee
+              Green L
             </a>
             , to guide me through the process.
           </p>
           <p className="text-base mb-4">
             Due to API rate limits, I added local caching and integrated a
-            second API to fill in missing data. Later, I also introduced unit
-            tests
+            fallback API to ensure the data remained reliable even during
+            refresh limits.
           </p>
         </section>
 
@@ -157,12 +164,19 @@ export default function StocksPage() {
         <section className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">What I Learned</h2>
           <ul className="list-disc pl-6 text-base space-y-1">
-            <li>How to build UIs from a Figma file without a UI library</li>
-            <li>How to handle API rate limits with caching and fallbacks</li>
-            <li>How to write clean, maintainable React code with TypeScript</li>
             <li>
-              How to test logic with <code>Vitest</code> and iterate from
-              feedback
+              How to build a UI from a Figma design without using a UI library
+            </li>
+            <li>
+              How to manage API rate limits using caching and fallback
+              strategies
+            </li>
+            <li>
+              How to write scalable, maintainable React code with TypeScript
+            </li>
+            <li>
+              How to test core logic using <code>Vitest</code> and improve based
+              on feedback
             </li>
           </ul>
         </section>
