@@ -1,13 +1,15 @@
 export default function Footer() {
   return (
-    <section className="text-center bg-black flex justify-center p-4">
-      <div className="flex sm:flex-col justify-start w-1/2">
-        <p className="mb-4 text-white">Interested in working together?</p>
+    <footer className="bg-black text-white text-center p-4">
+      <div className="flex flex-col sm:flex-row items-center sm:justify-between gap-4 max-w-4xl mx-auto w-full">
+        <p className="text-base">Interested in working together?</p>
+        <a
+          href="mailto:ivannissimrch@gmail.com"
+          className="bg-blue-900 text-white px-6 py-2 hover:bg-blue-800 transition rounded"
+        >
+          Send message
+        </a>
       </div>
-      <div className="flex justify-end w-1/2"></div>
-      <div className="bg-blue-900 text-white px-6 py-2 hover:bg-blue-800">
-        Send message ivannissimrch@gmail.com
-      </div>
-    </section>
+    </footer>
   );
 }
