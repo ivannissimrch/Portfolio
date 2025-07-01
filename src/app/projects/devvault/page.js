@@ -17,14 +17,13 @@ export default function DevVaultPage() {
               find curated tutorials, blogs, and videos shared in the Chingu
               Discord.
               <br />
-              Live version:{" "}
               <a
                 href="https://dev-vault-chingu.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 underline"
               >
-                DevVault
+                Live version
               </a>
             </p>
           </div>

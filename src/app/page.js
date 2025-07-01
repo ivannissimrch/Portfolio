@@ -34,7 +34,9 @@ export default function Home() {
               <h2 className="text-xl sm:text-2xl mt-2 flex justify-center md:justify-start">
                 a front-end developer.
               </h2>
-              <p>Welcome to my portfolio page</p>
+              <h3 className="text-xl sm:text-2xl mt-2 flex justify-center md:justify-start">
+                Welcome to my portfolio page
+              </h3>
               <div className="flex space-x-4 my-4 text-2xl justify-center md:justify-start">
                 <a href="https://www.linkedin.com/in/ivan-rebolledo-012b17244/">
                   <FaLinkedin />
@@ -63,15 +65,19 @@ export default function Home() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {PROJECTS_LIST.map((project, index) => (
-                <div key={index} className="bg-white overflow-hidden">
+                <Link
+                  href={project.link}
+                  key={index}
+                  className="bg-white overflow-hidden"
+                >
                   <div className="p-4">
                     <div className="text-sm text-right mb-2">
                       {project.date}
                     </div>
                     <h4 className="font-semibold">{project.title}</h4>
-                    <Link href={project.link} className="text-sm text-blue-800">
+                    <p className="text-sm text-blue-800">
                       {project.description}
-                    </Link>
+                    </p>
                   </div>
                   <div className="relative w-full h-96 bg-blue-200">
                     <Image
@@ -84,7 +90,7 @@ export default function Home() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </section>
