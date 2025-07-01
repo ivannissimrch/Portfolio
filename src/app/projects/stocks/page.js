@@ -15,12 +15,20 @@ export default function StocksPage() {
               stocks by name and view detailed information about each stock.
             </p>
             <a
-              className="text-blue-700 underline font-medium mt-2 inline-block"
+              className="text-blue-500 underline font-medium mt-2 inline-block mr-2"
               href="https://typescriptstocks.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
               Live Version
+            </a>
+            <a
+              href="https://github.com/ivannissimrch/stockDashBoard"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 underline"
+            >
+              Repo
             </a>
           </div>
           <div className="bg-white shadow rounded overflow-hidden">
