@@ -21,9 +21,17 @@ export default function DevVaultPage() {
                 href="https://dev-vault-chingu.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500 underline"
+                className="text-blue-500 underline mr-2"
               >
                 Live version
+              </a>
+              <a
+                href="https://github.com/chingu-voyages/V55-tier2-team-24"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline"
+              >
+                Repo
               </a>
             </p>
           </div>

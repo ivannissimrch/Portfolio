@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { PROJECTS_LIST } from "./projectsList";
 import { TECHNOLOGIES_ICONS } from "./TechnologiesIcons";
 import Link from "next/link";
+import Tooltip from "@mui/material/Tooltip";
 
 export default function Home() {
   return (
@@ -102,14 +103,15 @@ export default function Home() {
             </h3>
             <div className="flex flex-wrap gap-8 text-3xl">
               {TECHNOLOGIES_ICONS.map((icon, idx) => (
-                <Image
-                  key={idx}
-                  src={icon}
-                  alt=""
-                  width={40}
-                  height={40}
-                  quality={95}
-                />
+                <Tooltip title={icon.name} placement="top" key={idx}>
+                  <Image
+                    src={icon.image}
+                    alt=""
+                    width={40}
+                    height={40}
+                    quality={95}
+                  />
+                </Tooltip>
               ))}
             </div>
           </section>
