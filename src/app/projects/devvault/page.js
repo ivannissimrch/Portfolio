@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -37,7 +36,7 @@ export default function DevVaultPage() {
           </div>
           <div className="bg-white shadow rounded overflow-hidden">
             <Image
-              src="/images/weeklyBytesDesktop.png"
+              src="/images/devVaultDesktop.png"
               alt="Screenshot of DevVault app homepage"
               width={800}
               height={600}

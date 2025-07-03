@@ -87,7 +87,7 @@ export default function Home() {
                       fill
                       quality={100}
                       unoptimized
-                      className="object-cover"
+                      className="object-fit"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
@@ -101,7 +101,7 @@ export default function Home() {
             <h3 className="text-2xl font-bold mb-4">
               Technologies I work with. As a developer
             </h3>
-            <div className="flex flex-wrap gap-8 text-3xl">
+            <div className="flex flex-wrap gap-8 text-3x justify-evenly">
               {TECHNOLOGIES_ICONS.map((icon, idx) => (
                 <Tooltip title={icon.name} placement="top" key={idx}>
                   <Image
@@ -115,8 +115,6 @@ export default function Home() {
               ))}
             </div>
           </section>
-
-          {/* Contact Section */}
         </div>
       </main>
     </>
