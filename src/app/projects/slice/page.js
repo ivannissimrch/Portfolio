@@ -95,7 +95,7 @@ export default function SlicePage() {
           </div>
           <div className="bg-white shadow rounded overflow-hidden">
             <Image
-              src="/images/stocksDTeamWork.png"
+              src="/images/sliceDTeamWork.png"
               alt="Mentor feedback and development iterations"
               width={800}
               height={600}
