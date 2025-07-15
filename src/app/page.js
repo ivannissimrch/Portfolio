@@ -4,6 +4,8 @@ import { PROJECTS_LIST } from "./projectsList";
 import { TECHNOLOGIES_ICONS } from "./TechnologiesIcons";
 import Link from "next/link";
 import Tooltip from "@mui/material/Tooltip";
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
 
 export default function Home() {
   return (
@@ -32,11 +34,14 @@ export default function Home() {
                 <span className="text-blue-700">Ivan Rebolledo</span>
               </h1>
 
-              <h2 className="text-xl sm:text-2xl mt-2 flex justify-center md:justify-start">
-                a front-end developer.
+              <h2 className="text-2xl sm:text-2xl mt-2 flex justify-center md:justify-start">
+                React Front-End Developer
               </h2>
-              <h3 className="text-xl sm:text-2xl mt-2 flex justify-center md:justify-start">
-                Welcome to my portfolio page
+              <h3 className="text-xl sm:text-xl mt-2 flex justify-center md:justify-start">
+                Building apps with TypeScript,
+              </h3>
+              <h3 className="text-xl sm:text-xl mt-2 flex justify-center md:justify-start">
+                JavaScript, Next.js and Tailwind
               </h3>
               <div className="flex space-x-4 my-4 text-2xl justify-center md:justify-start">
                 <a href="https://www.linkedin.com/in/ivan-rebolledo-012b17244/">
@@ -58,6 +63,26 @@ export default function Home() {
             </div>
           </section>
 
+          {/* Technologies Section */}
+          <section className="mb-16">
+            <h3 className="text-2xl font-bold mb-4">
+              Technologies I work with. As a developer
+            </h3>
+            <div className="flex flex-wrap gap-8 text-3x justify-evenly">
+              {TECHNOLOGIES_ICONS.map((icon, idx) => (
+                <Tooltip title={icon.name} placement="top" key={idx}>
+                  <Image
+                    src={icon.image}
+                    alt=""
+                    width={40}
+                    height={40}
+                    quality={95}
+                  />
+                </Tooltip>
+              ))}
+            </div>
+          </section>
+
           {/* Projects Section */}
           <section className="mb-16">
             <h3 className="text-2xl font-bold mb-6">
@@ -76,9 +101,24 @@ export default function Home() {
                       {project.date}
                     </div>
                     <h4 className="font-semibold">{project.title}</h4>
-                    <p className="text-sm text-blue-800">
+                    <p className="text-sm text-blue-800 mb-2">
                       {project.description}
                     </p>
+                    <Stack
+                      direction="row"
+                      spacing={1}
+                      useFlexGap
+                      flexWrap="wrap"
+                    >
+                      {project.tech.map((t) => (
+                        <Chip
+                          key={t}
+                          label={t}
+                          color="primary"
+                          sx={{ borderRadius: "4px" }}
+                        />
+                      ))}
+                    </Stack>
                   </div>
                   <div className="relative w-full h-96 bg-blue-200">
                     <Image
@@ -92,26 +132,6 @@ export default function Home() {
                     />
                   </div>
                 </Link>
-              ))}
-            </div>
-          </section>
-
-          {/* Technologies Section */}
-          <section className="mb-16">
-            <h3 className="text-2xl font-bold mb-4">
-              Technologies I work with. As a developer
-            </h3>
-            <div className="flex flex-wrap gap-8 text-3x justify-evenly">
-              {TECHNOLOGIES_ICONS.map((icon, idx) => (
-                <Tooltip title={icon.name} placement="top" key={idx}>
-                  <Image
-                    src={icon.image}
-                    alt=""
-                    width={40}
-                    height={40}
-                    quality={95}
-                  />
-                </Tooltip>
               ))}
             </div>
           </section>
