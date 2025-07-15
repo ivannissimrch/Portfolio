@@ -6,6 +6,14 @@ export const PROJECTS_LIST = [
       "A web app to search and explore developer resources from the Chingu resources API.",
     imageDesktop: "/images/devVaultDesktop.png",
     link: "/projects/devvault",
+    tech: [
+      "typeScript",
+      "react",
+      "react-router",
+      "material-ui",
+      "fuse-js",
+      "tailwind",
+    ],
   },
   {
     title: "Stocks",
@@ -14,6 +22,7 @@ export const PROJECTS_LIST = [
       "A stock search app where you can search for companies by name and view trends in charts over 7 days, 6 weeks, or 5 months.",
     imageDesktop: "/images/stocksDesktop.png",
     link: "/projects/stocks",
+    tech: ["typeScript", "react", "css", "material-ui", "vitest", "vite"],
   },
 
   {
@@ -24,6 +33,14 @@ export const PROJECTS_LIST = [
 
     imageDesktop: "/images/weeklyBytesDesktop.png",
     link: "/projects/weeklybytes",
+    tech: [
+      "javaScript",
+      "react",
+      "react-router",
+      "material-ui",
+      "tailwind",
+      "react-select",
+    ],
   },
 
   {
@@ -34,5 +51,13 @@ export const PROJECTS_LIST = [
 
     imageDesktop: "/images/sliceDesktop.png",
     link: "/projects/slice",
+    tech: [
+      "javaScript",
+      "react",
+      "react-router",
+      "material-ui",
+      "tailwind",
+      "react-select",
+    ],
   },
 ];
