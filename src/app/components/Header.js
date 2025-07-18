@@ -5,9 +5,9 @@ export default function Header() {
       <Link href="/" className="font-bold text-lg">
         Home
       </Link>
-      <Link href="/journey" className="text-lg">
+      {/* <Link href="/journey" className="text-lg">
         My Coding Journey
-      </Link>
+      </Link> */}
     </nav>
   );
 }
