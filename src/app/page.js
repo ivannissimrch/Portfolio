@@ -97,28 +97,24 @@ export default function Home() {
                   className="bg-white overflow-hidden"
                 >
                   <div className="p-4">
-                    <div className="text-sm text-right mb-2">
-                      {project.date}
+                    <div className="text-sm flex items-center gap-2 mb-2">
+                      <div className="min-w-28">{project.date}</div>
+                      <div className="flex justify-end w-full gap-2">
+                        {project.tech.map((t) => (
+                          <Image
+                            width={20}
+                            height={20}
+                            key={t}
+                            alt={t}
+                            src={`/images/${t}-icon.svg`}
+                          />
+                        ))}
+                      </div>
                     </div>
                     <h4 className="font-semibold">{project.title}</h4>
                     <p className="text-sm text-blue-800 mb-2">
                       {project.description}
                     </p>
-                    <Stack
-                      direction="row"
-                      spacing={1}
-                      useFlexGap
-                      flexWrap="wrap"
-                    >
-                      {project.tech.map((t) => (
-                        <Chip
-                          key={t}
-                          label={t}
-                          color="primary"
-                          sx={{ borderRadius: "4px" }}
-                        />
-                      ))}
-                    </Stack>
                   </div>
                   <div className="relative w-full h-96 bg-blue-200">
                     <Image
