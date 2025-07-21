@@ -32,7 +32,7 @@ export default function SlicePage() {
               Repo
             </a>
           </div>
-          <div className="bg-white shadow rounded overflow-hidden">
+          <div className="bg-blue-200 shadow overflow-hidden relative w-full aspect-[16/9]">
             <Image
               src="/images/sliceDesktop.png"
               alt="Slice app homepage"
@@ -93,7 +93,7 @@ export default function SlicePage() {
               assign expenses to specific users.
             </p>
           </div>
-          <div className="bg-white shadow rounded overflow-hidden">
+          <div className="bg-blue-200shadow relative w-full aspect-[16/9] overflow-hidden">
             <Image
               src="/images/sliceDTeamWork.png"
               alt="Mentor feedback and development iterations"

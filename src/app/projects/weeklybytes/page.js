@@ -33,7 +33,7 @@ export default function WeeklyBytesPage() {
               Repo
             </a>
           </div>
-          <div className="bg-white shadow rounded overflow-hidden">
+          <div className="bg-blue-200shadow relative w-full aspect-[16/9] overflow-hidden">
             <Image
               src="/images/weeklyBytesDesktop.png"
               alt="Weekly Bytes desktop homepage"
@@ -98,7 +98,7 @@ export default function WeeklyBytesPage() {
               custom domain.
             </p>
           </div>
-          <div className="bg-white shadow rounded overflow-hidden">
+          <div className="bg-blue-200shadow relative w-full aspect-[16/9] overflow-hidden">
             <Image
               src="/images/weeklyBytesDTeamWork.png"
               alt="Weekly Bytes team collaboration"

@@ -34,7 +34,7 @@ export default function DevVaultPage() {
               </a>
             </p>
           </div>
-          <div className="bg-white shadow rounded overflow-hidden">
+          <div className="bg-blue-200 shadow overflow-hidden relative w-full aspect-[16/9]">
             <Image
               src="/images/devVaultDesktop.png"
               alt="Screenshot of DevVault app homepage"
@@ -117,7 +117,7 @@ export default function DevVaultPage() {
               </li>
             </ul>
           </div>
-          <div className="bg-white shadow rounded overflow-hidden">
+          <div className="bg-blue-200shadow relative w-full aspect-[16/9] overflow-hidden">
             <Image
               src="/images/devVaultTeamWork.png"
               alt="Team collaboration in DevVault project"
