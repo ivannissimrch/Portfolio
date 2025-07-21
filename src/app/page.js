@@ -112,18 +112,18 @@ export default function Home() {
                       </div>
                     </div>
                     <h4 className="font-semibold">{project.title}</h4>
-                    <p className="text-sm text-blue-800 mb-2">
+                    <p className="text-sm text-black mb-2">
                       {project.description}
                     </p>
                   </div>
-                  <div className="relative w-full h-96 bg-blue-200">
+                  <div className="relative w-full aspect-[16/9] bg-blue-200">
                     <Image
                       src={project.imageDesktop}
                       alt={`${project.title} project screenshot`}
                       fill
                       quality={100}
                       unoptimized
-                      className="object-fit"
+                      className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>

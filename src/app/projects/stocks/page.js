@@ -30,7 +30,7 @@ export default function StocksPage() {
               Repo
             </a>
           </div>
-          <div className="bg-white shadow rounded overflow-hidden">
+          <div className="bg-blue-200shadow relative w-full aspect-[16/9] overflow-hidden">
             <Image
               src="/images/stocksDesktop.png"
               alt="Stocks app homepage"
@@ -125,7 +125,7 @@ export default function StocksPage() {
               </li>
             </ul>
           </div>
-          <div className="bg-white shadow rounded overflow-hidden">
+          <div className="bg-blue-200shadow relative w-full aspect-[16/9] overflow-hidden">
             <Image
               src="/images/stocksDTeamWork.png"
               alt="Mentor feedback and development iterations"
