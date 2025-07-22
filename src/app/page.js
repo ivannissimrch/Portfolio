@@ -10,8 +10,8 @@ import Stack from "@mui/material/Stack";
 export default function Home() {
   return (
     <>
-      <main className="min-h-screen bg-blue-100 text-black px-6 py-10 font-sans">
-        <div className="max-w-6xl mx-auto">
+      <main className="min-h-screen bg-blue-100 text-black px-4 md:px-6 py-10 font-sans">
+        <div className="max-w-8xl mx-auto">
           {/* Hero Section */}
           <section className="flex flex-col items-center md:flex-row md:items-start md:justify-center text-left mb-16 gap-6 px-4">
             {/* Avatar */}
@@ -94,7 +94,7 @@ export default function Home() {
                 <Link
                   href={project.link}
                   key={index}
-                  className="bg-white overflow-hidden"
+                  className="bg-white overflow-hidden "
                 >
                   <div className="p-4">
                     <div className="text-sm flex items-center gap-2 mb-2">
