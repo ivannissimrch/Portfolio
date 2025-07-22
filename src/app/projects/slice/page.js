@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function SlicePage() {
   return (
-    <main className="bg-blue-100 text-black px-6 py-10 font-sans">
-      <div className="max-w-6xl mx-auto">
+    <main className="bg-blue-100 text-black px-4  md:px-6 py-10 font-sans">
+      <div className="max-w-8xl mx-auto">
         {/* Header Section */}
         <section className="mb-16 grid md:grid-cols-2 gap-10 items-center">
           <div>
