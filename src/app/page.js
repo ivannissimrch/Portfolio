@@ -8,8 +8,8 @@ import Tooltip from "@mui/material/Tooltip";
 export default function Home() {
   return (
     <>
-      <main className="min-h-screen bg-blue-100 text-black px-6 py-10 font-sans">
-        <div className="max-w-6xl mx-auto">
+      <main className="min-h-screen bg-blue-100 text-black px-4 md:px-6 py-10 font-sans">
+        <div className="max-w-8xl mx-auto">
           {/* Hero Section */}
           <section className="flex flex-col items-center md:flex-row md:items-start md:justify-center text-left mb-16 gap-6 px-4">
             {/* Avatar */}
