@@ -4,8 +4,6 @@ import { PROJECTS_LIST } from "./projectsList";
 import { TECHNOLOGIES_ICONS } from "./TechnologiesIcons";
 import Link from "next/link";
 import Tooltip from "@mui/material/Tooltip";
-import Chip from "@mui/material/Chip";
-import Stack from "@mui/material/Stack";
 
 export default function Home() {
   return (
@@ -91,11 +89,7 @@ export default function Home() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {PROJECTS_LIST.map((project, index) => (
-                <Link
-                  href={project.link}
-                  key={index}
-                  className="bg-white overflow-hidden"
-                >
+                <div key={index} className="bg-white overflow-hidden">
                   <div className="p-4">
                     <div className="text-sm flex items-center gap-2 mb-2">
                       <div className="min-w-28">{project.date}</div>
@@ -112,9 +106,16 @@ export default function Home() {
                       </div>
                     </div>
                     <h4 className="font-semibold">{project.title}</h4>
-                    <p className="text-sm text-black mb-2">
+                    <p className="text-sm text-black mb-4">
                       {project.description}
                     </p>
+                    <Link
+                      href={project.link}
+                      className="bg-blue-900 text-white px-6 py-2 hover:bg-blue-800 transition cursor-pointer"
+                    >
+                      {" "}
+                      View case study
+                    </Link>
                   </div>
                   <div className="relative w-full aspect-[16/9] bg-blue-200">
                     <Image
@@ -127,7 +128,7 @@ export default function Home() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
           </section>
