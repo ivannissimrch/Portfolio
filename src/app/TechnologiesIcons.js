@@ -1,10 +1,20 @@
 export const TECHNOLOGIES_ICONS = [
-  { name: "html", image: "/images/html-icon.svg" },
-  { name: "css", image: "/images/css-icon.svg" },
-  { name: "javascript", image: "/images/javascript-icon.svg" },
-  { name: "typescript", image: "/images/typescript-icon.svg" },
-  { name: "react", image: "/images/react-icon.svg" },
-  { name: "next js", image: "/images/next-js-icon.svg" },
-  { name: "react-router", image: "/images/react-router-icon.svg" },
-  { name: "tailwind", image: "/images/tailwind-icon.svg" },
+  { name: "React", icon: "devicon:react", bg: "bg-cyan-800 text-white" },
+  { name: "TypeScript", icon: "devicon:typescript", bg: "bg-indigo-500" },
+  {
+    name: "JavaScript",
+    icon: "devicon:javascript",
+    bg: "bg-yellow-400 text-black",
+  },
+  { name: "Next JS", icon: "devicon:nextjs", bg: "bg-violet-600" },
+  { name: "React-Router", icon: "simple-icons:reactrouter", bg: "bg-red-500" },
+  { name: "Material UI", icon: "devicon:materialui", bg: "bg-blue-800" },
+
+  { name: "CSS", icon: "devicon:css3", bg: "bg-blue-500" },
+
+  {
+    name: "Tailwind CSS",
+    icon: "devicon:tailwindcss",
+    bg: "bg-blue-800",
+  },
 ];
