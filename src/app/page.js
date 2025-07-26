@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { PROJECTS_LIST } from "./projectsList";
 import { TECHNOLOGIES_ICONS } from "./TechnologiesIcons";
 import Link from "next/link";
-import Tooltip from "@mui/material/Tooltip";
+import { Icon } from "@iconify/react";
 
 export default function Home() {
   return (
@@ -11,14 +11,14 @@ export default function Home() {
       <main className="min-h-screen bg-blue-100 text-black px-4 md:px-6 py-10 font-sans">
         <div className="max-w-8xl mx-auto">
           {/* Hero Section */}
-          <section className="flex flex-col items-center md:flex-row md:items-start md:justify-center text-left mb-16 gap-6 px-4">
+          <section className="flex flex-col items-center  md:items-start text-left mb-16 gap-6 px-4">
             {/* Avatar */}
-            <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center shrink-0">
+            <div className="w-26 h-26 bg-white rounded-full flex items-center justify-center shrink-0">
               <Image
                 src="/images/profile.jpg"
                 alt="Avatar"
-                width={128}
-                height={128}
+                width={110}
+                height={110}
                 priority
                 quality={95}
                 className="rounded-full object-cover"
@@ -27,12 +27,11 @@ export default function Home() {
             </div>
             {/* Intro Text */}
             <div className="max-w-xl mt-6 md:mt-0">
-              <h1 className="text-3xl sm:text-4xl font-bold flex justify-center md:justify-start gap-1">
-                Hi, I&apos;m
-                <span className="text-blue-700">Ivan Rebolledo</span>
+              <h1 className="text-3xl sm:text-4xl  flex justify-center md:justify-start gap-1 font-bold">
+                Hi, I&apos;m Ivan Rebolledo
               </h1>
 
-              <h2 className="text-2xl sm:text-2xl mt-2 flex justify-center md:justify-start">
+              <h2 className="text-3xl sm:text-4xl mt-2  flex justify-center md:justify-start text-blue-800 font-bold">
                 React Front-End Developer
               </h2>
               <h3 className="text-xl sm:text-xl mt-2 flex justify-center md:justify-start">
@@ -41,15 +40,8 @@ export default function Home() {
               <h3 className="text-xl sm:text-xl mt-2 flex justify-center md:justify-start">
                 JavaScript, Next.js and Tailwind
               </h3>
-              <div className="flex space-x-4 my-4 text-2xl justify-center md:justify-start">
-                <a href="https://www.linkedin.com/in/ivan-rebolledo-012b17244/">
-                  <FaLinkedin />
-                </a>
-                <a href="https://github.com/ivannissimrch">
-                  <FaGithub />
-                </a>
-              </div>
-              <p className="bg-white px-6 py-2 text-sm sm:text-base text-center md:text-left">
+
+              <p className=" py-2 text-sm sm:text-base text-center md:text-left">
                 I love learning about front-end development technologies and
                 creating applications using{" "}
                 <span className="font-bold">JavaScript, </span>
@@ -58,6 +50,21 @@ export default function Home() {
                 I love taking my miniature poodle on hikes on the weekends and I
                 enjoy Latin dancing.
               </p>
+
+              <div className="flex space-x-4 my-4 text-4xl justify-center md:justify-start items-center">
+                {/* <a
+                  href="mailto:ivannissimrch@gmail.com"
+                  className="bg-blue-900 text-white px-2 py-2 hover:bg-blue-800 transition rounded-4xl"
+                >
+                  Send message
+                </a> */}
+                <a href="https://www.linkedin.com/in/ivan-rebolledo-012b17244/">
+                  <FaLinkedin />
+                </a>
+                <a href="https://github.com/ivannissimrch">
+                  <FaGithub />
+                </a>
+              </div>
             </div>
           </section>
 
@@ -67,16 +74,17 @@ export default function Home() {
               Technologies I work with. As a developer
             </h3>
             <div className="flex flex-wrap gap-8 text-3x justify-evenly">
-              {TECHNOLOGIES_ICONS.map((icon, idx) => (
-                <Tooltip title={icon.name} placement="top" key={idx}>
-                  <Image
-                    src={icon.image}
-                    alt=""
-                    width={40}
-                    height={40}
-                    quality={95}
-                  />
-                </Tooltip>
+              {TECHNOLOGIES_ICONS.map((tech, idx) => (
+                <div key={tech.name} className="flex flex-col items-center">
+                  <div
+                    className={`w-14 h-14 flex items-center justify-center rounded-xl text-white shadow-md ${tech.bg}`}
+                  >
+                    <Icon icon={tech.icon} width="40" height="40" />
+                  </div>
+                  <span className="mt-2 text-sm text-gray-800">
+                    {tech.name}
+                  </span>
+                </div>
               ))}
             </div>
           </section>
