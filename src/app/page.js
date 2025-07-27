@@ -1,9 +1,11 @@
+"use client";
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { PROJECTS_LIST } from "./projectsList";
 import { TECHNOLOGIES_ICONS } from "./TechnologiesIcons";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -30,25 +32,20 @@ export default function Home() {
               <h1 className="text-3xl sm:text-4xl   gap-1 font-bold">
                 Hi, I&apos;m Ivan Rebolledo
               </h1>
-
               <h2 className="text-3xl sm:text-4xl mt-2   text-blue-800 font-bold">
                 React Front-End Developer
               </h2>
-              <h3 className="text-xl sm:text-xl mt-2 ">
-                Building apps with TypeScript,
-              </h3>
-              <h3 className="text-xl sm:text-xl mt-2 ">
-                JavaScript, Next.js and Tailwind
-              </h3>
 
               <p className=" py-2 text-sm sm:text-base  md:text-left">
-                I love learning about front-end development technologies and
-                creating applications using{" "}
+                Building apps with{" "}
+                <span className="font-bold">TypeScript, </span>
                 <span className="font-bold">JavaScript, </span>
-                <span className="font-bold">React,</span>{" "}
-                <span className="font-bold">and Next.js</span>. Besides coding,
-                I love taking my miniature poodle on hikes on the weekends and I
-                enjoy Latin dancing.
+                <span className="font-bold">Next.js, </span>
+                <span className="font-bold">Material-UI</span> and{" "}
+                <span className="font-bold">Tailwind CSS. </span>I’ve
+                contributed to team projects using GitHub Flow and Agile.
+                Besides coding, I love taking my miniature poodle on hikes on
+                the weekends and I enjoy Latin dancing.
               </p>
 
               <div className="flex space-x-4 my-4 text-3xl ">
@@ -76,11 +73,24 @@ export default function Home() {
             <div className="flex flex-wrap gap-8 text-3x justify-evenly">
               {TECHNOLOGIES_ICONS.map((tech, idx) => (
                 <div key={tech.name} className="flex flex-col items-center">
-                  <div
+                  <motion.div
                     className={`w-14 h-14 flex items-center justify-center rounded-xl text-white shadow-md ${tech.bg}`}
+                    animate={{
+                      boxShadow: [
+                        "0 0 0px rgba(0,0,0,0)",
+                        "0 0 10px rgba(59,130,246,0.9)",
+                        "0 0 0px rgba(0,0,0,0)",
+                      ],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      repeatType: "loop",
+                    }}
                   >
                     <Icon icon={tech.icon} width="40" height="40" />
-                  </div>
+                  </motion.div>
+
                   <span className="mt-2 text-sm text-gray-800">
                     {tech.name}
                   </span>
@@ -97,7 +107,20 @@ export default function Home() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {PROJECTS_LIST.map((project, index) => (
-                <div key={index} className="bg-white overflow-hidden">
+                <motion.div
+                  initial={{
+                    opacity: -1,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    transition: {
+                      duration: 1.5,
+                    },
+                  }}
+                  viewport={{ once: false }}
+                  key={index}
+                  className="bg-white overflow-hidden"
+                >
                   <div className="p-4">
                     <div className="text-sm flex items-center gap-2 mb-2">
                       <div className="min-w-28">{project.date}</div>
@@ -136,7 +159,7 @@ export default function Home() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </section>
