@@ -11,7 +11,7 @@ export default function Home() {
       <main className="min-h-screen bg-blue-100 text-black px-4 md:px-6 py-10 font-sans">
         <div className="max-w-8xl mx-auto">
           {/* Hero Section */}
-          <section className="flex flex-col items-center  md:items-start text-left mb-16 gap-6 px-4">
+          <section className="flex flex-col items-center md:items-start text-left mb-16 gap-6 px-4">
             {/* Avatar */}
             <div className="w-26 h-26 bg-white rounded-full flex items-center justify-center shrink-0">
               <Image
@@ -27,21 +27,21 @@ export default function Home() {
             </div>
             {/* Intro Text */}
             <div className="max-w-xl mt-6 md:mt-0">
-              <h1 className="text-3xl sm:text-4xl  flex justify-center md:justify-start gap-1 font-bold">
+              <h1 className="text-3xl sm:text-4xl   gap-1 font-bold">
                 Hi, I&apos;m Ivan Rebolledo
               </h1>
 
-              <h2 className="text-3xl sm:text-4xl mt-2  flex justify-center md:justify-start text-blue-800 font-bold">
+              <h2 className="text-3xl sm:text-4xl mt-2   text-blue-800 font-bold">
                 React Front-End Developer
               </h2>
-              <h3 className="text-xl sm:text-xl mt-2 flex justify-center md:justify-start">
+              <h3 className="text-xl sm:text-xl mt-2 ">
                 Building apps with TypeScript,
               </h3>
-              <h3 className="text-xl sm:text-xl mt-2 flex justify-center md:justify-start">
+              <h3 className="text-xl sm:text-xl mt-2 ">
                 JavaScript, Next.js and Tailwind
               </h3>
 
-              <p className=" py-2 text-sm sm:text-base text-center md:text-left">
+              <p className=" py-2 text-sm sm:text-base  md:text-left">
                 I love learning about front-end development technologies and
                 creating applications using{" "}
                 <span className="font-bold">JavaScript, </span>
@@ -51,7 +51,7 @@ export default function Home() {
                 enjoy Latin dancing.
               </p>
 
-              <div className="flex space-x-4 my-4 text-4xl justify-center md:justify-start items-center">
+              <div className="flex space-x-4 my-4 text-3xl ">
                 {/* <a
                   href="mailto:ivannissimrch@gmail.com"
                   className="bg-blue-900 text-white px-2 py-2 hover:bg-blue-800 transition rounded-4xl"
