@@ -29,36 +29,72 @@ export default function Home() {
             </div>
             {/* Intro Text */}
             <div className="max-w-xl mt-6 md:mt-0">
-              <h1 className="text-3xl sm:text-4xl   gap-1 font-bold">
-                Hi, I&apos;m Ivan Rebolledo
+              <h1 className="text-3xl sm:text-4xl font-bold">
+                Hi, I’m Ivan Rebolledo
               </h1>
-              <h2 className="text-3xl sm:text-4xl mt-2   text-blue-800 font-bold">
+              <h2 className="text-3xl sm:text-4xl mt-2 text-blue-800 font-bold">
                 React Front-End Developer
               </h2>
 
-              <p className=" py-2 text-sm sm:text-base  md:text-left">
-                Building apps with{" "}
-                <span className="font-bold">TypeScript, </span>
-                <span className="font-bold">JavaScript, </span>
-                <span className="font-bold">Next.js, </span>
-                <span className="font-bold">Material-UI</span> and{" "}
-                <span className="font-bold">Tailwind CSS. </span>I’ve
-                contributed to team projects using GitHub Flow and Agile.
-                Besides coding, I love taking my miniature poodle on hikes on
-                the weekends and I enjoy Latin dancing.
+              <p className="py-2 text-sm sm:text-base md:text-left">
+                I build web apps with{" "}
+                <strong>TypeScript, JavaScript, Next.js, Material UI</strong>,
+                and <strong>Tailwind CSS</strong>. I’ve collaborated on{" "}
+                <a href="https://www.chingu.io/" className="text-blue-800">
+                  Chingu{" "}
+                </a>
+                team projects like{" "}
+                <a
+                  href="https://dev-vault-chingu.netlify.app/"
+                  className="text-blue-800 "
+                >
+                  DevVault
+                </a>
+                <a
+                  href="https://ember-ai.vercel.app/"
+                  className="text-blue-800 "
+                >
+                  , Ember AI
+                </a>
+                <a
+                  href="https://islice.netlify.app/expenses-user"
+                  className="text-blue-800 "
+                >
+                  , Slice
+                </a>
+                , and {""}
+                <a href="https://weekly-bytes.com/" className="text-blue-800 ">
+                  Weekly Bytes
+                </a>
+                <strong></strong>, using Agile practices and the GitHub Flow
+                workflow. Currently, I’m building a solo{" "}
+                <a
+                  href="https://shadowing-app-spec.vercel.app/"
+                  className="text-blue-800 "
+                >
+                  ESL shadowing app
+                </a>{" "}
+                When I’m not coding, I’m out hiking with my miniature poodle or
+                enjoying Latin dancing. I’m always open to new opportunities and
+                collaborations!
               </p>
 
-              <div className="flex space-x-4 my-4 text-3xl ">
-                {/* <a
+              {/* <div className="mt-4"></div> */}
+
+              <div className="flex items-center space-x-4 mt-4 text-3xl">
+                <a
                   href="mailto:ivannissimrch@gmail.com"
-                  className="bg-blue-900 text-white px-2 py-2 hover:bg-blue-800 transition rounded-4xl"
+                  className="inline-block bg-blue-900 text-white px-4 py-2 rounded-full hover:bg-blue-800 transition  text-sm"
                 >
-                  Send message
-                </a> */}
-                <a href="https://www.linkedin.com/in/ivan-rebolledo-012b17244/">
+                  Let’s connect
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/ivan-rebolledo-012b17244/"
+                  aria-label="LinkedIn"
+                >
                   <FaLinkedin />
                 </a>
-                <a href="https://github.com/ivannissimrch">
+                <a href="https://github.com/ivannissimrch" aria-label="GitHub">
                   <FaGithub />
                 </a>
               </div>
