@@ -6,7 +6,21 @@ export const PROJECTS_LIST = [
       "A web app to search and explore developer resources from the Chingu resources API.",
     imageDesktop: "/images/devVaultDesktop.png",
     link: "/projects/devvault",
-    tech: ["typescript", "react", "react-router", "material-ui", "tailwind"],
+    tech: [
+      { name: "TypeScript", icon: "devicon:typescript", bg: "bg-indigo-500" },
+      { name: "React", icon: "devicon:react", bg: "bg-cyan-800 text-white" },
+      {
+        name: "React-Router",
+        icon: "simple-icons:reactrouter",
+        bg: "bg-red-500",
+      },
+      { name: "Material UI", icon: "devicon:materialui", bg: "bg-blue-800" },
+      {
+        name: "Tailwind CSS",
+        icon: "devicon:tailwindcss",
+        bg: "bg-blue-800",
+      },
+    ],
   },
   {
     title: "Stocks",
@@ -15,7 +29,12 @@ export const PROJECTS_LIST = [
       "A stock search app where you can search for companies by name and view trends in charts over 7 days, 6 weeks, or 5 months.",
     imageDesktop: "/images/stocksDesktop.png",
     link: "/projects/stocks",
-    tech: ["typescript", "react", "css", "material-ui"],
+    tech: [
+      { name: "React", icon: "devicon:react", bg: "bg-cyan-800 text-white" },
+      { name: "TypeScript", icon: "devicon:typescript", bg: "bg-indigo-500" },
+      { name: "Material UI", icon: "devicon:materialui", bg: "bg-blue-800" },
+      { name: "CSS", icon: "devicon:css3", bg: "bg-blue-500" },
+    ],
   },
 
   {
@@ -26,7 +45,25 @@ export const PROJECTS_LIST = [
 
     imageDesktop: "/images/weeklyBytesDesktop.png",
     link: "/projects/weeklybytes",
-    tech: ["javascript", "react", "react-router", "material-ui", "tailwind"],
+    tech: [
+      { name: "React", icon: "devicon:react", bg: "bg-cyan-800 text-white" },
+      {
+        name: "JavaScript",
+        icon: "devicon:javascript",
+        bg: "bg-yellow-400 text-black",
+      },
+      {
+        name: "React-Router",
+        icon: "simple-icons:reactrouter",
+        bg: "bg-red-500",
+      },
+      { name: "Material UI", icon: "devicon:materialui", bg: "bg-blue-800" },
+      {
+        name: "Tailwind CSS",
+        icon: "devicon:tailwindcss",
+        bg: "bg-blue-800",
+      },
+    ],
   },
 
   {
@@ -37,6 +74,24 @@ export const PROJECTS_LIST = [
 
     imageDesktop: "/images/sliceDesktop.png",
     link: "/projects/slice",
-    tech: ["javascript", "react", "react-router", "material-ui", "tailwind"],
+    tech: [
+      { name: "React", icon: "devicon:react", bg: "bg-cyan-800 text-white" },
+      {
+        name: "JavaScript",
+        icon: "devicon:javascript",
+        bg: "bg-yellow-400 text-black",
+      },
+      {
+        name: "React-Router",
+        icon: "simple-icons:reactrouter",
+        bg: "bg-red-500",
+      },
+      { name: "Material UI", icon: "devicon:materialui", bg: "bg-blue-800" },
+      {
+        name: "Tailwind CSS",
+        icon: "devicon:tailwindcss",
+        bg: "bg-blue-800",
+      },
+    ],
   },
 ];
