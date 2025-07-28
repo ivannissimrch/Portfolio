@@ -6,6 +6,7 @@ import { TECHNOLOGIES_ICONS } from "./TechnologiesIcons";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
+import useAnimatedText from "@/hooks/useAnimatedText";
 
 export default function Home() {
   return (
@@ -30,11 +31,25 @@ export default function Home() {
             {/* Intro Text */}
             <div className="max-w-xl mt-6 md:mt-0">
               <h1 className="text-3xl sm:text-4xl font-bold">
-                Hi, I’m Ivan Rebolledo
+                {useAnimatedText("Hi, I’m Ivan Rebolledo")}
               </h1>
-              <h2 className="text-3xl sm:text-4xl mt-2 text-blue-800 font-bold">
+              <motion.h2
+                className="text-3xl sm:text-4xl mt-2 font-bold text-blue-800"
+                animate={{
+                  textShadow: [
+                    "0 0 0px rgba(59,130,246,0)",
+                    "0 0 8px rgba(59,130,246,1.2)",
+                    "0 0 0px rgba(59,130,246,0)",
+                  ],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }}
+              >
                 React Front-End Developer
-              </h2>
+              </motion.h2>
 
               <p className="py-2 text-sm sm:text-base md:text-left">
                 I build web apps with{" "}
