@@ -3,7 +3,7 @@ export const PROJECTS_LIST = [
     title: "DevVault",
     date: "June 2025",
     description:
-      "A web app to search and explore developer resources from the Chingu resources API.",
+      "Team project, I built a smart search tool with typo tolerance, fallback caching, and API cleanup for developer resources.",
     imageDesktop: "/images/devVaultDesktop.png",
     link: "/projects/devvault",
     tech: [
@@ -26,7 +26,7 @@ export const PROJECTS_LIST = [
     title: "Stocks",
     date: "September 2024",
     description:
-      "A stock search app where you can search for companies by name and view trends in charts over 7 days, 6 weeks, or 5 months.",
+      "Built a stock dashboard with local caching, dual API integration, and interactive charting for time-based trends.",
     imageDesktop: "/images/stocksDesktop.png",
     link: "/projects/stocks",
     tech: [
@@ -41,7 +41,7 @@ export const PROJECTS_LIST = [
     title: "WeeklyBytes",
     date: "January 2025",
     description:
-      "Weekly Bytes is an intuitive web application designed to help managers effortlessly create and share weekly meal plans while prioritizing staff safety and dietary needs.",
+      "Team project, I built the logic to filter allergy-safe dishes for generating workplace menus.",
 
     imageDesktop: "/images/weeklyBytesDesktop.png",
     link: "/projects/weeklybytes",
@@ -70,8 +70,7 @@ export const PROJECTS_LIST = [
     title: "Slice",
     date: "September 2024",
     description:
-      "Expense-splitting app tailored specifically for roommates and friends. Slice helps users manage and divide expenses such as rent, utilities, subscription services, groceries, and more",
-
+      "Built global state with Context API and custom dropdowns using React Select for a team app that helps users split rent, utilities, and other expenses.",
     imageDesktop: "/images/sliceDesktop.png",
     link: "/projects/slice",
     tech: [

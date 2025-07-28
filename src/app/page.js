@@ -119,7 +119,7 @@ export default function Home() {
           {/* Technologies Section */}
           <section className="mb-16">
             <h3 className="text-2xl font-bold mb-4">
-              Technologies I work with. As a developer
+              Technologies I work with.
             </h3>
             <div className="flex flex-wrap gap-8 text-3x justify-evenly">
               {TECHNOLOGIES_ICONS.map((tech, idx) => (
