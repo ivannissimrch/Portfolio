@@ -126,18 +126,33 @@ export default function Home() {
                       <div className="min-w-28">{project.date}</div>
                       <div className="flex justify-end w-full gap-2">
                         {project.tech.map((t) => (
-                          <Image
-                            width={20}
-                            height={20}
-                            key={t}
-                            alt={t}
-                            src={`/images/${t}-icon.svg`}
-                          />
+                          <div
+                            key={t.name}
+                            className="flex flex-col items-center"
+                          >
+                            <motion.div
+                              className={`w-8 h-8 flex items-center justify-center rounded-xl text-white shadow-md ${t.bg}`}
+                              animate={{
+                                boxShadow: [
+                                  "0 0 0px rgba(0,0,0,0)",
+                                  "0 0 10px rgba(59,130,246,0.9)",
+                                  "0 0 0px rgba(0,0,0,0)",
+                                ],
+                              }}
+                              transition={{
+                                duration: 2,
+                                repeat: Infinity,
+                                repeatType: "loop",
+                              }}
+                            >
+                              <Icon icon={t.icon} width="20" height="20" />
+                            </motion.div>
+                          </div>
                         ))}
                       </div>
                     </div>
                     <h4 className="font-semibold">{project.title}</h4>
-                    <p className="text-sm text-black mb-4">
+                    <p className=" text-black mb-4 text-xs">
                       {project.description}
                     </p>
                     <Link
