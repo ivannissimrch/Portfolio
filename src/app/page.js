@@ -38,7 +38,7 @@ export default function Home() {
                 animate={{
                   textShadow: [
                     "0 0 0px rgba(59,130,246,0)",
-                    "0 0 8px rgba(59,130,246,1.2)",
+                    "0 0 8px rgba(59,130,246,1.1)",
                     "0 0 0px rgba(59,130,246,0)",
                   ],
                 }}
