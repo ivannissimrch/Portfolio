@@ -208,10 +208,17 @@ export default function Home() {
                     </p>
                     <Link
                       href={project.link}
-                      className="bg-blue-900 text-white px-6 py-2 hover:bg-blue-800 transition cursor-pointer"
+                      className="bg-blue-900 text-white px-6 py-2 hover:bg-blue-800 transition cursor-pointer mr-2"
                     >
                       {" "}
                       View case study
+                    </Link>
+                    <Link
+                      href={project.website}
+                      className="bg-blue-900 text-white px-6 py-2 hover:bg-blue-800 transition cursor-pointer"
+                    >
+                      {" "}
+                      Website
                     </Link>
                   </div>
                   <div className="relative w-full aspect-[16/9] bg-blue-200">

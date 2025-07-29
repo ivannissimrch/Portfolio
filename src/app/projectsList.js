@@ -6,6 +6,7 @@ export const PROJECTS_LIST = [
       "Team project, I built a smart search tool with typo tolerance, fallback caching, and API cleanup for developer resources.",
     imageDesktop: "/images/devVaultDesktop.png",
     link: "/projects/devvault",
+    website: "https://dev-vault-chingu.netlify.app/",
     tech: [
       { name: "TypeScript", icon: "devicon:typescript", bg: "bg-indigo-500" },
       { name: "React", icon: "devicon:react", bg: "bg-cyan-800 text-white" },
@@ -29,6 +30,7 @@ export const PROJECTS_LIST = [
       "Built a stock dashboard with local caching, dual API integration, and interactive charting for time-based trends.",
     imageDesktop: "/images/stocksDesktop.png",
     link: "/projects/stocks",
+    website: "https://typescriptstocks.netlify.app/",
     tech: [
       { name: "React", icon: "devicon:react", bg: "bg-cyan-800 text-white" },
       { name: "TypeScript", icon: "devicon:typescript", bg: "bg-indigo-500" },
@@ -45,6 +47,7 @@ export const PROJECTS_LIST = [
 
     imageDesktop: "/images/weeklyBytesDesktop.png",
     link: "/projects/weeklybytes",
+    website: "https://weekly-bytes.com/",
     tech: [
       { name: "React", icon: "devicon:react", bg: "bg-cyan-800 text-white" },
       {
@@ -73,6 +76,7 @@ export const PROJECTS_LIST = [
       "Built global state with Context API and custom dropdowns using React Select for a team app that helps users split rent, utilities, and other expenses.",
     imageDesktop: "/images/sliceDesktop.png",
     link: "/projects/slice",
+    website: "https://islice.netlify.app/expenses-user",
     tech: [
       { name: "React", icon: "devicon:react", bg: "bg-cyan-800 text-white" },
       {
