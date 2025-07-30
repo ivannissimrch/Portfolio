@@ -73,7 +73,7 @@ export const PROJECTS_LIST = [
     title: "Slice",
     date: "September 2024",
     description:
-      "Built global state with Context API and custom dropdowns using React Select for a team app that helps users split rent, utilities, and other expenses.",
+      "Built global state with Context API and custom dropdowns using React Select for a team app that helps users split expenses.",
     imageDesktop: "/images/sliceDesktop.png",
     link: "/projects/slice",
     website: "https://islice.netlify.app/expenses-user",
