@@ -124,23 +124,11 @@ export default function Home() {
             <div className="flex flex-wrap gap-8 text-3x justify-evenly">
               {TECHNOLOGIES_ICONS.map((tech, idx) => (
                 <div key={tech.name} className="flex flex-col items-center">
-                  <motion.div
+                  <div
                     className={`w-14 h-14 flex items-center justify-center rounded-xl text-white shadow-md ${tech.bg}`}
-                    animate={{
-                      boxShadow: [
-                        "0 0 0px rgba(0,0,0,0)",
-                        "0 0 10px rgba(59,130,246,0.9)",
-                        "0 0 0px rgba(0,0,0,0)",
-                      ],
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      repeatType: "loop",
-                    }}
                   >
                     <Icon icon={tech.icon} width="40" height="40" />
-                  </motion.div>
+                  </div>
 
                   <span className="mt-2 text-sm text-gray-800">
                     {tech.name}
@@ -170,42 +158,31 @@ export default function Home() {
                   }}
                   viewport={{ once: false }}
                   key={index}
-                  className="bg-white overflow-hidden"
+                  className="bg-white shadow-md overflow-hidden p-6 space-y-4"
                 >
                   <div className="p-4">
-                    <div className="text-sm flex items-center gap-2 mb-2">
+                    <div className="text-sm flex  gap-2 mb-2">
                       <div className="min-w-28">{project.date}</div>
-                      <div className="flex justify-end w-full gap-2">
+                      <div className="flex justify-end w-full gap-2 flex-wrap">
                         {project.tech.map((t) => (
                           <div
                             key={t.name}
                             className="flex flex-col items-center"
                           >
-                            <motion.div
+                            <div
                               className={`w-8 h-8 flex items-center justify-center rounded-xl text-white shadow-md ${t.bg}`}
-                              animate={{
-                                boxShadow: [
-                                  "0 0 0px rgba(0,0,0,0)",
-                                  "0 0 10px rgba(59,130,246,0.9)",
-                                  "0 0 0px rgba(0,0,0,0)",
-                                ],
-                              }}
-                              transition={{
-                                duration: 2,
-                                repeat: Infinity,
-                                repeatType: "loop",
-                              }}
                             >
                               <Icon icon={t.icon} width="20" height="20" />
-                            </motion.div>
+                            </div>
                           </div>
                         ))}
                       </div>
                     </div>
-                    <h4 className="font-semibold">{project.title}</h4>
-                    <p className=" text-black mb-4 text-xs">
+                    <h4 className="font-semibold text-base">{project.title}</h4>
+                    <p className="text-base text-gray-800 mb-4">
                       {project.description}
                     </p>
+
                     <Link
                       href={project.link}
                       className="bg-blue-900 text-white px-6 py-2 hover:bg-blue-800 transition cursor-pointer mr-2"
@@ -221,7 +198,7 @@ export default function Home() {
                       Website
                     </Link>
                   </div>
-                  <div className="relative w-full aspect-[16/9] bg-blue-200">
+                  <div className="relative w-full aspect-[16/9] bg-blue-200 p-2">
                     <Image
                       src={project.imageDesktop}
                       alt={`${project.title} project screenshot`}
