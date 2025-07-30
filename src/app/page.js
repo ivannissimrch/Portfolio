@@ -51,7 +51,7 @@ export default function Home() {
                 React Front-End Developer
               </motion.h2>
 
-              <p className="py-2 text-sm sm:text-base md:text-left">
+              <p className="py-2text-base md:text-left">
                 I build web apps with{" "}
                 <strong>TypeScript, JavaScript, Next.js, Material UI</strong>,
                 and <strong>Tailwind CSS</strong>. I’ve collaborated on{" "}

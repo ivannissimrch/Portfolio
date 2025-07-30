@@ -1,7 +1,5 @@
-"use client";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
-import { motion } from "framer-motion";
 import { PROJECTS_LIST } from "@/app/projectsList";
 
 export default function SlicePage() {
@@ -65,23 +63,11 @@ export default function SlicePage() {
             <div className="flex gap-4 flex-wrap mb-4">
               {PROJECTS_LIST[3].tech.map((t) => (
                 <div key={t.name} className="flex flex-col items-center">
-                  <motion.div
+                  <div
                     className={`w-8 h-8 flex items-center justify-center rounded-xl text-white shadow-md ${t.bg}`}
-                    animate={{
-                      boxShadow: [
-                        "0 0 0px rgba(0,0,0,0)",
-                        "0 0 10px rgba(59,130,246,0.9)",
-                        "0 0 0px rgba(0,0,0,0)",
-                      ],
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      repeatType: "loop",
-                    }}
                   >
                     <Icon icon={t.icon} width="20" height="20" />
-                  </motion.div>
+                  </div>
                 </div>
               ))}
             </div>
