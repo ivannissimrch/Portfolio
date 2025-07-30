@@ -144,7 +144,7 @@ export default function Home() {
               What I have been working on. Projects that challenge me and
               inspired me.
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {PROJECTS_LIST.map((project, index) => (
                 <motion.div
                   initial={{
@@ -163,7 +163,7 @@ export default function Home() {
                   <div className="p-4">
                     <div className="text-sm flex  gap-2 mb-2">
                       <div className="min-w-28">{project.date}</div>
-                      <div className="flex justify-end w-full gap-2 flex-wrap">
+                      <div className="flex justify-evenly sm:justify-end w-full gap-2 flex-wrap">
                         {project.tech.map((t) => (
                           <div
                             key={t.name}
