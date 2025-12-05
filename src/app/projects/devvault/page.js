@@ -35,14 +35,15 @@ export default function DevVaultPage() {
               </a>
             </p>
           </div>
-          <div className="bg-blue-200 shadow overflow-hidden relative w-full aspect-[16/9]">
+          <div className="w-full bg-gray-200 p-0.5">
             <Image
-              src="/images/devVaultDesktop.png"
-              alt="Screenshot of DevVault app homepage"
+              src="/images/devvault.gif"
+              alt="DevVault app demo"
               width={800}
-              height={600}
+              height={450}
               quality={100}
-              className="w-full h-auto object-cover"
+              unoptimized
+              className="w-full h-auto"
             />
           </div>
         </section>
@@ -52,15 +53,16 @@ export default function DevVaultPage() {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Project Goal</h2>
             <p className="text-base mb-6">
-              Build an app to help developers discover useful learning
-              resources. It supports phrase-based search, tag filtering,
-              persistent state, and fallback handling for API downtime.
+              Build a developer resource hub with intelligent search that
+              actually finds what you're looking for. The search needed to
+              handle typos, understand related terms (searching "js" should find
+              "javascript"), and work even when the API goes down.
             </p>
           </div>
           <div>
             <h2 className="text-2xl font-semibold mb-4">Tech Stack</h2>
             <div className="flex gap-4 flex-wrap mb-4">
-              {PROJECTS_LIST[0].tech.map((t) => (
+              {PROJECTS_LIST[1].tech.map((t) => (
                 <div key={t.name} className="flex flex-col items-center">
                   <div
                     className={`w-8 h-8 flex items-center justify-center rounded-xl text-white shadow-md ${t.bg}`}
@@ -101,12 +103,25 @@ export default function DevVaultPage() {
               updates.
             </p>
             <ul className="list-disc pl-6 text-base space-y-1">
-              <li>Built the full-phrase and fuzzy search using Fuse.js</li>
-              <li>Implemented persistent state using a custom hook</li>
-              <li>Added fallback static data in case of API failures</li>
-              <li>Implemented tag filtering and sorting functionality</li>
               <li>
-                Created a custom API endpoint with handpicked Chingu resources
+                <strong>Fuse.js fuzzy matching</strong> with 0.1 threshold for
+                typo tolerance, searching across name, author, and resource type
+              </li>
+              <li>
+                <strong>Keyword expansion system</strong> that maps "js" to
+                "javascript", "frontend" to [HTML, CSS, JavaScript, React]
+              </li>
+              <li>
+                <strong>Stopword removal</strong> using NLP library to filter
+                out "the", "and", etc. for cleaner search results
+              </li>
+              <li>
+                <strong>Set-based deduplication</strong> to prevent duplicate
+                results when multiple keywords match
+              </li>
+              <li>
+                <strong>localStorage caching</strong> with daily invalidation
+                and fallback data when API fails
               </li>
               <li>
                 Wrote and shared a GitFlow guide to support team collaboration
@@ -154,20 +169,23 @@ export default function DevVaultPage() {
           <h2 className="text-2xl font-semibold mb-4">What I Learned</h2>
           <ul className="list-disc pl-6 text-base space-y-1">
             <li>
-              How to handle unreliable APIs by implementing fallback strategies
-              and persistent caching
+              How fuzzy search algorithms work and how to tune thresholds for
+              the right balance of strictness vs flexibility
             </li>
             <li>
-              How to clean up and validate API data, including removing
-              duplicates and broken links
+              How to implement keyword expansion and synonym mapping for
+              intelligent search
             </li>
             <li>
-              How to build a smart, typo-tolerant search bar that supports full
-              phrases using Fuse.js
+              NLP concepts like stopword removal and why they matter for search
+              quality
             </li>
             <li>
-              How to separate state logic cleanly using custom hooks for a
-              resilient UX
+              How to use Sets for O(1) deduplication instead of O(n) array
+              methods
+            </li>
+            <li>
+              How to design caching strategies with time-based invalidation
             </li>
           </ul>
         </section>

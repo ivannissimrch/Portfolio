@@ -12,8 +12,9 @@ export default function StocksPage() {
             <h1 className="text-3xl sm:text-4xl font-bold mb-2">Stocks</h1>
             <hr className="border-blue-300 mb-4" />
             <p className="text-base sm:text-lg">
-              A stock search and analysis app that allows users to search for
-              stocks by name and view detailed information about each stock.
+              Stock tracker with dual API integration, smart caching with
+              different TTLs, and data transformation that converts raw daily
+              prices into weekly and monthly trend averages.
             </p>
             <a
               className="text-blue-500 underline font-medium mt-2 inline-block mr-2"
@@ -32,14 +33,15 @@ export default function StocksPage() {
               Repo
             </a>
           </div>
-          <div className="bg-blue-200shadow relative w-full aspect-[16/9] overflow-hidden">
+          <div className="w-full bg-gray-200 p-0.5">
             <Image
-              src="/images/stocksDesktop.png"
-              alt="Stocks app homepage"
+              src="/images/stocks.gif"
+              alt="Stocks app demo"
               width={800}
-              height={600}
+              height={450}
               quality={100}
-              className="w-full h-auto object-cover"
+              unoptimized
+              className="w-full h-auto"
             />
           </div>
         </section>
@@ -49,21 +51,17 @@ export default function StocksPage() {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Project Goal</h2>
             <p className="text-base mb-6">
-              My goal was to build a reliable stock search app using real-world
-              APIs. Users can search for a stock by name and analyze its trends
-              using historical data. The app displays charts for 7-day, 6-week,
-              and 5-month periods, along with real-time price updates.
-              <strong>
-                {" "}
-                (Note: only the currently selected stock is updated every 15
-                minutes.)
-              </strong>
+              Build a stock tracker that integrates multiple APIs, handles rate
+              limits gracefully, and transforms raw daily data into meaningful
+              trend visualizations. The challenge: APIs have strict rate limits,
+              so I needed smart caching. Quotes refresh every 15 minutes,
+              historical data refreshes daily.
             </p>
           </div>
           <div>
             <h2 className="text-2xl font-semibold mb-4">Tech Stack</h2>
             <div className="flex gap-4 flex-wrap mb-4">
-              {PROJECTS_LIST[1].tech.map((t) => (
+              {PROJECTS_LIST[2].tech.map((t) => (
                 <div key={t.name} className="flex flex-col items-center">
                   <div
                     className={`w-8 h-8 flex items-center justify-center rounded-xl text-white shadow-md ${t.bg}`}
@@ -87,81 +85,79 @@ export default function StocksPage() {
         <section className="mb-16 grid md:grid-cols-2 gap-10 items-start">
           <div>
             <h2 className="text-2xl font-semibold mb-4">
-              My Contributions (Solo Project)
+              Solo Project
             </h2>
-            <p className="text-base mb-2">
-              With mentorship support from{" "}
-              <a
-                href="https://mentorcruise.com/mentor/martinstadler/?queryID=37da4bb9f036b663fb9107010ef2416a&source=search"
-                className="text-blue-700 underline"
-                target="_blank"
-              >
-                Martin Stadler
-              </a>
-              , I completed the following:
-            </p>
-            <ul className="list-disc pl-6 text-base space-y-1">
+                        <ul className="list-disc pl-6 text-base space-y-1">
               <li>
-                Converted a Figma design into a responsive UI using plain CSS
+                <strong>Dual API integration</strong>: Finnhub for real-time
+                quotes, Alpha Vantage for historical data, with{" "}
+                <code>Promise.all</code> for parallel fetching
               </li>
               <li>
-                Implemented a caching system using <code>useContext</code> and a
-                custom <code>usePersistedState</code> hook
+                <strong>Smart caching with different TTLs</strong>: quotes
+                invalidate after 15 minutes, historical data after 24 hours
               </li>
               <li>
-                Created reusable, typed components with clean TypeScript
-                interfaces
+                <strong>Data transformation pipeline</strong> that converts raw daily data to
+                weekly averages and monthly averages for trend charts
               </li>
               <li>
-                Wrote unit tests with <code>Vitest</code> to ensure app
-                functionality
+                <strong>Auto-refresh system</strong> using{" "}
+                <code>useAutoUpdateStock</code> hook with 30-second interval
+                checks
               </li>
               <li>
-                Built an quote auto-update feature to update the quotes of the
-                stocks
+                <strong>Debounced search</strong> (500ms) to prevent API spam on
+                rapid typing
+              </li>
+              <li>
+                Unit tests with <code>Vitest</code> for data transformation
+                functions
               </li>
             </ul>
           </div>
-          <div className="bg-blue-200shadow relative w-full aspect-[16/9] overflow-hidden">
-            <Image
-              src="/images/stocksDTeamWork.png"
-              alt="Mentor feedback and development iterations"
-              width={800}
-              height={600}
-              className="w-full h-auto object-cover"
-            />
+          <div className="bg-blue-200 shadow relative w-full aspect-[16/9] overflow-hidden flex items-center justify-center">
+            <p className="text-lg font-semibold text-blue-800">
+              Solo Project
+            </p>
           </div>
         </section>
 
-        {/* Iterations */}
+        {/* Technical Decisions */}
         <section className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">
-            Iterations & Thought Process
+            Technical Decisions
           </h2>
-          <p className="text-base mb-4">
-            This project went through multiple iterations and overlapped with
-            several Chingu Voyages. I used what I learned from this app, like
-            caching logic and search implementation, to contribute more
-            effectively to team projects.
-          </p>
-          <p className="text-base mb-4">
-            I originally used Material UI, but switched to plain CSS to improve
-            my layout and styling skills. Since I wasn’t familiar with turning
-            Figma designs into HTML/CSS, I worked with a tutor,{" "}
-            <a
-              href="https://www.wyzant.com/match/tutor/89018372"
-              className="text-blue-700 underline"
-              target="_blank"
-            >
-              Green L
-            </a>
-            , to guide me through the process.
-          </p>
-          <p className="text-base mb-4">
-            Due to API rate limits, I added local caching and integrated a
-            fallback API to ensure the data remained reliable even during
-            refresh limits.
-          </p>
+          <div className="space-y-4">
+            <div>
+              <h3 className="text-xl font-medium mb-2">Why Two APIs?</h3>
+              <p className="text-base">
+                Finnhub provides real-time quotes but limited historical data.
+                Alpha Vantage has comprehensive historical data but slower
+                updates. Using both gives users current prices AND meaningful
+                trend analysis. <code>Promise.all</code> fetches both in
+                parallel to minimize load time.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-medium mb-2">Why Different Cache TTLs?</h3>
+              <p className="text-base">
+                Stock quotes change throughout the day, so a 15-minute cache keeps
+                data fresh without hitting rate limits. Historical data only
+                changes once daily after market close, so a 24-hour cache is
+                sufficient.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-medium mb-2">Why Transform Daily to Weekly/Monthly?</h3>
+              <p className="text-base">
+                Raw daily data over 5 months is noisy and hard to read. Weekly
+                and monthly averages reveal actual trends. Built a generic
+                grouping utility with a <code>GroupType</code> enum so the same
+                logic handles both week and month aggregation.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* What I Learned */}
@@ -169,18 +165,22 @@ export default function StocksPage() {
           <h2 className="text-2xl font-semibold mb-4">What I Learned</h2>
           <ul className="list-disc pl-6 text-base space-y-1">
             <li>
-              How to build a UI from a Figma design without using a UI library
+              How to design caching strategies with different TTLs for different
+              data types
             </li>
             <li>
-              How to manage API rate limits using caching and fallback
-              strategies
+              How to transform and aggregate time-series data (daily to weekly to
+              monthly averages)
             </li>
             <li>
-              How to write scalable, maintainable React code with TypeScript
+              How to integrate multiple APIs with fallback strategies for rate
+              limits
             </li>
             <li>
-              How to test core logic using <code>Vitest</code> and improve based
-              on feedback
+              How to implement auto-refresh systems with interval-based checks
+            </li>
+            <li>
+              How debouncing prevents unnecessary API calls and improves UX
             </li>
           </ul>
         </section>

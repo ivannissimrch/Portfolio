@@ -53,8 +53,8 @@ export default function Home() {
 
               <p className="py-2text-base md:text-left">
                 I build web apps with{" "}
-                <strong>TypeScript, JavaScript, Next.js, Material UI</strong>,
-                and <strong>Tailwind CSS</strong>. I’ve collaborated on{" "}
+                <strong>TypeScript, Next.js, React, Material UI</strong>,
+                and <strong>Tailwind CSS</strong>. I've collaborated on{" "}
                 <a href="https://www.chingu.io/" className="text-blue-800">
                   Chingu{" "}
                 </a>
@@ -65,33 +65,17 @@ export default function Home() {
                 >
                   DevVault
                 </a>
-                <a
-                  href="https://ember-ai.vercel.app/"
-                  className="text-blue-800 "
-                >
-                  , Ember AI
-                </a>
-                <a
-                  href="https://islice.netlify.app/expenses-user"
-                  className="text-blue-800 "
-                >
-                  , Slice
-                </a>
-                , and {""}
-                <a href="https://weekly-bytes.com/" className="text-blue-800 ">
-                  Weekly Bytes
-                </a>
-                <strong></strong>, using Agile practices and the GitHub Flow
-                workflow. Currently, I’m building a solo{" "}
+                , using Agile practices and the GitHub Flow
+                workflow. My most recent project is{" "}
                 <a
                   href="https://shadowing-app-spec.vercel.app/"
                   className="text-blue-800 "
                 >
-                  ESL shadowing app
-                </a>{" "}
-                When I’m not coding, I’m out hiking with my miniature poodle or
-                enjoying Latin dancing. I’m always open to new opportunities and
-                collaborations!
+                  ShadowSpeak
+                </a>
+                , a full-stack ESL platform with browser audio recording, JWT auth, and PostgreSQL.
+                When I'm not coding, I'm out hiking with my miniature poodle or
+                enjoying Latin dancing.
               </p>
 
               {/* <div className="mt-4"></div> */}
@@ -198,14 +182,15 @@ export default function Home() {
                       Website
                     </Link>
                   </div>
-                  <div className="relative w-full aspect-[16/9] bg-blue-200 p-2">
+                  <div className="w-full bg-gray-200 p-0.5">
                     <Image
                       src={project.imageDesktop}
                       alt={`${project.title} project screenshot`}
-                      fill
+                      width={800}
+                      height={450}
                       quality={100}
                       unoptimized
-                      className="object-cover"
+                      className="w-full h-auto"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
