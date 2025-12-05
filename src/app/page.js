@@ -54,7 +54,7 @@ export default function Home() {
               <p className="py-2text-base md:text-left">
                 I build web apps with{" "}
                 <strong>TypeScript, Next.js, React, Material UI</strong>,
-                and <strong>Tailwind CSS</strong>. I've collaborated on{" "}
+                and <strong>Tailwind CSS</strong>. I have collaborated on{" "}
                 <a href="https://www.chingu.io/" className="text-blue-800">
                   Chingu{" "}
                 </a>
@@ -74,7 +74,7 @@ export default function Home() {
                   ShadowSpeak
                 </a>
                 , a full-stack ESL platform with browser audio recording, JWT auth, and PostgreSQL.
-                When I'm not coding, I'm out hiking with my miniature poodle or
+                When not coding, I am out hiking with my miniature poodle or
                 enjoying Latin dancing.
               </p>
 

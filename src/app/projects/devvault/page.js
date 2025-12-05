@@ -54,9 +54,9 @@ export default function DevVaultPage() {
             <h2 className="text-2xl font-semibold mb-4">Project Goal</h2>
             <p className="text-base mb-6">
               Build a developer resource hub with intelligent search that
-              actually finds what you're looking for. The search needed to
-              handle typos, understand related terms (searching "js" should find
-              "javascript"), and work even when the API goes down.
+              actually finds what you are looking for. The search needed to
+              handle typos, understand related terms (searching {'"'}js{'"'} should find
+              {'"'}javascript{'"'}), and work even when the API goes down.
             </p>
           </div>
           <div>
