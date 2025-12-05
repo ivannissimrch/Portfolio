@@ -108,12 +108,12 @@ export default function DevVaultPage() {
                 typo tolerance, searching across name, author, and resource type
               </li>
               <li>
-                <strong>Keyword expansion system</strong> that maps "js" to
-                "javascript", "frontend" to [HTML, CSS, JavaScript, React]
+                <strong>Keyword expansion system</strong> that maps {'"'}js{'"'} to
+                {'"'}javascript{'"'}, {'"'}frontend{'"'} to [HTML, CSS, JavaScript, React]
               </li>
               <li>
                 <strong>Stopword removal</strong> using NLP library to filter
-                out "the", "and", etc. for cleaner search results
+                out {'"'}the{'"'}, {'"'}and{'"'}, etc. for cleaner search results
               </li>
               <li>
                 <strong>Set-based deduplication</strong> to prevent duplicate

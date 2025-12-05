@@ -100,7 +100,7 @@ export default function ShadowSpeakPage() {
               </li>
               <li>
                 <strong>YouTube segment looping</strong> via custom 100ms
-                polling (YouTube API doesn't support native looping)
+                polling (YouTube API does not support native looping)
               </li>
               <li>
                 <strong>Cloud storage pipeline</strong>: recordings converted to
@@ -140,7 +140,7 @@ export default function ShadowSpeakPage() {
                 YouTube Segment Looping
               </h3>
               <p className="text-base">
-                The YouTube embedded player doesn't support native segment
+                The YouTube embedded player does not support native segment
                 looping. I built a custom solution using a{" "}
                 <code className="bg-gray-100 px-1">useLoopButtons</code> hook
                 that polls the video position every 100ms. When playback reaches
@@ -171,10 +171,10 @@ export default function ShadowSpeakPage() {
               </h3>
               <p className="text-base">
                 Implemented two-tier access: JWT tokens contain role claims
-                ("teacher" or "student"), middleware validates every API
+                ({'"'}teacher{'"'} or {'"'}student{'"'}), middleware validates every API
                 request, and server-side route protection checks{" "}
                 <code className="bg-gray-100 px-1">
-                  req.user.role !== "teacher"
+                  req.user.role !== {'"'}teacher{'"'}
                 </code>{" "}
                 before allowing destructive operations. Students get 403
                 Forbidden if they try to access teacher endpoints.
