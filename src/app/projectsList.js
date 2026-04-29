@@ -3,16 +3,18 @@ export const PROJECTS_LIST = [
     title: "ShadowSpeak",
     date: "December 2025",
     description:
-      "Full-stack ESL platform with browser-based audio recording (MediaRecorder API), YouTube segment looping via custom 100ms polling, and Azure Blob Storage integration. Built JWT authentication with role-based access control. Teachers create lessons and review submissions, students record and submit.",
+      "Full-stack ESL platform where students loop YouTube segments, record pronunciation in-browser, and get AI-scored feedback via Azure Cognitive Services Speech API (accuracy, fluency, completeness). Teachers create lessons, upload videos to Cloudinary, assign students, and review submissions with threaded feedback. Production monitored with Sentry; email notifications via Resend.",
     imageDesktop: "/images/esl.gif",
     link: "/projects/shadowspeak",
-    website: "https://shadowing-app-spec.vercel.app/",
+    website: "https://shadowspeak.net",
     tech: [
       { name: "Next.js", icon: "devicon:nextjs", bg: "bg-black" },
       { name: "TypeScript", icon: "devicon:typescript", bg: "bg-indigo-500" },
       { name: "React", icon: "devicon:react", bg: "bg-cyan-800 text-white" },
       { name: "Express", icon: "devicon:express", bg: "bg-gray-800" },
       { name: "PostgreSQL", icon: "devicon:postgresql", bg: "bg-blue-800" },
+      { name: "Azure", icon: "devicon:azure", bg: "bg-blue-500" },
+      { name: "Material UI", icon: "devicon:materialui", bg: "bg-blue-800" },
     ],
   },
   {

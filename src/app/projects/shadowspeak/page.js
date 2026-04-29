@@ -15,17 +15,19 @@ export default function ShadowSpeakPage() {
               A full-stack ESL learning platform where students practice
               pronunciation by recording themselves mimicking YouTube video
               segments, and teachers review submissions and provide feedback.
+              Students receive AI-scored pronunciation evaluations powered by
+              Azure Cognitive Services Speech API.
             </p>
             <a
               className="text-blue-500 underline font-medium mt-2 inline-block mr-2"
-              href="https://shadowing-app-spec.vercel.app/"
+              href="https://shadowspeak.net"
               target="_blank"
               rel="noopener noreferrer"
             >
               Live Version
             </a>
             <a
-              href="https://github.com/chingu-voyages/V55-tier2-team-24"
+              href="https://github.com/ivannissimrch/shadowing-app"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 underline"
@@ -56,7 +58,8 @@ export default function ShadowSpeakPage() {
               screen recording software for practice. Students can loop specific
               YouTube segments, record themselves in-browser, and submit
               directly. Teachers create lessons, assign them to students, and
-              review submissions with feedback.
+              review submissions with threaded feedback. Azure Speech API
+              automatically scores each recording for pronunciation accuracy.
             </p>
           </div>
           <div>
@@ -74,11 +77,16 @@ export default function ShadowSpeakPage() {
             </div>
             <ul className="list-disc pl-6 text-base space-y-1">
               <li>Next.js 15 with App Router, React 19, TypeScript</li>
-              <li>Express.js backend with PostgreSQL database</li>
+              <li>Express.js backend with PostgreSQL database (8 tables)</li>
               <li>Azure Blob Storage for audio recordings and images</li>
+              <li>Azure Cognitive Services Speech SDK for pronunciation scoring</li>
+              <li>Cloudinary for teacher video uploads and audio extraction</li>
               <li>JWT authentication with role-based access control</li>
-              <li>SWR for data fetching with optimistic updates</li>
-              <li>Material UI components, CSS Modules with container queries</li>
+              <li>SWR for data fetching with automatic revalidation</li>
+              <li>Material UI components and WaveSurfer.js waveform visualization</li>
+              <li>next-intl for multi-language support</li>
+              <li>Resend for email notifications, Sentry for error monitoring</li>
+              <li>Husky + lint-staged for pre-commit code quality enforcement</li>
             </ul>
           </div>
         </section>
@@ -95,6 +103,11 @@ export default function ShadowSpeakPage() {
             </p>
             <ul className="list-disc pl-6 text-base space-y-1">
               <li>
+                <strong>Azure Speech API integration</strong> — evaluates
+                recorded audio and returns per-word scores for accuracy,
+                fluency, completeness, and pronunciation
+              </li>
+              <li>
                 <strong>Browser audio recording</strong> using MediaRecorder API
                 with start, pause, resume, and stop controls
               </li>
@@ -108,16 +121,33 @@ export default function ShadowSpeakPage() {
                 database
               </li>
               <li>
+                <strong>Phrase practice pipeline</strong> — audio segments with
+                start/end timestamps linked to lessons so students can practice
+                individual phrases
+              </li>
+              <li>
+                <strong>Threaded feedback system</strong> — teachers and
+                students exchange replies per submission stored in a
+                feedback_replies table
+              </li>
+              <li>
+                <strong>Student progress tracking</strong> — status machine:
+                new → in_progress → submitted → completed with collapsible
+                lesson archive
+              </li>
+              <li>
                 <strong>JWT auth with RBAC</strong>: teachers and students have
                 different permissions enforced on both frontend and backend
               </li>
               <li>
-                <strong>PostgreSQL schema</strong> with users, lessons, and
-                assignments tables, proper foreign keys and cascade deletes
+                <strong>Email notifications</strong> via Resend API alert
+                teachers when students submit recordings
               </li>
               <li>
-                <strong>State management</strong> using Context API + useReducer
-                for complex recorder state machine
+                <strong>PostgreSQL schema</strong> with 8 tables (users,
+                lessons, assignments, audio_segments, practice_words,
+                practice_results, lists, feedback_replies), proper foreign keys
+                and cascade deletes
               </li>
             </ul>
           </div>
@@ -188,28 +218,31 @@ export default function ShadowSpeakPage() {
           <h2 className="text-2xl font-semibold mb-4">What I Learned</h2>
           <ul className="list-disc pl-6 text-base space-y-1">
             <li>
-              How to build a complete full-stack application from database
-              schema to deployed frontend
+              How to integrate AI/speech recognition APIs (Azure Cognitive
+              Services) into a production full-stack application
             </li>
             <li>
-              How to work with browser APIs (MediaRecorder) and cloud services
-              (Azure Blob Storage)
+              How to build a complete full-stack application from database
+              schema design to deployed production frontend
+            </li>
+            <li>
+              How to work with browser APIs (MediaRecorder) and multiple cloud
+              services (Azure Blob, Azure Speech, Cloudinary)
             </li>
             <li>
               How to implement proper authentication and authorization with JWT
-              and role-based access
+              and role-based access control
             </li>
             <li>
-              How to manage complex UI state using reducer patterns and state
-              machines
+              How to manage complex UI state using reducer patterns and context
             </li>
             <li>
-              How to design relational database schemas with proper foreign keys
-              and constraints
+              How to design relational database schemas with proper foreign keys,
+              constraints, and indexes for query performance
             </li>
             <li>
-              How to handle file uploads with proper validation, size limits,
-              and unique naming
+              How to set up production monitoring (Sentry), transactional email
+              (Resend), and pre-commit code quality enforcement (Husky)
             </li>
           </ul>
         </section>
