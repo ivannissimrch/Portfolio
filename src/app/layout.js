@@ -17,7 +17,19 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Ivan Rebolledo | Front-End Developer",
   description:
-    "Frontend portfolio with React, Next.js, and TypeScript projects.",
+    "Ivan Rebolledo is a Front-End Developer building web apps with React, Next.js, TypeScript, and Tailwind CSS.",
+  keywords: [
+    "Ivan Rebolledo",
+    "Ivan Robolledo",
+    "Evan Rebolledo",
+    "Front-End Developer",
+    "React Developer",
+    "Next.js Developer",
+    "ivanrebolledo.dev",
+  ],
+  alternates: {
+    canonical: "https://ivanrebolledo.dev",
+  },
   openGraph: {
     title: "Ivan Rebolledo | Front-End Developer",
     description:
@@ -48,6 +60,25 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Ivan Rebolledo",
+              alternateName: ["Ivan Robolledo", "Evan Rebolledo"],
+              url: "https://ivanrebolledo.dev",
+              jobTitle: "Front-End Developer",
+              description:
+                "Ivan Rebolledo is a Front-End Developer specializing in React, Next.js, TypeScript, Material UI, and Tailwind CSS.",
+              sameAs: [
+                "https://www.linkedin.com/in/ivan-rebolledo-012b17244/",
+                "https://github.com/ivannissimrch",
+              ],
+            }),
+          }}
+        />
         <Script id="clarity-script" strategy="afterInteractive">
           {`
             (function(c,l,a,r,i,t,y){
